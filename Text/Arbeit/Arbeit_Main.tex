@@ -1,0 +1,303 @@
+%HEADER
+
+%<---!!!!!!!!!!!!!!! MAKRO-DEFIONITIONEN; BITTE NICHT VERAENDERN !!!!!!!!!!
+%<--- ARBEIT EINSEITIG
+\def\makroEinseitig{
+%KOMA-Script-Klasse: scrreprt
+%deutsches Design, Schriftgröße 12, DIN A4
+%Literaturverzeichnis und Index in Inhaltsverzerzeichnis einbinden
+\documentclass[12pt,a4paper,listof=totoc,oneside]{scrreprt}
+%Seitenspiegel einstellen
+\usepackage[a4paper]{geometry}
+\geometry{a4paper,left=30mm,right=25mm,
+bottom=20mm,top=15mm,bindingoffset=2mm,
+includehead,includefoot}}
+% ARBEIT EINSEITIG --->
+
+\def\makroZweiseitig{
+%<--- ARBEIT ZWEISEITIG
+%KOMA-Script-Klasse: scrreprt
+%deutsches Design, zweiseitig
+%Literaturverzeichnis und Index in Inhaltsverzerzeichnis einbinden
+\documentclass[12pt,a4paper,listof=totoc,twoside, headsepline]{scrreprt}
+\usepackage[a4paper]{geometry}
+\geometry{a4paper,left=25mm,right=25mm,
+bottom=20mm,top=15mm,bindingoffset=2mm,
+includehead,includefoot}}
+% ARBEIT ZWEISEITIG --->
+
+%<--- Einstellungen Kopfzeile
+\def\makroFH-Kopfzeilenstil{
+\pagestyle{scrheadings} 
+\setheadsepline{0.4pt}
+\pagestyle{scrheadings}
+\renewcommand*{\chapterpagestyle}{scrheadings}}
+%Einstellungen Kopfzeile --->
+%!!!!!!!!!!!!!!! MAKRO-DEFIONITIONEN; BITTE NICHT VERAENDERN !!!!!!!!!!--->
+
+
+%AUSWAHL: TEXT EINSEITIG (ja/nein)
+\makroEinseitig
+%\makroZweiseitig
+
+%schalte Umlaute frei
+\usepackage[english, ngerman]{babel}
+%passende Codierung
+\usepackage[utf8]{inputenc}
+%Seitenspiegel einzustellen
+\usepackage[a4paper]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deutsche und englische Referenzen
+\usepackage{babelbib}
+
+% Utopia Schriftart
+\usepackage{utopia}
+
+% Farbige Überschriften
+% https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+\usepackage[dvipsnames]{xcolor}
+\usepackage{sectsty}
+\chapterfont{\color{CornflowerBlue}}
+\sectionfont{\color{Cerulean}}
+\subsectionfont{\color{Cerulean}}
+\subsubsectionfont{\color{Cerulean}}
+\paragraphfont{\color{Cerulean}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Mathepaket
+\usepackage{amsmath}
+%Symbole
+\usepackage{amssymb}
+%griechische Symbole
+\usepackage{upgreek}
+%weitere Symbole
+\usepackage{pxfonts}
+% Phonetischen Alphabete für LaTeX
+\usepackage{tipa}
+%farbige Schriften
+%\usepackage{color}
+\usepackage{scrhack}
+%Bilder fixieren
+\usepackage{float}
+%Grafiken einbinden
+\usepackage{graphicx}
+% Kopf- und Fußzeilen
+\usepackage[automark,standardstyle,markusedcase]{scrlayer-scrpage}
+% deutsche Überschriften
+\usepackage[ngerman]{translator}
+% Kopfzeilenabstand festlegen
+\setlength{\headheight}{10mm}
+%Abb. statt Abbildung
+\usepackage{caption3}
+\addto\captionsngerman{
+\renewcommand{\figurename}{Abb.}
+\renewcommand{\tablename}{Tab.}
+}
+%Glossar-Pakage
+% HYPERREF VOR GLOSSARIES EINFÜGEN
+\usepackage{hyperref}
+
+\usepackage[
+nonumberlist, %keine Seitenzahlen anzeigen
+acronym,      %ein Abkürzungsverzeichnis erstellen
+toc]          %Einträge im Inhaltsverzeichnis      
+{glossaries}
+\usepackage{cite}
+
+\hypersetup{ colorlinks,
+linkcolor=MidnightBlue,
+filecolor=MidnightBlue,
+urlcolor=MidnightBlue,
+citecolor=MidnightBlue }
+
+%Glossar einschalten
+\makeglossaries
+
+
+%fertigen Kopfzeilenstil aktivieren
+\makroFH-Kopfzeilenstil
+
+%Zeilenabstand * 1.25 (default)
+\renewcommand{\baselinestretch}{1.25}\normalsize
+%(Kommentar entfernen, um Zeilenabstand
+% auf 1,5-fache Groesse zu ueberschreiben)
+%\renewcommand{\baselinestretch}{1.50}\normalsize
+
+% KOMPILATION
+% pdflatex Arbeit_Main.tex
+% makeglossaries Arbeit_Main
+% bibtex Arbeit_Main
+% 2 * pdflatex Arbeit_Main.tex
+%
+
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO #1}}}
+
+\begin{document}
+
+\input{Glossar/Arbeit_Glossar}
+
+\input{Inhalt/Titelseite}
+
+%Füge leere Seite ein (optional)
+\input{Inhalt/LeereSeite}
+%Verwende Muster-Erklärung zur selbstständigen Arbeit 
+\input{Inhalt/Erklaerung}
+%Füge leere Seite ein (optional)
+\input{Inhalt/LeereSeite}
+
+\input{Inhalt/Abstract}
+
+\tableofcontents
+\setcounter{page}{1}
+
+\chapter{Grundlagen von Predictive Analytics}
+
+Textkram Textkram Textkram Textkram Textkram Textkram Textkram \\ \\
+Mehr Textkram Mehr Textkram Mehr Textkram Mehr Textkram Mehr Textkram Mehr
+Textkram \\ \\
+Abkürzung (Akronym) \gls{MS} und Glossareintrag \gls{glos:AntwD}. \\ \\
+Zitieren auf Deutsch \cite{ART12d} und Englisch \cite{ART12e}. \\ \\
+Hier ein Link \url{www.kram.de}.
+
+\cite{Thapa_Parycek} und \cite{Mergel}
+
+\section{Motivation - Die Schwierigkeit von Vorhersagen}
+
+\section{Begriffsdefinition und -Abgrenzung}
+
+\section{Bestandteile von Predictive Analytics}
+
+\subsection{CRISP-DM Vorgehensmodell}
+
+\subsection{Daten}
+
+\subsubsection{Information Management (Data Warehouse)}
+
+\subsubsection{Datenabhängige Ziele}
+
+\paragraph{\ldots}
+
+\paragraph{Beschreibung der Daten}
+
+\paragraph{Klassifikation}
+
+\paragraph{Zeitreihenanalyse}
+
+\subsection{Methoden}
+
+\subsubsection{Die Großen Drei}
+
+\paragraph{Regression}
+
+\paragraph{Entscheidungsbäume}
+
+\paragraph{Neuronale Netze}
+
+\subsubsection{Zeitreihenanalyse}
+
+\subsubsection{\ldots}
+
+\subsection{Werkzeuge}
+
+\subsection{(Kreative) Freiheitsgrade bei der Implementierung eines
+  Vorhersagemodells}
+
+\section{Anwendungsbeispiele}
+
+\subsection{Allgemeine Anwendungsfelder (siehe SAP Artikel)}
+
+\subsection{\ldots}
+
+\section{Allgemeine Risiken bei der Nutzung von Predictive Analytics}
+
+\subsection{Risiko der Unverhältnismäßigkeit}
+
+\subsection{Risiken bei der Datenerhebung}
+
+\subsubsection{\ldots}
+
+\subsection{Risiken bei der Interpretation der Daten}
+
+\subsection{Risiken bei der Interpretation der Ergebnisse}
+
+\subsubsection{Prognose verändert das Verhalten des Systems 
+%  (``Selffulfilling Prophecy'')}
+  (\glqq{Selffulfilling} Prophecy\grqq})
+
+\subsubsection{Ignorieren der Unsicherheiten bei der Prognose}
+
+\chapter{Predictive Analytics im öffentlichen Sektor}
+
+\section{Übersicht}
+
+\section{Thematische Schwerpunkte}
+\todo{Wo könnte der größte Nutzen liegen?}
+
+\todo{vorläufig:}
+
+\subsection{Öffentliche Verwaltung}
+
+\subsubsection{Daten in der öffentlichen Verwaltung}
+
+\paragraph{Open Data Portale ( GovData.de )}
+
+\subsubsection{Organisationseinheiten für Predictive Analytics}
+
+\paragraph{\ldots}
+
+\subsection{Gesundheit}
+
+\subsection{Bildung}
+
+\chapter{Gegenwärtige Anwendungen}
+
+\section{Predictive Analytics in Finanzbehörden}
+
+\section{Google Flu Trends}
+
+\section{Predictive Policing}
+
+\section{Cambridge Analytica}
+
+% TODO Auflistungstabelle
+% Kategorie | Anwendung | Beispiel
+
+\chapter{Zukunftsperspektiven}
+
+\section{\ldots}
+
+\section{Einschätzung der politischen Stimmungslage}
+
+\section{Vorhersage kultureller Unterschiede}
+
+\chapter{Zusammenfassung und Fazit}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\chapter{Probablility Scoring - Vertiefung}
+
+\chapter{Predictive Analytics mit R}
+
+\section{Tabellenkalkulationen versus R}
+
+Inhalt vom ersten Anhang.
+
+\section{Beispielhafte Auswertung eines Datensatzes}
+
+Inhalt des zweiten Anhang.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{Bibliographie/Bibli.bib}{}
+\bibliographystyle{babplain}
+
+\listoffigures
+\listoftables
+\printglossary[title=Glossar]
+\printglossary[type=\acronymtype, title=Akronyme]
+% keine deutschen Überschriften
+%\printglossaries 
+
+\end{document}
+
+
