@@ -34,7 +34,7 @@ set : $(SOURCES)
 > cp $(OUTDIR)/$(MAINFILE_NO_EXTENSION).pdf $(FINDIR)/$(DOCNAME)
 
 clean :
-> rm $(OUTDIR)/*
+> rm $(OUTDIR)/$(MAINFILE_NO_EXTENSION).*
 > rm $(FINDIR)/$(DOCNAME)
 
 #view : enddoc/$(DOCNAME)
