@@ -1,0 +1,18 @@
+-- List of required Latex packages --
+
+texlive [Debian sid]
+
+  +
+
+  texlive-lang-german
+  
+  texlive-latex-extra
+
+
+-- List of required R packages --
+
+r-base [Debian sid]
+
+  +
+  
+  ...
