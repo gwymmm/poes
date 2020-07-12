@@ -131,7 +131,14 @@ citecolor=MidnightBlue }
 % 2 * pdflatex Arbeit_Main.tex
 %
 
+% https://www.overleaf.com/learn/latex/Tables
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+
 \newcommand{\todo}[1]{\textcolor{red}{\textbf{TODO #1}}}
+\newcommand{\xcom}{\textcolor{YellowGreen}{\textbf{[?]}}}
+\newcommand{\misobj}[1]{\textcolor{YellowGreen}{\textbf{#1}}}
 
 \begin{document}
 
@@ -160,6 +167,22 @@ Abkürzung (Akronym) \gls{MS} und Glossareintrag \gls{glos:AntwD}. \\ \\
 %Zitieren auf Deutsch \cite{ART12d} und Englisch \cite{ART12e}. \\ \\
 Hier ein Link \url{www.kram.de}.
 
+\begin{tabular}{ |l|l|p{3cm}|  }
+\hline
+\multicolumn{3}{|c|}{Country List} \\
+\hline
+Country Name     or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 \\
+\hline \hline
+Afghanistan & AF &AFG \\
+Aland Islands & AX   & ALA \\
+Albania &AL & ALB \\
+Algeria    &DZ & DZA \\
+American Samoa & AS & ASM \\
+Andorra & AD & AND   \\
+Angola & AO & AGO \\
+\hline
+\end{tabular}
+
 \cite{Thapa_Parycek} und \cite{Mergel}
 
 \cite{Bijma}, ...
@@ -167,6 +190,14 @@ Hier ein Link \url{www.kram.de}.
 \cite{Mauerer}, \cite{OECD}, \cite{Dinov}, \cite{Runkler}, \cite{McCarthy}
 
 \cite{Crossman}, \cite{Bowles}
+
+\cite{Arens}
+
+Hier ist Etwas unbekanntes \xcom.
+
+Verweise auf \gls{glos:PCA}. Und es geht weiter \gls{glos:PCA}. \gls{PCA} \gls{PCA}
+
+\misobj{Tabelle mit Kram}
 
 \input{Inhalt/Einleitung}
 
