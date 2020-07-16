@@ -18,6 +18,71 @@ vereinheitlichen. Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM \xc
 
 \subsection{Daten}
 
+\subsubsection{Datentypen}
+
+Bei Daten lassen sich verschiedene Typen\footnote{Auch als Skalen
+(\emph{scales of measurement}) bezeichnet} unterscheiden.
+Je nach Datentyp einer
+Variablen, werden ihre Werte unterschiedlich interpretiert. Zudem können
+bestimmte mathematische Operationen nur mit Variablen eines bestimmten Typs
+durchgeführt werden. Die Datentypen werden im folgenden Text genauer erläutert
+(vgl. \cite{Arens}, S.~1229 und \cite{McCarthy}, S.~28-29).\\ \\
+Der \glqq{einfachste}\grqq Datentyp ist eine nominal skalierte Variable. 
+Werte von nominal skalierten Variablen werden als Namen
+interpretiert. Weiterhin ist es nicht sinnvoll diese Art von Variablen zu
+ordnen. Es lässt sich lediglich feststellen, ob zwei nominal skalierte Variablen
+gleich oder ungleich sind. Ein Beispiel für eine nominal skalierte Variable ist
+der Name einer Stadt. Die Werte sind dann konkrete Städtenamen wie
+\glqq{München}\grqq oder \glqq{Berlin}\grqq. Als Operationen stehen nur $=$
+oder $\neq$ zur Verfügung, weil Aussagen wie 
+\glqq{München}\grqq$=$\glqq{München}\grqq oder
+\glqq{München}\grqq$\neq$\glqq{Berlin}\grqq sinnvoll sind. Nicht sinnvoll wären
+dagegegen Vergleiche wie \glqq{München}\grqq$<$\glqq{Berlin}\grqq
+\footnote{Der Vergleich wäre sinnvoll, wenn mit der Nennung des Namens 
+z. B. implizit die Größe der Stadt gemeint wäre. Dies ist hier aber nicht der
+Fall.}.
+Weitere Beispiele für nominal skalierte Variablen sind Geschlecht, Augenfarbe
+oder Postleitzahl. \\ \\
+Etwas mehr Möglichkeiten stehen zur Verfügung, wenn eine ordinal skalierte
+Variable vorliegt. Für eine solche Variable ist eine Ordnung sinnvoll, sodass
+alle Vergleichsoperationen möglich sind. Eine Kleidungsgröße (\texttt{S},
+\texttt{M}, \texttt{L}) ist ein Beispiel für eine ordinal skalierte
+Variable. Im Gegensatz zum Beispiel mit den Städtenamen ist ein Vergleich wie
+\texttt{S} $<$ \texttt{M} hier sinnvoll. \\ \\
+Wird eine Variable auf einer Intervallskala definiert, sind ihre Werte
+numerisch.
+Zusätzlich zu
+allen Operationen von nominal und ordinal skalierten Variablen können hier auch
+Additionen und Subtraktionen ausgeführt werden. Ein Beispiel hierfür sind
+Temperaturen in °C, die addiert und subtrahiert werden können. Allerdings sind
+20~°C nicht das Doppelte von 10~°C. Hier kann man erkennen, dass es bei
+Intervallskalen nicht sinnvoll ist, Verhältnisse zu berechnen. Der Grund
+hierfür ist, dass der Nullpunkt einer Intervallskala nicht mit dem absoluten
+Nullpunkt einer Größe identisch sein muss. So sind 0~°C nicht der absolute
+Nullpunkt für die Temperatur. Wenn man sinnvolle Verhältnisse berechnen will,
+wird eine Proportionalskala benötigt. \\ \\
+Eine auf einer Proportionalskala definierte Variable hat numerische Werte, für
+die alle zuvor erwähnten mathematischen Operationen definiert sind und
+zusätzlich auch Multiplikation und Division möglich sind. So führt eine
+Multiplikation einer Länge in Metern mit der Konstante 2 zu der doppelten Länge.
+Ist das Verhältnis zweier Längen gleich 10, so ist die eine Länge 10
+mal so groß wie die andere. Weiterhin führt die Multiplikation zweier Längen
+in m zu einer korrekten Fläche in $\textrm{m}^2$. Die Ergebnisse wären nicht
+korrekt, wenn der Nullpunkt der Meterskala nicht mit dem Nullpunkt der
+Längenskala identisch wäre, wie es bei Intervallskalen der Fall ist. \\ \\
+Nominal und ordinal skalierte Variablen sind qualitative Variablen.
+Variablen, die auf Intervall- oder Proportionalskalen definiert sind, werden
+hingegen als quantitative oder kardinale Variablen bezeichnet.
+Weiterhin werden qualitative Variablen auch als kategorisch
+(\emph{categorical}) bezeichnet, quantitative als numerisch (\emph{numeric})
+und je nach Wertebereich als diskret (\emph{discrete}, ganzzahlige Werte) oder
+kontinuierlich (\emph{continuous}, Fließkommawerte). \\ \\
+Tabelle~\xcom zeigt eine Zusammenfassung der verschiedenen Datentypen und der
+erlaubten Operationen (basierend auf Tabelle 2.2 in \cite{Runkler}, S.~8).
+
+\misobj{Tabelle Datentypen}
+
+
 \subsubsection{Information Management (Data Warehouse)}
 
 \subsubsection{Datenabhängige Ziele}
