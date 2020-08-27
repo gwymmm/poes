@@ -28,7 +28,7 @@ Dies könnte
 \item[(a)] notwendiger sein als erwartet und
 \item[(b)] schwieriger werden als gedacht.
 \end{description}
-Denn eine ausführliche Studie des Psychologen \xcom Tetlock aus dem Jahr 2005
+Denn eine ausführliche Studie des Psychologen Philip Tetlock aus dem Jahr 2005
 (siehe \cite{Tetlock}) ergab,
 dass Experten zu politischen Fragen keine besseren Prognosen liefern konnten,
 als die einfachsten statistischen Algorithmen. Zudem hatten die Experten
@@ -50,11 +50,11 @@ der \emph{probability score} verwendet. Dabei wurden ihre Vorhersagen mit den
 Ergebnissen von einfachen und erweiterten statistischen Algorithmen
 verglichen. \\ \\
 Das Ergebnis ist in Abbildung~\ref{pic:Tetlock_1} dargestellt und wird im
-folgenden Text ausführlich erläutert. \\ \\
+folgenden Text ausführlich erläutert\footnote{Die Grafik ist eine leicht 
+abgewandelte Version vom Original aus \cite{Tetlock}, S. 51).} \\ \\
 \begin{figure}%[!hbt]
 \centering
-\caption{ Bei den \emph{forecasting exercises} erzielte Wertungen 
-  (Grafik leicht abgewandelt vom Original aus \cite{Tetlock}, S. 51). }
+\caption{Bei den \emph{forecasting exercises} erzielte Wertungen.}
 \includegraphics[scale=1.0]{Grafiken/Tetlock_1_Fertig_Ink.pdf} 
 \label{pic:Tetlock_1}
 \end{figure}
@@ -100,7 +100,7 @@ Die Gruppe mit der geringsten Qualifikation waren Studenten, die die Übungen
 zu Vorhersagen absolvieren mussten, nachdem sie kurze Zusammenfassungen von
 Fakten zu den jeweiligen Themen erhalten haben (vgl. \cite{Tetlock}, S.~56).
 \\ \\
-Weiterhin enthält Abbildung~\xcom auch die Ergebnisse, die von den
+Weiterhin enthält Abbildung~\ref{pic:Tetlock_1} auch die Ergebnisse, die von den
 statistischen Algorithmen erzielt wurden. Zur besseren Übersicht werden die
 Algorithmen hier in vier Gruppen eingeteilt. Der Stufe 0 Algorithmus würfelt
 einfach die Antworten , er ordnet den zur Debatte stehenden Ereignissen
@@ -117,12 +117,37 @@ sieht folgendermaßen aus:
 \begin{description}
 \item[Stufe 0:] \emph{random guessing} (\emph{chimp})
 \item[Stufe 1:] \emph{contemporary base rate} (1-1), \emph{restrictive base
-  rate} (1-2), \emph{restrictive base rate} (1-3)
+  rate} (1-2), \emph{expansive base rate} (1-3)
 \item[Stufe 2:] \emph{cautious case-specific extrapolation} (2-1),
   \emph{aggressive case-specific extrapolation} (2-2)
 \item[Stufe 3:] \emph{autoregressive distributed lag models}
 \end{description}
 } \\ \\
-Nun können die Ergebnisse der Abbildung~\xcom interpretiert werden.
-
-Diese zeigen, dass Experten ...
+Abbildung~\ref{pic:Tetlock_1} zeigt, dass die Experten die Studenten bei
+den \emph{forecasting exercises} deutlich schlagen konnten. Allerdings waren die
+Experten kaum besser (!) als der zufallsgesteuerte Algorithmus 
+(Stufe 0)\footnote{Die Experten waren schlechter kalibriert aber besser bei
+der Diskriminierung, sodass sie insgesamt eine etwas bessere Gesamtwertung
+hatten}. Insbesondere verloren die Experten gegen die komplexeren Algorithmen
+(Stufe 2 und 3) mit deutlichem Abstand und zwar sowohl bei Kalibrierung, als
+auch bei Diskriminierung. Falsche Überzeugungen und mentale Barrieren haben, so
+Tetlock, das Urteilsvermögen der Experten getrübt und zu den schlechten
+Ergebnissen geführt (mehr dazu in Abschnitt~\xcom). \\ \\
+Was haben diese Ergebnisse mit \emph{predictive analytics} und dem öffentlichen
+Sektor zu tun?\\ \\
+Erstens waren die Fragestellungen der \emph{forecasting exercises} aus den
+Bereichen Politik und Wirtschaft\footnote{
+Andere Themen, wie beispielweise naturwissenschaftliche Fragestellungen,
+z. B. \glqq{Wie} wahrscheinlich ist die Detektion dunkler Materie
+in den nächsten fünf Jahren?\grqq, wurden nicht behandelt.
+}, was für den öffentlichen Sektor relevant ist. Zweitens handelt es sich dabei
+um generelle Probleme der menschlichen Urteilsfindung. Probleme, die in vielen
+Bereichen auftreten und zu Fehleinschätzungen führen können. Zudem
+konnten datenbasierte Algorithmen, also \emph{predictive analytics}, die
+menschlichen Vorhersagen bei den \emph{forecasting exercises} schlagen. Dies
+deutet darauf hin, dass formale Methoden wie \emph{predictive analytics} dabei
+helfen können, bessere Urteile zu fällen und folglich auch bessere
+Entscheidungen zu treffen. \\ \\
+Der nächste Teil der Arbeit behandelt \emph{predictive analytics},
+den Prozess der (menschlichen) Urteilsfindung und wie formale Methoden diesen
+Prozess verbessern können.
