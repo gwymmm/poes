@@ -3,6 +3,8 @@
 
 \section{Begriffsdefinition und -Abgrenzung}
 
+\section{Probleme menschlicher Urteile}
+
 \section{Bestandteile von \emph{predictive analytics}}
 
 Bei \emph{predictive analytics} werden Daten mit Hilfe von geeigneten Methoden
@@ -21,8 +23,8 @@ vereinheitlichen. Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM \xc
 \subsubsection{Elementare Datentypen}
 
 Bei Daten lassen sich verschiedene elementare Typen\footnote{Alternativ dazu
-spricht man von verschiedenen Skalen (\emph{scales of measurement}) auf denen
-Daten definiert werden.} unterscheiden.
+spricht man vom Skalenniveau (\emph{scale of measurement}) als eine
+Eigenschaft von Daten und Variablen.} unterscheiden.
 Je nach Datentyp einer
 Variablen, werden ihre Werte unterschiedlich interpretiert. Zudem können
 bestimmte mathematische Operationen nur mit Variablen eines bestimmten Typs
@@ -64,7 +66,9 @@ Nullpunkt für die Temperatur. Wenn man sinnvolle Verhältnisse berechnen will,
 wird eine Proportionalskala benötigt. \\ \\
 Eine auf einer Proportionalskala definierte Variable hat numerische Werte, für
 die alle zuvor erwähnten mathematischen Operationen definiert sind und
-zusätzlich auch Multiplikation und Division möglich sind. So führt eine
+zusätzlich auch Multiplikation und Division möglich sind.
+%Insbesondere ist es sinnvoll Verhältnisse zu berechnen.
+So führt eine
 Multiplikation einer Länge in Metern mit der Konstante 2 zu der doppelten Länge.
 Ist das Verhältnis zweier Längen gleich 10, so ist die eine Länge 10
 mal so groß wie die andere. Weiterhin führt die Multiplikation zweier Längen
@@ -78,10 +82,52 @@ Weiterhin werden qualitative Variablen auch als kategorisch
 (\emph{categorical}) bezeichnet, quantitative als numerisch (\emph{numeric})
 und je nach Wertebereich als diskret (\emph{discrete}, ganzzahlige Werte) oder
 kontinuierlich (\emph{continuous}, Fließkommawerte). \\ \\
-Tabelle~\xcom zeigt eine Zusammenfassung der verschiedenen Datentypen und der
-erlaubten Operationen (basierend auf Tabelle 2.2 in \cite{Runkler}, S.~8).
+Tabelle~\ref{tab:Skalen} zeigt eine Zusammenfassung der verschiedenen Datentypen
+und der erlaubten Operationen\footnote{
+Basierend auf Tabelle 2.2 in \cite{Runkler}, S.~8}.
+\begin{table}
+%\footnotesize
+\centering
+\caption{Übersicht der Datenskalen}
+\label{tab:Skalen}
+\scalebox{0.7}{
+\begin{tabular}{ |l|l|l|l|  }
+\hline
+Skala & Sinnvolle Operationen & Beispielgrößen & Beispielwerte \\
+\hline
+Nominal & Gleichheit ($=, \neq$) & Name, & \glqq{Julia}\grqq,
+  \glqq{Klaus}\grqq \\
+& & Geschlecht & \texttt{M}, \texttt{W} \\
+\hline
+Ordinal & Gleichheit ($=, \neq$), & Kleidungsgöße & \texttt{S}, \texttt{M},
+  \texttt{L} \\
+        & Vergleiche ($<, >, \ldots$) & & \\
+\hline
+Intervall & Gleichheit ($=, \neq$), & Jahresangabe, & 2015~A.D. \\
+  & Vergleiche ($<, >, \ldots$), & Temperatur in Grad Celsius & 20~°C \\
+  & Addition ($+$), Subtraktion ($-$), &  &  \\
+\hline
+Proportional & Gleichheit ($=, \neq$), & Alter, & 21 Jahre \\
+  & Vergleiche ($<, >, \ldots$), & Temperatur in Kelvin & 273.4~K \\
+  & Addition ($+$), Subtraktion ($-$), &  &  \\
+  & Multiplikation ($\cdot$), Division ($/$) & & \\
+\hline
 
-\misobj{Tabelle Datentypen}
+%\multicolumn{3}{|c|}{Country List} \\
+%\hline
+%Country Name     or Area Name& ISO ALPHA 2 Code &ISO ALPHA 3 \\
+%\hline \hline
+%Afghanistan & AF &AFG \\
+%Aland Islands & AX   & ALA \\
+%Albania &AL & ALB \\
+%Algeria    &DZ & DZA \\
+%American Samoa & AS & ASM \\
+%Andorra & AD & AND   \\
+%Angola & AO & AGO \\
+%\hline
+\end{tabular}
+}
+\end{table}
 
 
 \subsubsection{Information Management (Data Warehouse)}
