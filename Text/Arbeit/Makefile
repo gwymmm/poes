@@ -19,7 +19,7 @@ FINDIR = Enddokument
 # VIEWER = atril
 # VFLAGS = -w
 
-enddoc/$(DOCNAME) : $(SOURCES)
+$(FINDIR)/$(DOCNAME) : $(SOURCES)
 > pdflatex -output-directory=$(OUTDIR) $(MAINFILE)
 > makeglossaries -d $(OUTDIR) $(MAINFILE_NO_EXTENSION)
 > bibtex $(OUTDIR)/$(MAINFILE_NO_EXTENSION)
