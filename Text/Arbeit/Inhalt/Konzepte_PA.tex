@@ -31,6 +31,28 @@ schneller Rechnungen begleichen.
 Mitarbeiter, die bald einen Arbeitsplatzwechsel vollziehen könnten, mit Hilfe
 von Vorhersagemodellen erkennen, um rechtzeitig darauf reagieren zu können.
 \end{description}
+\begin{figure}%[!hbt]
+\centering
+\caption{Erstellung von Vorhersagemodellen.}
+\includegraphics[scale=0.8]{Grafiken/PA_Ink.pdf} 
+\label{pic:PA}
+\end{figure}
+Abbildung~\ref{pic:PA} veranschaulicht den allgemeinen Prozess zur Generierung
+von Vorhersagemodellen\footnote{
+Basierend auf dem Original aus \cite{Parthasarathy}.
+}.
+Zum Erstellen der Vorhersagen werden historische Daten benötigt. Diese Daten
+werden von Algorithmen genutzt, um Modelle zu bauen. Die Vorhesagemodelle
+akzeptieren neue Daten als Eingabe und liefern dazu eine Vorhesage der
+gewünschten Eigenschaften. So könnte eine Versicherung beispielsweise
+Vorhersagemodelle zur Betrugserkennung implementieren. Die historischen Daten
+könnten in diesem Fall Forderungen von Kunden an die Versicherung aus der
+Vergangenheit sein. Das Vorhesagemodell würde dann eine neue Forderung an die
+Versicherung als Eingabe nehmen und könnte als Ausgabe eine Zahl zwischen 0 und
+1 liefern. Dieser vorhergesagte Wert kann dann als Wahrscheinlichkeit
+interpretiert werden, dass es sich bei der neuen Forderung um einen Betrugsfall
+handelt. 
+
 
 \section{Probleme menschlicher Urteile}
 
