@@ -195,9 +195,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="360.23496"
-     inkscape:cy="469.98263"
+     inkscape:zoom="1.4"
+     inkscape:cx="351.47304"
+     inkscape:cy="475.23158"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -258,16 +258,16 @@
        height="26.876844"
        width="42.612442"
        id="rect873"
-       style="fill:#ffb380;stroke:#000000;stroke-width:0.499999" />
+       style="fill:#ffb380;fill-opacity:0.40000001;stroke:#000000;stroke-width:0.499999" />
     <rect
-       style="fill:#afe9af;stroke:#000000;stroke-width:0.499999"
+       style="fill:#afe9af;fill-opacity:0.40000001;stroke:#000000;stroke-width:0.499999"
        id="rect873-6"
        width="42.612442"
        height="26.876844"
        x="27.961143"
        y="150.19325" />
     <rect
-       style="fill:#ff5599;stroke:#000000;stroke-width:0.499999"
+       style="fill:#ff5599;fill-opacity:0.40000001;stroke:#000000;stroke-width:0.499999"
        id="rect873-4"
        width="42.612442"
        height="26.876844"
@@ -296,16 +296,16 @@
        height="26.652563"
        width="49.248379"
        id="rect1364"
-       style="fill:#eeaaff;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#eeaaff;fill-opacity:0.40000001;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none" />
     <ellipse
        ry="12.704657"
        rx="17.795984"
        cy="108.24036"
        cx="165.56825"
        id="path1366"
-       style="fill:#80e5ff;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#80e5ff;fill-opacity:0.40000001;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none" />
     <ellipse
-       style="fill:#80e5ff;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#80e5ff;fill-opacity:0.40000001;stroke:#000000;stroke-width:0.499999;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1366-3"
        cx="109.05934"
        cy="163.16444"
@@ -313,7 +313,7 @@
        ry="12.704657" />
     <text
        transform="translate(-42.332884,28.309725)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect1385)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect1385);"
        id="text1383"
        xml:space="preserve"><tspan
          x="73.134985"
