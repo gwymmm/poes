@@ -20,7 +20,7 @@ Automatische Systeme schätzen die Ausfallwahrscheinlichkeit von Maschinen ein
 und bestimmen den Zeitpunkt für die nächste Inspektion.
 \item[Verringerung von Ausschuss (\emph{predictive quality}):]
 Mit Hilfe von Sensordaten werden fehlerhafte Produkte im Produktionsprozess
-erkannt und herausgefiltert.
+erkannt und aussortiert.
 \item[Erkennung von Kundenunzufriedenheit (\emph{churn management}):]
 Muster in Daten, die auf Unzufriedenheit von Kunden deuten, automatisch erkennen
 und rechtzeitig Gegenmaßnahmen versuchen.
@@ -87,6 +87,8 @@ Einsichten liefern (vgl. \cite{Tetlock}, S.~8).
 Für die empirischen Korresponenztests führten Tetlock und sein Team eine Reihe
 von \emph{forecasting exercises} durch. 
 
+\subsection{Detaillierte Ergebnisse der \emph{forecasting exercises}}
+
 \begin{figure}%[!hbt]
 \centering
 \caption{Leistungsunterschiede bei den \emph{forecasting exercises} in
@@ -94,6 +96,13 @@ von \emph{forecasting exercises} durch.
 \includegraphics[scale=0.9]{Grafiken/Tetlock_2_Ink.pdf} 
 \label{pic:Tetlock_2}
 \end{figure}
+
+Tetlock ist der Meinung, dass die Kernaufgabe politischer Weltanschauungen
+nicht die Erstellung möglichst korrekter Prognosen ist, sondern die
+Aufrechterhaltung einer bequemen Illusion von Berechenbarkeit
+(vgl. \cite{Tetlock}, S.~39). Somit sind die Ergebnisse schlecht, weil
+nüchterner Realismus unerwünscht ist. Die Aufrechterhaltung von Glaubenssätzen,
+die zum kollektiven Zusammenhalt beitragen, hat höhere Priorität.
 
 \section{Bestandteile von \emph{predictive analytics}}
 
@@ -183,13 +192,14 @@ Basierend auf Tabelle 2.2 in \cite{Runkler}, S.~8}.
 \scalebox{0.7}{
 \begin{tabular}{ |l|l|l|l|  }
 \hline
-Skala & Sinnvolle Operationen & Beispielgrößen & Beispielwerte \\
+\textbf{Skala} & \textbf{Sinnvolle Operationen}
+  & \textbf{Beispielgrößen} & \textbf{Beispielwerte} \\
 \hline
 Nominal & Gleichheit ($=, \neq$) & Name, & \glqq{Julia}\grqq,
   \glqq{Klaus}\grqq \\
 & & Geschlecht & \texttt{M}, \texttt{W} \\
 \hline
-Ordinal & Gleichheit ($=, \neq$), & Kleidungsgöße & \texttt{S}, \texttt{M},
+Ordinal & Gleichheit ($=, \neq$), & Kleidungsgröße & \texttt{S}, \texttt{M},
   \texttt{L} \\
         & Vergleiche ($<, >, \ldots$) & & \\
 \hline
@@ -266,7 +276,7 @@ Proportional & Gleichheit ($=, \neq$), & Alter, & 21 Jahre \\
 
 \section{Allgemeine Risiken bei der Nutzung von Predictive Analytics}
 
-Es exisitieren Risiken, die dazu führen können, dass die Ziele einer
+Es existieren Risiken, die dazu führen können, dass die Ziele einer
 Datenanalyse nicht oder nicht in vollem Umfang erreicht werden können.
 Im folgenden Text werden einige dieser Risiken erläutert.
 
@@ -311,7 +321,7 @@ die von negativen Auswirkungen im Sinne einer
 \glqq{Selffulfilling} Prophecy\grqq begleitet werden können
 (vgl. \cite{Crossman}). Bestimmte Prognosen können beispielsweise von einer 
 Interessengruppe als Bestätigung ihrer Agenda interpretiert werden, wobei
-anderslautende Vorhersagen ignoriert werden. Dadurch bestärkt, setzt die Gruppe
+anders lautende Vorhersagen ignoriert werden. Dadurch bestärkt, setzt die Gruppe
 ihre gewünschten Handlungsoptionen um. Dies ruft den vorhergesagten Effekt
 jedoch erst hervor.
 
