@@ -115,9 +115,9 @@ Weiterhin wurden die Fragen in folgende Themenbereiche untergliedert
 \item[(d)] Zusätzliche Spezialthemen
 \end{description}
 Insgesamt wurden 82 361 subjektive Wahrscheinlichkeiten eingeholt, die als
-Antwort auf 27 450 Fragen gegeben wurden. (vgl. \cite{Tetlock}, S.~246)
+Antwort auf circa 27 450 Fragen gegeben wurden. (vgl. \cite{Tetlock}, S.~246)
 
-\subsection{Detaillierte Ergebnisse der Forecasting Exercises}
+\subsection{Der Probability Score als Maß der Genauigkeit von Vorhersagen}
 
 Die Fragen der \emph{forecasting exercises} wurden so formuliert, dass bei allen
 nach einer gewissen Zeitspanne festgestellt werden konnte, ob und welches der
@@ -125,11 +125,33 @@ möglichen Szenarien\footnote{
 Die möglichen Szenarien müssen dabei logisch vollständig sein und sich
 gegenseitig ausschließen (\emph{logically exhaustive and mutually exclusive};
 vgl. \cite{Tetlock}, S.~245).
-} tatsächlich eingetreten ist.
+} tatsächlich eingetreten ist. Um dann die, auf Seite~\pageref{misc:Emp_Korr}
+erwähnte, Richtigkeit der Vorhersagen zu überprüfen, müssen die subjektiven
+Wahrscheinlichkeiten mit der eingetretenen Wirklichkeit verglichen werden. \\ \\
+Das Werkzeug zur Durchführung dieses Vergleichs und zur Bewertung der
+Genauigkeit der erstellten Prognosen ist der \emph{probability score}\footnote{
+  Auch \emph{Brier score} genannt (siehe \xcom)
+} (vgl. \cite{Tetlock}, S.~46). Dabei werden die subjektiven
+Wahrscheinlichkeiten (die Vorhersagen) mit den tatsächlich eingetretenen
+Ereignissen (der Wirklichkeit) verrechnet\footnote{
+  Es wird 0 eingesetzt, falls ein Szenario nicht eingetreten ist und 1 falls es
+  eingetreten ist (vgl. \cite{Tetlock}, S.~46-47).
+}. Das Ergebnis ist eine Zahl zwischen 0 und 1, wobei 0 die beste und 1 die
+schlechteste Wertung darstellt. Wenn ein Prognostiker jedes Ereignis, das
+schließlich eintritt, als unmöglich eingestuft hat und jedes Ereignis, welches
+ausbleibt als sicher, dann endet er beim schlechtesten \emph{probability
+score} von 1. Die beste Wertung von 0 kann hingegen nur erreicht werden, indem
+man, zumindest was die gestellten Fragen betrifft, hellseherische Fähigkeiten
+beweist und jedes eingetretene Ereignis mit einer subjektiven Wahrscheinlichkeit
+von 1 bewertet und jedem ausgebliebenen Ereignis eine 0 zugewiesen hat (vgl.
+\cite{Tetlock}, S.~47). \\ \\
 
-Um die auf Seite~\pageref{misc:Emp_Korr} erwähnte Richtigkeit der Vorhersagen
-zu überprüfen, müssen die subjektiven Wahrscheinlichkeiten mit der eingetretenen
-Wirklichkeit verglichen werden.
+
+% Wertebereich, was gut - schlecht
+% Komponenten: Kalibirierung und Diskriminierung (von den Fähigkeiten des Prognostiker abhängige)
+% zentrale KernIdee: große Zahlen
+
+%%\subsection{Detaillierte Ergebnisse der Forecasting Exercises}
 
 \begin{figure}%[!hbt]
 \centering
@@ -143,7 +165,7 @@ Wirklichkeit verglichen werden.
 \begin{figure}%[!hbt]
 \centering
 \caption{Leistungsunterschiede bei den \emph{forecasting exercises} in
-  Abhängigkeit von den mentalen Charakteristika der Teilnehmer}
+  Abhängigkeit vom \emph{Style-of-Reasoning} der Teilnehmer}
 \includegraphics[scale=0.88]{Grafiken/Tetlock_2_Ink.pdf} 
 \label{pic:Tetlock_2}
 \end{figure}
