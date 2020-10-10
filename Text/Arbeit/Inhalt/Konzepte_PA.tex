@@ -164,18 +164,75 @@ einem Wert, der die Unsicherheit der Umgebung, für die die Prognosen erstellt
 werden, widerspiegelt (vgl. \cite{Tetlock}, S.~278). Im Falle der
 Diskriminierung ist 0 der schlechteste Wert. Im besten Fall ist der Wert der
 Diskriminierung gleich dem Wert der Unsicherheit. \\ \\
- 
+Die Kernidee bei der Anwendung des \emph{probability score} ist das Nutzen
+des Gesetzes der großen Zahlen (\emph{law of large numbers})
+(vgl. \cite{Tetlock}, S.~12-13). Einzelne Urteile mit subjektiven
+Wahrscheinlichkeiten, die nicht 0 oder 1 sind, können nicht widerlegt werden,
+da seltene Ereignisse eintreten können und häufige Ereignisse ausbleiben können.
+Betrachtet man hingegen eine große Zahl an Vorhersagen, dann kann mit Hilfe
+des \emph{probability score} die Genauigkeit des Prognostiker aus der Gesamtheit
+seiner Vorhersagen eingeschätzt werden. \\ \\
+Der Anhang~\xcom liefert die Formeln für den \emph{probability score}, wobei
+dessen Berechnung zusätzlich anhand von Beispielen erläutert wird. \\ \\
 
+\subsection{Detaillierte Ergebnisse der Forecasting Exercises}
 
-% Wertebereich, was gut - schlecht
-% Komponenten: Kalibirierung und Diskriminierung (von den Fähigkeiten des Prognostiker abhängige)
-% zentrale KernIdee: große Zahlen
-
-%%\subsection{Detaillierte Ergebnisse der Forecasting Exercises}
+Die Analyse der Ergebnisse der \emph{forecasting exercises} konnte Aufschluss
+darüber geben, welche Attribute der Teilnehmer einen Einfluss auf die
+Genauigkeit ihrer Vorhersagen haben und welche nicht. \\ \\
+Zu den Attributen, die keinen Einfluss auf die Fähigkeiten der Experten haben,
+gehören überraschenderweise (vgl. \cite{Tetlock}, S.~68):
+\begin{itemize}
+\item der Bildungsgrad (Doktortitel oder kein Doktortitel)
+\item das Fachgebiet
+\item die Erfahrung
+\item der Zugang zu geheimen Informationen
+\end{itemize}
+Zudem hat Medienberühmtheit einen starken negativen Effekt auf die Fähigkeiten
+der Prognostiker (vgl. \cite{Tetlock}, S.~68). \\ \\
+Ein entscheidender Faktor, der gute von schlechte Prognostikern unterscheidet,
+ist nicht ihr Weltbild, sondern ihre Art zu Denken (\emph{cognitive style})
+(vgl. \cite{Tetlock}, S.~72 und S.~75). Tetlock unterteilt die Experten in
+Abhängigkeit von ihrer Art zu Denken in Füchse (\emph{foxes}) und Igel
+(\emph{hedgehogs})\footnote{
+In Anlehnung an das Essay \emph{The Hedgehog and the Fox} des Philosophen Isaiah
+Berlin.
+}. Genauer ausgedrückt, ist das wichtigste Maß für den \emph{cognitive style}
+eines Experten ein Wert auf einer kontinuierlichen Skala (vgl. \cite{Tetlock},
+S.~87). An einem Ende der Skala befinden sich die \emph{foxes}, an dem anderen
+die \emph{hedgehogs}. Dazwischen befinden sich die hybriden Ausprägungen
+\emph{fox-hog} (eher \emph{fox} als \emph{hedgehog}) und \emph{hedge-fox} (eher
+\emph{hedgehog} als \emph{fox}). Bestimmt wird der Wert als Ergebnis eines
+Fragebogens (siehe \cite{Tetlock}, S.~241). Dabei ist der Punkt, der am
+stärksten in die Gewichtung einfließt, die Frage nach der Selbstidentifikation
+(vgl. \cite{Tetlock}, S.~74 Tabelle~3.3)\footnote{
+Hierbei werden Gewichtungen angegeben, mit denen die einzelnen Fragen in
+die Bewertung einfließen. Je höher der Betrag des Gewichts, desto stärkeren
+Einfluss hat die Frage auf das Ergebnis. Das Vorzeichen des Gewichts gibt an,
+in welche Richtung die jeweilige Frage das Ergebnis verschiebt. Ein negatives
+Vorzeichen verschiebt den Wert auf der Skala in \emph{hedgehog} Richtung, ein
+positives Vorzeichen hingegen in \emph{fox} Richtung.   
+}. Diese Frage lautet übersetzt (siehe \cite{Tetlock}, S.~241):
+\begin{quotation}
+%\begin{spacing}{1.2}
+Isaiah Berlin unterteilte Intellektuelle in Igel und Füchse. Der Igel kennt eine
+große Sache und versucht so viel wie möglich innerhalb dieses konzeptionellen
+Rahmens zu erklären, wohingegen der Fuchs viele kleine Dinge weiß und damit
+zufrieden ist, von Fall zu Fall andere improvisierte Erklärungen zu
+finden. Ich positioniere mich zum Igel- oder Fuchsende dieser Skala.
+% Isaiah Berlin classified intellectuals as hedgehogs or
+% foxes. The hedgehog knows one big thing and tries to explain as much as
+% possible within that conceptual framework, whereas the fox knows
+% many small things and is content to improvise explanations on a case-
+% by-case basis. I place myself toward the hedgehog or fox end of this
+% scale
+%\end{spacing}
+\end{quotation}
+Abbildung~\ref{pic:Hedgehog_Fox} erläutert die Skala des \emph{cognitive style}.
 
 \begin{figure}%[!hbt]
 \centering
-\caption{Skala des \emph{Style-of-Reasoning}%, mit den Charakterisierungen
+\caption{Skala des \emph{cognitive style}%, mit den Charakterisierungen
 %  \emph{Fox} und \emph{Hedgehog} als Gegenpole}
 }
 \includegraphics[scale=1]{Grafiken/Hedgehog_Fox.pdf} 
@@ -185,7 +242,7 @@ Diskriminierung gleich dem Wert der Unsicherheit. \\ \\
 \begin{figure}%[!hbt]
 \centering
 \caption{Leistungsunterschiede bei den \emph{forecasting exercises} in
-  Abhängigkeit vom \emph{Style-of-Reasoning} der Teilnehmer}
+  Abhängigkeit vom \emph{cognitive style} der Teilnehmer}
 \includegraphics[scale=0.88]{Grafiken/Tetlock_2_Ink.pdf} 
 \label{pic:Tetlock_2}
 \end{figure}
