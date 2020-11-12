@@ -37,8 +37,8 @@ includehead,includefoot}}
 
 
 %AUSWAHL: TEXT EINSEITIG (ja/nein)
-\makroEinseitig
-%\makroZweiseitig
+%\makroEinseitig
+\makroZweiseitig
 
 %schalte Umlaute frei
 \usepackage[english, ngerman]{babel}
@@ -157,8 +157,9 @@ citecolor=MidnightBlue }
 
 \input{Inhalt/Abstract}
 
-\tableofcontents
 \setcounter{page}{1}
+\tableofcontents
+
 
 \input{Inhalt/Einleitung}
 
@@ -191,6 +192,29 @@ citecolor=MidnightBlue }
 % - Konkurrenz (v. a. bei strategischen Entscheidungen) 
 % - Ignorieren (-> Probleme menschl. Urteile)
 
+\subsection{Eine pessimistische Sichtweise}
+
+Es gibt Stimmen, die behaupten, dass ein immenser Widerstand gegen die
+Einführung solcher Methoden [Forecasting + Predictive Analytics] zu erwarten
+ist. Teilweise deutet sich sogar eine Unmöglichkeit dieser Aufgabe an. Beim 
+Thema Forecasting ist es Tetlock selbst, der sich skeptisch äußert. Er
+benennt den Widerstand der Experten als die größte Barriere zur Einführung der
+neuen Methodik (\emph{the most daunting of all the barriers to implementation},
+vgl. \cite{Tetlock}, S.~235). Jackson und Reichin vertreten eine ähnliche
+Auffassung (vgl. \cite{Jackson}, S.~295).
+
+% TODO Daten (-> Heise) 
+% Thapa_Parycek S. 46
+\subsection{Eine optimistische Sichtweise}
+
+Bessere Prognosen führen zu besseren Entscheidungen. Dies bringt wiederum
+sowohl Vorteile gegenüber Konkurrenten als auch
+\glqq{gegen die Natur}\grqq\footnote{
+Wenn sich beispielsweise viele Menschen gegen das Rauchen entscheiden, gibt es
+eine gesündere Bevölkerung; entscheidet man sich für eine bessere
+Behandlungsmethode in der Medizin, können mehr Menschen geheilt werden\ldots
+}
+
 \section{Spieltheoretische Betrachtung}
 
 % TODO
@@ -216,7 +240,7 @@ citecolor=MidnightBlue }
 \begin{figure}%[!hbt]
 \centering
 \caption{Gemischte Stag Hunt-Deadlock Auszahlungsmatrix}
-\includegraphics[scale=0.8]{Grafiken/Mixed_Ink.pdf} 
+\includegraphics[scale=0.7]{Grafiken/Mixed_Ink.pdf} 
 \label{pic:Mixed}
 \end{figure}
 
@@ -233,6 +257,14 @@ citecolor=MidnightBlue }
 
 % Auswahl
 % TODO Fallstudien einfach ausführlichere Beispiele
+
+\subsection{Daten}
+
+% TODO
+% 2 grundlegende Probleme
+% - Datenschutz: Achtung Privatsphäre + Angst vor Missbrauch
+% - Verzerrungen in Daten: insb. auch Big Data, Daten nicht repräsentativ,
+%     Daten kulturabhängig
 
 \subsection{Öffentliche Verwaltung}
 
