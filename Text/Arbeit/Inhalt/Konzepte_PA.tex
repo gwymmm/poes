@@ -11,11 +11,14 @@ die Entscheidungsfindung wichtigen Daten fehlen (vgl. \cite{Dinov}, S.~9~f.).
 Hier sind einige Anwendungsbeispiele, die verdeutlichen, wie \emph{predictive
 analytics} eingesetzt werden kann (vgl. \cite{Schmitz}):
 \begin{description}
-\item[Betrugserkennung (\emph{fraud detection}):] Geschäftsvorgänge werden
-automatisch analysiert, in der Hoffnung, dass Unregelmäßigkeiten vom System
-erkannt werden. Verdächtige Vorgänge können dann zum Beispiel einer manuellen
-Prüfung unterzogen werden.
-\item[Vorhersage von Wartungszeitpunkten (\emph{predictive maintenance}):]
+\item[Betrugserkennung (\emph{fraud detection}):] \hfill \\
+Geschäftsvorgänge werden automatisch analysiert, in der Hoffnung, dass
+Unregelmäßigkeiten vom System erkannt werden. Verdächtige Vorgänge können dann
+zum Beispiel einer manuellen Prüfung unterzogen werden.
+
+
+\item[Vorhersage von Wartungszeitpunkten (\emph{predictive
+  maintenance}):] \hfill \\
 Automatische Systeme schätzen die Ausfallwahrscheinlichkeit von Maschinen ein
 und bestimmen den Zeitpunkt für die nächste Inspektion.
 \item[Verringerung von Ausschuss (\emph{predictive quality}):]
@@ -500,9 +503,51 @@ Diese Programme lesen die Daten ein, führen die notwendigen Berechnungen aus un
 ermöglichen eine graphische Aufbereitung der Ergebnisse. \\ \\
 Standardisierte
 Vorgehensmodelle können helfen, die Arbeitsschritte einer Datenanalyse zu
-vereinheitlichen. Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM \xcom.
+vereinheitlichen. Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM
+(\cite{crispdm}).
 
 \subsection{CRISP-DM Vorgehensmodell}
+
+(vgl. \cite{Runkler}, S.~3)
+
+Zeigt eine beispielhafte Auswahl an Schritten, die in dieser Phase durchgeführt
+werden können
+
+\begin{table}
+\centering
+\caption{Vier Phasen Vorgehensmodell bei Datenanalysen}
+\label{tab:Vier_Phasen}
+%\scalebox{0.7}{
+\begin{tabular}{ |l|l|  }
+\hline
+\textbf{Phase} & \textbf{Bestandteile} \\
+\hline
+Vorbereitung & Planung \\
+  & Sammeln von Daten \\
+  & Generierung abgeleiteter Attribute \\
+  & Datenselektion \\
+\hline
+Vorverarbeitung & Daten aufräumen, \\
+  & filtern, \\
+  & ergänzen, \\
+  & vervollständigen, \\
+  & korrigieren, \\
+  & standardisieren, \\
+  & umwandeln \\
+\hline
+Analyse & Visualisierung \\
+  & Korrelationsanalyse \\
+  & Regression \\
+  & Klassifikation \\
+  & Clusteranalyse \\
+\hline
+Nachbearbeitung & Interpretation der Ergebnisse \\
+  & Dokumentation \\
+  & Evaluation \\
+\hline
+\end{tabular}
+%}
+\end{table}
 
 \subsection{Daten}
 
