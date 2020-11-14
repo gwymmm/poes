@@ -8,6 +8,8 @@ texlive [Debian sid]
   
   texlive-latex-extra
 
+  texlive-fonts-extra
+
 
 -- List of required R packages --
 
