@@ -124,8 +124,9 @@ die Meinungen und Vorhersagen von Experten mit der Wirklichkeit übereinstimmen.
 \item[(2) Logische Konsistenz des Denkmodells (\emph{think the right way}):]
 Die Gedanken von Experten sollten logisch konsistent sein. Genauer ausgedrückt
 bedeutet dies, dass die Denkmodelle nicht die Gesetze der Logik und der
-Statistik missachten sollten. Zudem sollte eine Person mit einem guten
-Urteilsvermögen ihre Glaubenssätze an neue Erkenntnisse anpassen können.
+Wahrscheinlichkeitstheorie missachten sollten. Zudem sollte eine Person mit
+einem guten Urteilsvermögen ihre Glaubenssätze an neue Erkenntnisse anpassen
+können.
 \end{description}
 Dabei sollte die experimentelle Psychologie die notwendigen Fakten und
 Einsichten liefern (vgl. \cite{Tetlock}, S.~8).
@@ -375,16 +376,16 @@ durchgeführt.
 
 \item[(2) Logische Konsistenz des Denkmodells] \hfill \\
 Die Denkmodelle der Forecaster sollten konsistent mit den Gesetzen der Logik
-und Statistik sein.
+und Wahrscheinlichkeitstheorie sein.
 
 \end{description}
 
 Grundsätzlich ist Tetlock der Auffassung, dass die Experten bei den empirischen
 Korrespondenztests (1) schlecht abgeschnitten haben, weil ihre Denkmodelle
-nicht den Anforderungen der Gesetze der Logik und Statistik (2) gerecht wurden.
-Hierbei identifiziert Tetlock vier Prinzipien aus der
-Wahrscheinlichkeitstheorie, die befolgt werden müssen, um ein gutes
-Urteilsvermögen zu erlangen\footnote{
+nicht den Anforderungen der Gesetze der Logik und Wahrscheinlichkeitsrechnung 
+(2) gerecht wurden (vgl. \cite{Tetlock}, S.~121). Hierbei identifiziert Tetlock
+vier Prinzipien aus der Wahrscheinlichkeitstheorie, die befolgt werden müssen,
+um ein gutes Urteilsvermögen zu erlangen\footnote{
 Weitere Prinzipien, die identifiziert werden können, wären die logische und
 zeitliche Konsistenz des Gedankenmodells einer Person. Die logische Konsistenz
 kann erreicht werden, wenn die Glaubenssätze (Axiome) und Schlussfolgerungen,
@@ -394,28 +395,53 @@ Geschichtsrevisionismus betreibt, also nicht versucht, ihre  (falschen bzw.
 fehlerhaften) Urteile und Axiome nachträglich mit neuen Erkenntnissen zu
 versöhnen.
 
-Solche Prinzipien sollten prinzipiell auch beachtet werden, allerdings sind sie
+Solche Regeln sollten prinzipiell auch beachtet werden, allerdings sind sie
 auch weiter verbreitet und werden aus diesen Gründen hier nicht so ausführlich
 behandelt.
 } (vgl. \cite{Tetlock}, S.~301-302):
 \begin{description}
 
-\item[Additive Regel (\emph{additive rule}):] \hfill \\
-...
+\item[(1) Additive Regel (\emph{additive rule}):] \hfill \\
+Die Wahrscheinlichkeit, dass mindestens eins von zwei sich gegenseitig
+ausschließenden Ereignissen eintritt, ist die Summe der einzelnen
+Wahrscheinlichkeiten.
 
-\item[Multiplikative Regel (\emph{multiplicative rule}):] \hfill \\
-...
+\item[(2) Multiplikative Regel (\emph{multiplicative rule}):] \hfill \\
+Die Wahrscheinlichkeit, dass zwei unabhängige Ereignisse eintreten, ist das
+Produkt der Einzelwahrscheinlichkeiten.
 
-\item[Würdigung rivalisierender Weltsichten:] \hfill \\
-...
+\item[(3) Würdigung rivalisierender Weltsichten:] \hfill \\
+Bei zwei konkurrierenden Weltsichten (Hypothesen)\footnote{
+Die Weltsichten  müssen vollständig sein und sich gegenseitig
+ausschließen (siehe Anhang~\xcom)
+} sollten beide Ansichten in die Berechnung der Wahrscheinlichkeit für den
+Eintritt eines Ereignisses fließen. Eine Hypothese braucht nur dann nicht
+beachtet werden, wenn man sicher ist, dass ihr Wahrheitsgehalt bei 0 liegt.
 
-\item[Glaubensanpassung (\emph{belief updating}):] \hfill \\
-...
+\item[(4) Glaubensanpassung (\emph{belief updating}):] \hfill \\
+Bei Eintritt eines Ereignisses sollte der Wahrheitsgehalt einer Weltsicht
+angepasst werden, und zwar je nachdem, ob die betrachtete Weltsicht den Eintritt
+dieses Ereignisses vorhergesagt hat oder nicht.
 
 \end{description}
-Ausführlichere Erläuterungen zu den vier Prinzipien der logischen Konsistenz 
-befinden sich in Anhang~\xcom. Dort werden die relevanten Formeln vorgestellt 
-und es werden einige Beispiele präsentiert.  
+Die Regeln (3) und (4) basieren auf den Rechenregeln für bedingte
+Wahrscheinlichkeiten und insbesondere auf der Formel von Bayes. Ausführlichere
+Erläuterungen zu den vier Prinzipien der logischen Konsistenz befinden sich in
+Anhang~\xcom. Dort werden die relevanten Formeln vorgestellt und es werden
+einige Beispiele präsentiert.
+
+Tetlocks Untersuchungen haben unter Anderem gezeigt, dass die befragten Experten
+\emph{nicht} intuitiv die Weltsichten ihrer Rivalen gewürdigt haben und damit
+Regel (3) verletzt haben. Die Experten waren zwar nicht der Meinung, dass ihre
+Weltsicht richig ist und alle anderen falsch, trotzdem haben sie ihren Ansichten
+mehr Gewicht beigemessen als angemessen gewesen wäre\footnote{
+Tetlock bezeichnet dieses Phänomen als \glqq{egozentrische Lücke}\grqq{}
+(\emph{egocentricity gap}; vgl. \cite{Tetlock}, S.~123)
+} (vgl. \cite{Tetlock}, S.~122-123). 
+% Regel 4 verletzt 127
+
+% mass market driven media like hedgehogs (S. 119)
+%-------------------------------------------------------------------------------
 Die in der Wissenschaft geschätzte Fähigkeit, mit wenigen Grundregeln oder
 Axiomen auszukommen, scheint sich in eine Schwäche zu verwandeln, wenn
 es darum geht, Prognosen für die reale Welt zu erstellen (vgl. \cite{Tetlock},
@@ -490,70 +516,28 @@ Arbeit bestätigt.
 
 \subsection{Nachwirkungen von Tetlocks Forschungsergebnissen}
 
+
+\subsection{Grundprinzipien des Forecasting}
+
+
 % TODO Zusammenfassung
 % - Brier Score: große Zahlen -> Evidence
 % - Bayes + einfache Statistische Regeln als Hilfswerkzeug
 % - besser fox als hedgehog sein
 % - Versuchen Kognitive Verzerrungen abzumildern
-% - no thought above criticism (S. 118)
+% - no thought above criticism (S. 102, 118)
+% - fördert bescheidenheit, beugt overconfidence vor (S. 104)
 % - wenn möglich komplexere statistische Algorithmen verwenden
 
-..., also \emph{predictive analytics} zu implementieren.
+..., also \gls{glos:Predictive_Analytics} zu implementieren.
 
 \section{Bestandteile von Predictive Analytics}
 
-Bei \emph{predictive analytics} werden Daten mit Hilfe von geeigneten Methoden
+Bei Predictive Analytics werden Daten mit Hilfe von geeigneten Methoden
 verarbeitet, um verschiedene Arten von Prognosen zu ermöglichen. Dem
 Datenanalysten stehen für diese Aufgabe Computeranwendungen zur Verfügung.
 Diese Programme lesen die Daten ein, führen die notwendigen Berechnungen aus und
 ermöglichen eine graphische Aufbereitung der Ergebnisse. \\ \\
-Standardisierte
-Vorgehensmodelle können helfen, die Arbeitsschritte einer Datenanalyse zu
-vereinheitlichen. Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM
-(\cite{crispdm}).
-
-\subsection{CRISP-DM Vorgehensmodell}
-
-(vgl. \cite{Runkler}, S.~3)
-
-Zeigt eine beispielhafte Auswahl an Schritten, die in dieser Phase durchgeführt
-werden können
-
-\begin{table}
-\centering
-\caption{Vier Phasen Vorgehensmodell bei Datenanalysen}
-\label{tab:Vier_Phasen}
-%\scalebox{0.7}{
-\begin{tabular}{ |l|l|  }
-\hline
-\textbf{Phase} & \textbf{Bestandteile} \\
-\hline
-Vorbereitung & Planung \\
-  & Sammeln von Daten \\
-  & Generierung abgeleiteter Attribute \\
-  & Datenselektion \\
-\hline
-Vorverarbeitung & Daten aufräumen, \\
-  & filtern, \\
-  & ergänzen, \\
-  & vervollständigen, \\
-  & korrigieren, \\
-  & standardisieren, \\
-  & umwandeln \\
-\hline
-Analyse & Visualisierung \\
-  & Korrelationsanalyse \\
-  & Regression \\
-  & Klassifikation \\
-  & Clusteranalyse \\
-\hline
-Nachbearbeitung & Interpretation der Ergebnisse \\
-  & Dokumentation \\
-  & Evaluation \\
-\hline
-\end{tabular}
-%}
-\end{table}
 
 \subsection{Daten}
 
@@ -654,18 +638,64 @@ Proportional & Gleichheit ($=, \neq$), & Alter, & 21 Jahre \\
 }
 \end{table}
 
+\subsubsection{Zusammengesetzte Datentypen}
 
 \subsubsection{Information Management (Data Warehouse)}
 
-\subsubsection{Datenabhängige Ziele}
 
-\paragraph{\ldots}
+\subsection{Vorgehensmodelle}
 
-\paragraph{Beschreibung der Daten}
+% TODO
+% Beispiel CRIPS-DM
 
-\paragraph{Klassifikation}
+Standardisierte
+Vorgehensmodelle können helfen, die Arbeitsschritte einer Datenanalyse zu
+vereinheitlichen. Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM
+(\cite{crispdm}).
 
-\paragraph{Zeitreihenanalyse}
+(vgl. \cite{Runkler}, S.~3)
+
+Zeigt eine beispielhafte Auswahl an Schritten, die in dieser Phase durchgeführt
+werden können
+
+\begin{table}
+\centering
+\caption{Vier Phasen Vorgehensmodell bei Datenanalysen}
+\label{tab:Vier_Phasen}
+%\scalebox{0.7}{
+\begin{tabular}{ |l|l| }
+\hline
+\textbf{Phase} & \textbf{Bestandteile} \\
+\hline
+Vorbereitung & Planung \\
+  & Sammeln von Daten \\
+  & Generierung abgeleiteter Attribute \\
+  & Datenselektion \\
+\hline
+Vorverarbeitung & Daten aufräumen, \\
+  & filtern, \\
+  & ergänzen, \\
+  & vervollständigen, \\
+  & korrigieren, \\
+  & standardisieren, \\
+  & umwandeln \\
+\hline
+Analyse & Visualisierung \\
+  & Korrelationsanalyse \\
+  & Regression \\
+  & Klassifikation \\
+  & Clusteranalyse \\
+\hline
+Nachbearbeitung & Interpretation der Ergebnisse \\
+  & Dokumentation \\
+  & Evaluation \\
+\hline
+\end{tabular}
+%}
+\end{table}
+
+% TODO
+% Klassifikation vs Regression
 
 \subsection{Methoden}
 
@@ -675,6 +705,10 @@ Proportional & Gleichheit ($=, \neq$), & Alter, & 21 Jahre \\
 \includegraphics[scale=1.0]{Grafiken/PA_Methoden_Ink.pdf} 
 \label{pic:PA_Methoden}
 \end{figure}
+
+% TODO
+% Beschreibung / Visualisierung der Daten
+% 
 
 \subsubsection{Die Großen Drei}
 
@@ -686,18 +720,9 @@ Proportional & Gleichheit ($=, \neq$), & Alter, & 21 Jahre \\
 
 \subsubsection{Zeitreihenanalyse}
 
-\subsubsection{\ldots}
+\subsubsection{Textbasierte Analysen}
 
 \subsection{Werkzeuge}
-
-\subsection{(Kreative) Freiheitsgrade bei der Implementierung eines
-  Vorhersagemodells}
-
-\section{Anwendungsbeispiele}
-
-\subsection{Allgemeine Anwendungsfelder (siehe SAP Artikel)}
-
-\subsection{\ldots}
 
 \section{Allgemeine Risiken bei der Nutzung von Predictive Analytics}
 
@@ -720,14 +745,14 @@ gleiche Ergebnis mit einer einfacheren, kostengünstigeren Methode erreicht
 werden kann. In diesem Fall würde die Anwendung eines aufwändigen Predictive
 Analytics Verfahrens wertvolle Ressourcen binden, die an anderer Stelle stärker
 gebraucht werden. \\ \\
-Somit ist es wichtig, Betrachtungen zu Alternativkosten \todo{gls eintrag}
+Somit ist es wichtig, Betrachtungen zu Alternativkosten\footnote{
+kommt noch...
+}
 in die Planung von \emph{predictive analytics} Anwendungen einzubeziehen. 
 
 \subsection{Risiken bei der Datenerhebung}
 
 Trainingsdaten spiegeln nicht (mehr) das Verhalten des Systems wider.
-
-\subsubsection{\ldots}
 
 \subsection{Risiken bei der Interpretation der Daten}
 
@@ -742,7 +767,7 @@ werden nun erläutert.
 
 Die Ergebnisse von Vorhersagen werden von Menschen interpretiert,
 die daraufhin ihr Verhalten anpassen. Dies kann zu Rückkopplungseffekten führen,
-die von negativen Auswirkungen im Sinne einer
+die von negativen Auswirkungen im Sinne einer selbsterfüllenden Prophezeiung
 \glqq{Selffulfilling} Prophecy\grqq{} begleitet werden können
 (vgl. \cite{Crossman}). Bestimmte Prognosen können beispielsweise von einer 
 Interessengruppe als Bestätigung ihrer Agenda interpretiert werden, wobei
@@ -757,3 +782,5 @@ und die Prognose als eine Gewissheit betrachtet wird. Somit wird möglichen,
 alternativen Entwicklungen bei der Entscheidungsfindung nicht genügend Bedeutung
 beigemessen. Dies kann dazu führen, dass Risiken falsch kalkuliert werden und
 in der Zukunft nicht genügend Handlungsoptionen zur Verfügung stehen.
+
+\section{Kritische Würdigung von Forecasting und Predictive Analytics}
