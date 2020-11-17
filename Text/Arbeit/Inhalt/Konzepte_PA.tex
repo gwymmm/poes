@@ -10,30 +10,37 @@ auch Einschätzungen und Beurteilungen unklarer Situationen, bei denen die für
 die Entscheidungsfindung wichtigen Daten fehlen (vgl. \cite{Dinov}, S.~9~f.).
 Hier sind einige Anwendungsbeispiele, die verdeutlichen, wie \emph{predictive
 analytics} eingesetzt werden kann (vgl. \cite{Schmitz}):
+
 \begin{description}
+
 \item[Betrugserkennung (\emph{fraud detection}):] \hfill \\
 Geschäftsvorgänge werden automatisch analysiert, in der Hoffnung, dass
 Unregelmäßigkeiten vom System erkannt werden. Verdächtige Vorgänge können dann
 zum Beispiel einer manuellen Prüfung unterzogen werden.
 
-
 \item[Vorhersage von Wartungszeitpunkten (\emph{predictive
   maintenance}):] \hfill \\
 Automatische Systeme schätzen die Ausfallwahrscheinlichkeit von Maschinen ein
 und bestimmen den Zeitpunkt für die nächste Inspektion.
-\item[Verringerung von Ausschuss (\emph{predictive quality}):]
+
+\item[Verringerung von Ausschuss (\emph{predictive quality}):] \hfill \\
 Mit Hilfe von Sensordaten werden fehlerhafte Produkte im Produktionsprozess
 erkannt und aussortiert.
-\item[Erkennung von Kundenunzufriedenheit (\emph{churn management}):]
+
+\item[Erkennung von Kundenunzufriedenheit (\emph{churn management}):] \hfill \\
 Muster in Daten, die auf Unzufriedenheit von Kunden deuten, automatisch erkennen
 und rechtzeitig Gegenmaßnahmen versuchen.
-\item[Verbesserung der Zahlungsmoral:]
+
+\item[Verbesserung der Zahlungsmoral:] \hfill \\
 Mit Hilfe von Vorhersagen die Randbedingungen verbessern, sodass Kunden
 schneller Rechnungen begleichen.
-\item[Bessere Kontrolle von Personalfluktuationen:]
+
+\item[Bessere Kontrolle von Personalfluktuationen:] \hfill \\
 Mitarbeiter, die bald einen Arbeitsplatzwechsel vollziehen könnten, mit Hilfe
 von Vorhersagemodellen erkennen, um rechtzeitig darauf reagieren zu können.
+
 \end{description}
+
 \begin{figure}%[!hbt]
 \centering
 \caption{Erstellung von Vorhersagemodellen.}
@@ -81,9 +88,12 @@ Bei Predictive Analytics hingegen steht die Anwendung dieser Methoden im
 Fokus.
 
 Business Analytics wird als Oberbegriff für Prozesse definiert, die
-Analysemodelle im geschäftlichen Kontext erstellen . Predictive Analytics
-und Data Mining werden dann als Bestandteil von Business Analytics
-gesehen. (vgl. \cite{McCarthy}, S.~6))
+Analysemodelle im geschäftlichen Kontext erstellen (vgl. \cite{McCarthy}, S.~6)). 
+Predictive Analytics und Data Mining werden dann als Bestandteil von Business Analytics
+gesehen. 
+
+% TODO
+% Data Mining Betonung von Big Data, 3 Vs
 
 Business Intelligence ist ein zu Business Analytics ähnlicher
 Begriff und steht allgemein für Anwendungen und Techniken, die im
@@ -117,11 +127,11 @@ formal fassbar zu machen (vgl. \cite{Tetlock}, S.~3). Nach Tetlock sollte gutes
 Urteilsvermögen anhand zweier Kriterien gemessen werden (vgl. \cite{Tetlock},
 S.~7):
 \begin{description}
-\item[(1) Richtigkeit der Vorhersagen (\emph{get it right}):]
+\item[(1) Richtigkeit der Vorhersagen (\emph{get it right}):] \hfill \\
 \label{misc:Emp_Korr}
 Empirische Korrespondenztests sollen genutzt werden, um zu überprüfen, wie gut
 die Meinungen und Vorhersagen von Experten mit der Wirklichkeit übereinstimmen.
-\item[(2) Logische Konsistenz des Denkmodells (\emph{think the right way}):]
+\item[(2) Logische Konsistenz des Denkmodells (\emph{think the right way}):] \hfill \\
 Die Gedanken von Experten sollten logisch konsistent sein. Genauer ausgedrückt
 bedeutet dies, dass die Denkmodelle nicht die Gesetze der Logik und der
 Wahrscheinlichkeitstheorie missachten sollten. Zudem sollte eine Person mit
@@ -225,17 +235,32 @@ dessen Berechnung zusätzlich anhand von Beispielen erläutert wird. \\ \\
 
 \subsection{Detaillierte Ergebnisse der Forecasting Exercises}
 
-Die Analyse der Ergebnisse der \emph{forecasting exercises} konnte Aufschluss
+Die Analyse der Ergebnisse der Forecasting Exercises konnte Aufschluss
 darüber geben, welche Attribute der Teilnehmer einen Einfluss auf die
 Genauigkeit ihrer Vorhersagen haben und welche nicht. \\ \\
 Zu den Attributen, die \emph{keinen} Einfluss auf die Fähigkeiten der Experten
 hatten, gehörten überraschenderweise (vgl. \cite{Tetlock}, S.~68):
-% TODO Punkte genauer ausführen
+
 \begin{description}
-\item[(a)] der Bildungsgrad (Doktortitel oder kein Doktortitel)
-\item[(b)] das Fachgebiet
-\item[(c)] die Erfahrung
-\item[(d)] der Zugang zu geheimen Informationen
+
+\item[(a) Bildungsgrad:] \hfill \\
+Es gab keinen Zusammenhang zwischen Bildungsgrad und Genauigkeit der Vorhersagen.
+Insbesondere spielte ein Doktortitel keine Rolle.
+
+\item[(b) Fachgebiet:] \hfill \\
+Es war kein Fachgebiet erkennbar, das den jeweiligen Experten in diesem Gebiet
+einen Vorteil in Bezug auf die Genauigkeit der Prognosen gegenüber Spezialisten
+aus anderen Gebieten bot.
+
+\item[(c) Erfahrung:] \hfill \\
+Es spielte keine Rolle, wie lange ein Experte in seinem Gebiet tätig war oder
+wie oft er schon eine beratende Funktion übernommen hatte.
+
+\item[(d) Zugang zu geheimen Informationen:] \hfill \\
+Möglicherweise das überraschendste Ergebnis ist, die Tatsache, dass die Experten,
+die einen Zugang zu vertraulichen Informationen hatten, keinen Vorteil gegenüber
+anderen Teilnehmern in Bezug auf die Genauigkeit ihrer Prognosen hatten.
+
 \end{description}
 Zudem hat Medienberühmtheit einen starken negativen Effekt auf die Fähigkeiten
 der Prognostiker (vgl. \cite{Tetlock}, S.~68). \\ \\
@@ -633,10 +658,8 @@ Quellen seine Informationen bezieht (vgl. \cite{Juergs}).
 allgemein einsehbar sind (\emph{public superforecasts}; vgl. \cite{GJP_Ink}).
 Abbildung~\ref{pic:Forecast} zeigt ein Beispiel für eine solche Prognose\footnote{
 Die Grafik gibt eine öffentliche Prognose vom 16.11.2020 zum Thema COVID-19 wider (vgl. \cite{GJP_Ink_F}).
-% charakteristiken: zeitbegrenzung, gegenseitig ausschließende und vollständige Antwortvarianten,
-% subjektive Wahrscheinlichkeiten ergänzen sich zu 100%
 }. Grundsätzlich sind alle Forecasting Exercises in ähnlicher Weise aufgebaut.
-Das Beispiel zeigt einige Grundeigenschaften dieser Aufgaben. Zunächst ist
+Das Beispiel zeigt einige Grundeigenschaften der Forecasts. Zunächst ist
 ein genaues Datum angegeben, an dem die Prognosen \glqq{fällig}\grqq{} werden. Ab
 diesem Datum ist die Antwort auf die Frage bekannt und es kann geprüft werden,
 ob und welche der Vorhersagen eingetreten sind. Zudem ist die Frage sehr präzise
@@ -681,6 +704,9 @@ Diese Programme lesen die Daten ein, führen die notwendigen Berechnungen aus un
 ermöglichen eine graphische Aufbereitung der Ergebnisse. \\ \\
 
 \subsection{Daten}
+
+% TODO
+% unstrukturiert, teilstrukturiert und strukturiert.
 
 \subsubsection{Elementare Datentypen}
 
@@ -939,6 +965,11 @@ beigemessen. Dies kann dazu führen, dass Risiken falsch kalkuliert werden und
 in der Zukunft nicht genügend Handlungsoptionen zur Verfügung stehen.
 
 \section{Kritische Würdigung von Forecasting und Predictive Analytics}
+
+% TODO
+% subjektive Wsk füllen Entscheidungsbaum (S. 319) und Entscheidungsmatrix
+
+% Große Zahlen erforderlich
 
 % short term predictions are possible and reasonably accurate (s. unclouded vision)
 % like weather forecasts
