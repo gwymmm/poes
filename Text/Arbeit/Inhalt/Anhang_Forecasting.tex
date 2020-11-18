@@ -66,7 +66,7 @@ fehlerhafte Annahmen besser erkannt werden. Schätzungen für die einzelnen Grö
 können erstellt und verschiedene Schätzungen miteinander verglichen werden. Dadurch kann der Grad der Unsicherheit
 der Gesamtschätzung deutlicher herausgearbeitet werden.
 
-\item[(3) Berücksichtigung von Basisraten:] \hfill \\
+\item[(3) Berücksichtigen von Basisraten:] \hfill \\
 Dabei wird zwischen der Sicht von Außerhalb (\emph{outside view}) und der Sicht von Innerhalb (\emph{inside view})
 unterschieden. Bei der Sicht von Außerhalb geht es darum, eine Basisrate für das spezifische Ereignis aufzustellen.
 Die Kernfrage, die dabei beantwortet werden muss, lautet:
@@ -86,16 +86,77 @@ dafür verantwortlich sein können, dass die Häufigkeit eines Ereignisses von d
 Prädiktorvariablen werden dann gewichtet und mit der Basisrate verrechnet, wobei manche Prädiktoren das Ereignis wahrscheinlicher
 machen, wohingegen andere die Warscheinlichkeit des betrachteten Ereignisses geringer machen.
 
-\item[(4) Belief Updating:]
+\item[(4) Praktizieren von Belief Updating:] \hfill \\
 Gute Forecaster passen ihre Weltsicht ständig an neue Erkenntnisse an. Dabei geht es nicht nur darum die Formel von Bayes
 (siehe S.~\xcom) anzuwenden. Vielmehr müssen zunächst wichtige Signale aus dem Fluss von Nachrichten herausgefiltert werden, wobei
 Wunschdenken, Über- und Unterreaktionen vermieden werden müssen. Hierfür müssen Forecaster ständig die aktuellen Nachrichten beobachten 
 und kritisch widerspiegeln.
 
-\item[(5) Berücksichtigung rivalisierender Weltsichten:]
-Hierbei geht es darum, den Wahrheitsgehalt zweier gegensätzlicher Meinungen in Verhältnis zueinander zu bringen (siehe S.~\xcom).
+\item[(5) Berücksichtigen rivalisierender Weltsichten:] \hfill \\
+Hierbei geht es darum, den Wahrheitsgehalt zweier gegensätzlicher Weltanschauungen (Hypothesen) in Verhältnis zueinander zu bringen (siehe S.~\xcom).
+Je höher der Wahrheitsgehalt einer Hypothese, desto eher ist sie für die Erstellung von Prognosen relevant. Insbesondere
+sollte allein die eigene Weltsicht zur Bildung von Vorhersagen herangezogen werden, wenn man sehr sicher ist, dass die Weltsicht des
+geistigen Rivalen absolut falsch ist. Zudem kann das Verhältnis der Hypothesen sich angesichts neuer Ereignisse verändern.
+Treten Ereignisse ein, die mit Hilfe einer Weltanschauung mit höherer Wahrscheinlichkeit vorhergesagt wurden, dann erhält diese
+Hypothese zukünftig mehr Gewicht.
 
+\item[(6) Berücksichtigen von Unsicherheit:] \hfill \\
+Forecaster müssen lernen, den Grad der Unsicherheit, den sie bei der Fällung ihrer Urteile verspüren, zu quantifizieren.
+Vage Ausdrücke wie \glqq{wahrscheinlich}\grqq{}, \glqq{vielleicht}\grqq{} oder \glqq{kaum vorstellbar}\grqq{} müssen in
+Zahlen, also subjektiven Wahrscheinlichkeiten, ausgedrückt werden.
+
+\item[(7) Finden einer Balance zwischen Unentschlossenheit und Verbissenheit:] \hfill \\
+Zum Einen geht es bei diesem Ratschlag um das Dilemma, das entsteht, wenn man versucht seine Vorhersagen im Hinblick auf
+den Kalibrierungs- und Diskriminierungswert des Brier Score (siehe Anhang~\xcom) zu verbessern. Zu viel Entschlossenheit
+kann zu großen Fehlern und folglich zu Einbußen bei der Kalibrierung führen. Unentschlossenheit hingegen kann dem
+Diskriminierungswert schaden, da bei vielen Prognosen eine vorsichtige \glqq{50/50-Schätzung}\grqq{} gegeben wird. Um
+die Vorhersagegenaugkeit auf einem guten Niveau zu halten, muss hierbei eine Balance gefunden werden.
+
+Zum Anderen spielt es auch eine Rolle, wie ein Urteil oder eine Prognose kommuniziert wird. Ein Urteil, das starke
+Unsicherheit ausdrückt, kann entmutigend wirken. Aus diesem Grund wird vorgeschlagen, nach der Urteilsfindung
+eine entschlossene Haltung einzunehmen aber trotzdem den Grad der Unsicherheit bei der Entscheidung zu vermitteln
+(vgl. \cite{Jackson}, S.~293).
+
+\item[(8) Aus Fehlern lernen:] \hfill \\
+Ein Vorschlag, der als sehr schwierig in der Umsetzung gilt (vgl. \cite{Jackson}, S.~294). Gute Forecaster müssen
+ehrliche Lektionen aus ihren Fehlern ziehen, anstatt durch Hindsight Bias (siehe S.~\xcom) und Rechtfertigungsversuche
+(Belief System Defenses, siehe S.~\xcom) davon abgelenkt zu werden.
+
+\item[(9) Gruppenarbeit lernen:] \hfill \\
+In Laufe des Good Judgement Projects wurde beobachtet, dass Gruppen bessere Prognose erstellen als einzelne Personen
+(vgl. \cite{Jackson}, S.~294). Allerdings müssen für eine solche konstruktive Gruppenarbeit einige Fähigkeiten einstudiert
+werden, insbesondere:
+
+\begin{description}
+
+\item[(a) Perspektivenwechsel (\emph{perspective taking}):] \hfill \\
+Die Fähigkeit andere Perspektiven einzunehmen und die Argumente der Gegenseite zu verstehen.
+
+\item[(b) Präzise Fragestellungen (\emph{precision questioning}):] \hfill \\
+Anderen bei der Erläuterung ihrer Argumente helfen, um Missverständnisse zu vermeiden.
+
+\item[(c) Konstruktive Konfrontation (\emph{constructive confrontation}):] \hfill \\
+Die Fähigkeit, jemandem auf freundliche Weise zu widersprechen.
 
 \end{description}
 
-Wie in der Beschreibung angedeutet, versuchen manche Prinzipien die in Anhang~\xcom besprochenen Formeln in Worten zu beschreiben.
+\item[(10) Üben:] \hfill \\
+Beim Forecasting läuft man oft Gefahr beim Korrigieren eines Fehlers einen anderen zu begehen. Aus diesem Grund brauchen
+Forecaster viel Übung und ausreichendes Feedback, um die notwendige Balance zu finden\footnote{
+Good Judgement Inc. betreibt eine Online-Plattform, die Freiwilligen die Möglichkeit bietet, Prognosen abzugeben und ihre
+Forecasting Fähigkeiten zu verbessern (\url{https://www.gjopen.com/}).
+}.
+
+\item[(11) Kritisch bleiben:] \hfill \\
+Zum Schluss wird betont, das die Regeln eher als Ratschläge interpretiert werden sollten, die auch jederzeit hinterfragt
+werden können. Sonst läuft man Gefahr, in zu starre Denkmuster zu verfallen.
+%---------------------------------------------------------------------------------
+\end{description}
+
+% TODO
+
+% Schwer umzusetzen (-> Regel 1)
+
+Wie in der Beschreibung angedeutet, versuchen manche Ratschläge, mathematische Formulierungen und deren Auswirkungen in Worten zu beschreiben.
+Es ist jedoch einfacher, die Ratschläge zu verstehen und vor Allem auch einzuhalten, wenn die zugrunde liegenden Formeln bekannt
+sind.
