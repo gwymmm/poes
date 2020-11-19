@@ -1,5 +1,31 @@
 \chapter{Predictive Analytics im öffentlichen Sektor}
 
+Die Methode des Forecasting hat (bisher) noch keinen bedeutenden Durchbruch in
+der breiten Öffentlichkeit gehabt\footnote{
+
+}. Es gibt Stimmen, die behaupten, dass ein immenser Widerstand gegen die
+Einführung dieser Methode zu erwarten ist. Teilweise deutet sich sogar eine
+Unmöglichkeit dieser Aufgabe an. 
+Beim Thema Forecasting ist es Tetlock selbst, der sich skeptisch äußert. Er
+benennt den Widerstand der Experten als die größte Barriere zur Einführung der
+neuen Methodik (\emph{the most daunting of all the barriers to implementation},
+vgl. \cite{Tetlock}, S.~235). Jackson und Reichin vertreten eine ähnliche
+Auffassung (vgl. \cite{Jackson}, S.~295). 
+
+Für Predictive Analytics sind die Prognosen optimistischer (vgl. \cite{Mauerer}).
+Allerdings ist zweifelhaft, ob Top Manager \emph{ihre} Entscheidungen mit Hilfe
+von Predictive Analytics Methoden treffen.
+Unternehmen behaupten zwar, dass strategische Entscheidungen mit Hilfe von Predictive Analytics
+unterstützt werden sollen (vgl. \cite{Mauerer}, S.~2), die konkreten Anwendungsbeispiele deuten
+aber darauf hin, dass hauptsächlich operative Abteilungen (wie z. B. der Kauf und Verkauf von
+Gütern) betroffen sind.
+
+Somit deutet sich die Frage an, ob grundsätzliche Hindernisse bestehen, die verhindern, dass sich
+evidenzbasierte Methoden wie Forecasting und Predictive Analytics auf allen Ebenen der
+Entscheidungshierarchie etablieren. Diese Fragestellung wird im folgenden Text untersucht werden.
+
+\section{Rahmenbedingungen}
+
 Bei der folgenden Analyse ist es sinnvoll zwischen strategischer, taktischer und
 operativer Ebene zu unterscheiden. Im Allgemeinen lassen sich die verschiedenen
 Ebenen wie folgt abgrenzen:
@@ -32,8 +58,15 @@ Entscheidungen, wobei ihr Spielraum dabei durch die Entscheidungen der strategis
 Ebene meist stark eingeschränkt ist. Im öffentlichen Sektor führen Beamte im mittleren Dienst und 
 operative Manager von Firmen mit öffentlichen Auftraggebern Tätigkeiten auf operativer Ebene aus.
 
-
 \end{description}
+
+Weiterhin wird nicht davon ausgegangen, dass wichtige taktische und strategische Entscheidungen
+vollkommen automatisiert getroffen werden können. Vielmehr wird im besten Fall ein Zusammenspiel
+erwartet, bei dem Menschen entscheiden und Computer sie dabei unterstützen.
+
+
+
+% TODO Technologie prinzipiell kein Hindernis (s. IT Novum)
 
 % TODO
 % Stand Entscheidungshilfen (wie vorstellbar: Mensch entscheidet, Computer
@@ -41,9 +74,9 @@ operative Manager von Firmen mit öffentlichen Auftraggebern Tätigkeiten auf op
 % Abgrenzung zum privaten Sektor
 % auf operativer Ebene allerdings ähnlich
 % unterschied strategisch, taktische Ebene, operativ
-% top management, mittleres management, operatives management 
+ 
 % s. Watson, Abschnitt Lack of regulation and algorithm bias
-% TODO bias insgesamt (in Rahmenbedingungen)
+
 \begin{figure}%[!hbt]
 \centering
 \caption{Risikomatrix für die Nutzung maschineller Entscheidungshilfen}
@@ -51,26 +84,18 @@ operative Manager von Firmen mit öffentlichen Auftraggebern Tätigkeiten auf op
 \label{pic:Risiko_Matrix}
 \end{figure}
 
-\section{Rahmenbedingungen}
 
-% TODO Technologie prinzipiell kein Hindernis (s. IT Novum)
+
+
 
 % TODO
 % Politiker, Experten und Kommentatoren formulieren keine subjektiven Wsk und
 % niemand berechnet den Brier Score (oder ein anderes Maß)
-% Widerstände auf strat und takt Ebene gegen Forecasting und PA
-% Forecasting und PA nicht auf dem Vormarsch
-% Forecasting leichter zu sehen,
-% PA auf operativer Ebene (Tabellenkalkulation) verschleiert Widerstand auf
-% takt und strategischer Ebene (!)
-% Rahmenbedingungen:
-% - Wahrheit taktisch genutzt
-% - versch. Gruppen/Kulturen -> versch. Wahrheiten
-% - Themen kontroverser (vs. z. B. Fruchtsäfte)
-% - Konkurrenz (v. a. bei strategischen Entscheidungen) 
-% - Ignorieren (-> Probleme menschl. Urteile)
+% 
+
 
 %-------------------------------------------------------------------------------
+% Tetlock kam bei seiner Studie zu dem Urteil, ...
 Tetlock ist der Meinung, dass die Kernaufgabe politischer Weltanschauungen
 nicht die Erstellung möglichst korrekter Prognosen ist, sondern die
 Aufrechterhaltung einer bequemen Illusion von Berechenbarkeit
@@ -81,13 +106,13 @@ Priorität.
 
 In diesem Zusammenhang sind auch verschiedene Interpretationen des
 Wahrheitsbegriffs bedeutsam. Eine weit verbreitete Interpretation wird mit
-Hilfe des Pragmatismus von William James definiert. Demnach werden
+Hilfe des Pragmatismus von William James definiert (vgl. \cite{Precht}). Demnach werden
 Aussagen von Menschen als Wahrheit akzeptiert, falls die Aussagen ihnen bei der
 Orientierung in der Welt nützlich sind. Dies liefert eine Erklärung dafür, dass
 Menschen dazu tendieren Aussagen zu glauben, die ihre eigene Weltsicht
 bestätigen. Bei einer extremen Ausprägung des pragmatischen Wahrheitsbegriffs
 wird aus der Nützlichkeit einer Aussage ihr Wahrheitsgehalt abgeleitet:
-\glqq{Es ist wahr, weil es nützlich ist}\grqq. (vgl. \cite{Precht})
+\glqq{Es ist wahr, weil es nützlich ist}\grqq.
 
 Diese radikale Wahrheitsinterpretation ist problematisch, wenn die als Wahrheit
 betrachteten Grundsätze der Realität widersprechen. Denn es gibt keine
@@ -120,29 +145,44 @@ pragmatisch ist.
 
 \subsection{Eine pessimistische Sichtweise}
 
+%\subsubsection{}
+
+% TODO
+
 % 3 Ängste: Verlust Privilegien, Verlust der Arbeit, Verlust der (kollektiven) Identität
 
-Je mehr das Treffen von Entscheidungen zur Hauptaufgabe von Personen gehört,
-desto stärker betrachten sie \emph{predictive analytics} als eine Gefahr für
-ihren Arbeitsplatz.
+%Je mehr das Treffen von Entscheidungen zur Hauptaufgabe von Personen gehört,
+%desto stärker betrachten sie \emph{predictive analytics} als eine Gefahr für
+%ihren Arbeitsplatz.
 
-Es gibt Stimmen, die behaupten, dass ein immenser Widerstand gegen die
-Einführung solcher Methoden [Forecasting + Predictive Analytics] zu erwarten
-ist. Teilweise deutet sich sogar eine Unmöglichkeit dieser Aufgabe an. Beim 
-Thema Forecasting ist es Tetlock selbst, der sich skeptisch äußert. Er
-benennt den Widerstand der Experten als die größte Barriere zur Einführung der
-neuen Methodik (\emph{the most daunting of all the barriers to implementation},
-vgl. \cite{Tetlock}, S.~235). Jackson und Reichin vertreten eine ähnliche
-Auffassung (vgl. \cite{Jackson}, S.~295).
+%Zudem spielen politische Faktoren im öffentlichen Sektor eine größere Rolle als
+%im privaten Sektor.
 
-Der investigative Charakter von Datenanalysen kann Nervosität und Unbehagen
-auslösen.
+%Es ist zu erwarten, dass sich Predictive Analytics am leichtesten auf der operativen Ebene etablieren
+%lässt, da das Führungspersonal der taktischen und strategischen Ebene über mehr Macht verfügt.
 
-% TODO Daten (-> Heise) 
-% Thapa_Parycek S. 46
+% - versch. Gruppen/Kulturen -> versch. Wahrheiten
+
+% Forecasting leichter zu sehen,
+% 
+% 
+% - Wahrheit taktisch genutzt
+
+% - Themen kontroverser (vs. z. B. Fruchtsäfte)
+% - 
+% - Ignorieren (-> Probleme menschl. Urteile)
+
+%Der investigative Charakter von Datenanalysen kann Nervosität und Unbehagen
+%auslösen.
+
+
 \subsection{Eine optimistische Sichtweise}
 
+% + MÖGLICHKEIT BESSERE ENTSCHEIDUNGEN ZU TREFFEN
+
 % Formalisierung erwünscht (BBC + IC)
+
+% 
 
 Bessere Prognosen und Urteile führen zu besseren Entscheidungen. Dies bringt
 wiederum sowohl Vorteile gegenüber Konkurrenten als auch Vorteile bei der
