@@ -714,21 +714,55 @@ logisch konsitent denken oder nicht. Mehr Informationen hierzu befinden sich in 
 Für ein gutes Urteilsvermögen ist es grundsätzlich besser ein Fox als ein Hedgehog zu sein\footnote{
 Dieser wichtige Punkt wird auch oft in Artikeln betont, die über Forecasting berichten (vgl.
 \cite{Economist} und \cite{Burton})
-}.
+}. Dies ist eine schlechte Nachricht für Hedgehogs, die somit ihre Persönlichkeit ändern müssen,
+um ein guter Forecaster zu werden.
 
+\item[Kognitive Verzerrungen:] \hfill \\
+Kognitive Verzerrungen verschlechtern das Urteilsvermögen und müssen somit vermieden werden.
+Tabelle~\ref{tab:Kognitive_Verzerrungen} listet einige kognitive Verzerrungen, die im Bereich
+von Forecasting und Datenanalysen zu Problemen führen können. Von Tetlock wurden insbesondere
+kognitiver Konservatismus (\emph{cognitive conservatism}), Zuschreibungsfehler (\emph{attribution bias}), 
+Rückschaufehler (\emph{hindsight bias}) und Selbstüberschätzung (\emph{overconfidence effect}) als
+relevante Verzerrungen eingestuft. Mehr Informationen zu kognitiven
+Verzerrungen sind in Anhang~\xcom zusammengestellt.
+
+\item[Betonung des (selbst)kritischen Denkens:] \hfill \\
+Für einen guten Forecaster sollte kritisches Denken an erster Stelle stehen
+(\emph{no thought above criticism}, vgl. \cite{Tetlock}, S.~118). Gute Forecaster
+stellen sich selbst in Frage, falls sie sich einer Sache zu sicher fühlen (vgl. \cite{Tetlock}, S.~102).
+Sie erinnern sich auch an ihre früheren Meinungen und wann sie diese Meinungen revidieren mussten
+(vgl. \cite{Tetlock}, S.~104). Dies soll Selbstüberschätzungen verhindern.
+
+\item[Formale Modelle:]
+Trotz ihrer besseren Veranlagungen konnten auch die Foxes bei Weitem nicht die Prognosegenauigkeit
+formaler statistischer Modelle erreichen (siehe auch Abbildung~\ref{pic:Tetlock_2}). Aus diesem Grund sollten, wenn möglich, diese Methoden
+rein menschlichen Prognosen vorgezogen werden.
 
 \end{description}
 
-% TODO Zusammenfassung 
-% - besser fox als hedgehog sein
+Man beachte auch die \emph{10 Commandments of Superforecasting} die wichtige Ratschläge zum
+Forecasting liefern. Allerdings ist zu beachten, dass sie die obigen Punkte nicht obsolet machen,
+sondern vielmehr ergänzen. Anhang~\xcom liefert Erläuterungen zu den 10 Commandments.
 
-% - Versuchen Kognitive Verzerrungen abzumildern
-% - no thought above criticism (S. 102, 118)
-% - fördert bescheidenheit, beugt overconfidence vor (S. 104)
-% - wenn möglich komplexere statistische Algorithmen verwenden
+Der letzte Punkt der obigen Liste ist auch deshalb interessant, weil die Forecaster manchmal selbst
+einfachere, mathematische Modelle aufstellen, um ihre Prognosen aufzustellen und zu rechtfertigen
+(vgl. \cite{Roetheli}, S.~257 und \cite{Burton}). So erklärt der Superforecaster Nick Hare seinen auf
+Basisraten basierenden Algorithmus, der die Wahrscheinlichkeit berechnet, dass Nordkorea in den nächsten
+drei Monaten einen Nukleartest durchführt (vgl. \cite{Burton}). Zunächst recherchierte Hare, die Häufigkeit
+solcher Tests. Bei einem Test in 30 Monaten, also 0.1 Test in 3 Monaten, erhielt er die Häufigkeit 10~\%
+als Basisrate. Dann hat Hare diese Basisrate mit Hilfe weiterer Daten angepasst. Er beobachtete, dass eine
+Drohung von nordkoreanischer Seite in der Vergangenheit zu einer Verdopplung der Wahrscheinlichkeit für einen
+tatsächlichen Test geführt hatte. Dies ergibt folgendes Modell: Die Wahrscheinlichkeit, dass Nordkorea einen
+Nukleartest in den nächsten drei Monaten durchführt liegt bei 10~\%, es sei denn, es hat zuvor eine Drohung
+gegeben, dann wird die Wahrscheinlichkeit auf 20~\% verdoppelt\footnote{
+Dieses Vorgehen wird auch im dritten Ratschlag der \emph{10 Commandments of Superforecasting} beschrieben
+(siehe Anhang~\xcom).
+}.
 
-% 11 Commandments auch wichtig, machen obige Punkte aber nicht obsolet
-..., also \gls{glos:Predictive_Analytics} zu implementieren.
+Der Übergang von Forecasting zu Predictive Analytics scheint also fließend. Wenn man die notwendigen
+Ressourcen hat und es notwendig erscheint, sollte man Datenanalysen mit Hilfe mathematischer Modelle
+durchführen, also \gls{glos:Predictive_Analytics} implementieren.
+
 
 \section{Bestandteile von Predictive Analytics}
 
