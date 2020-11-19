@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="353.53361"
-     inkscape:cy="870.95125"
+     inkscape:zoom="1.979899"
+     inkscape:cx="142.05438"
+     inkscape:cy="936.77013"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -234,15 +234,16 @@
          id="flowPara911">Deadlock Spieler:</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4622-17-2"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.0000002px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;"
-       transform="matrix(0.26458333,0,0,0.26458333,-85.710272,42.611914)"><flowRegion
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-65.677534,37.320247)"><flowRegion
          id="flowRegion4624-5-1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.0000002px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;"><rect
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
            id="rect4626-9-7"
            width="247.85715"
            height="41.42857"
            x="352.14285"
            y="48.233971"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.0000002px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr;text-anchor:start;" /></flowRegion><flowPara
-         id="flowPara937">Stag Hunt Spieler:</flowPara></flowRoot>  </g>
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara869">Stag Hunt</flowPara><flowPara
+         id="flowPara871">Spieler:</flowPara></flowRoot>  </g>
 </svg>
