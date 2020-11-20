@@ -131,6 +131,7 @@ können.
 
 
 \subsection{Eine pessimistische Sichtweise}
+\label{Pessimistisch}
 
 Die Einführung formaler Methoden zur Entscheidungsunterstützung kann zu unlösbaren Konflikten führen,
 da sie drei Verlustängste bei den betroffenen Personen weckt: Verlust von Privilegien,
@@ -187,7 +188,7 @@ entweder gar nicht statt, oder die Erkenntnisse werden ignoriert.
 Die zentrale Motivation dafür evidenzbasierte Methoden in einer Organisation
 einzuführen, ist die Möglichkeit zu erhalten, bessere Entscheidungen zu treffen.
 Dies bringt sowohl Vorteile gegenüber Konkurrenten als auch Vorteile beim
-\glqq{Spiel gegen die Natur\grqq{} (siehe S.~\xcom). So sind beispielsweise Staaten Stammkunden
+\glqq{Spiel gegen die Natur}\grqq{} (siehe S.~\xcom). So sind beispielsweise Staaten Stammkunden
 für Prognosen und Urteile von Experten (vgl. \cite{Roetheli}, S.~256) und haben damit ein
 starkes Interesse daran, diese zu verbessern. Es gibt auch Impulse, die direkt aus den Nachrichtendiensten
 kommen. Schon 1951 hat der CIA-Analyst Sherman Kent\footnote{
@@ -260,8 +261,12 @@ wird davon ausgegangen, dass die Spieler das Spiel spielen, um ihren Nutzen zu o
 
 In den folgenden Abschnitten wird die Einführung evidenzbasierter Methoden wie Predictive Analytics oder Forecasting innerhalb einer
 Organisation modelliert. Die Spieler können dabei einzelne Entscheidungsträger oder Gruppen sein. Weiterhin werden zwei Spieler
-betrachtet. Der Spieler, der die Einführung evidenzbasierter Methoden befürwortet, wird als der \glqq{progressive Spieler}\grqq{}
-bezeichnet. Der Spieler, der die Einführung nicht wünscht, wird hingegen der \glqq{traditionelle Spieler}\grqq{} genannt.  
+betrachtet. 
+
+%Der Spieler, der die Einführung evidenzbasierter Methoden befürwortet, wird als der \glqq{progressive Spieler}\grqq{}
+%bezeichnet. Der Spieler, der die Einführung nicht wünscht, wird hingegen der \glqq{traditionelle Spieler}\grqq{} genannt.  
+%Für den traditionellen Spieler gilt die pessimistische Sicht aus Abschnitt~\ref{Pessimistisch}, während auf den progressiven Spieler das
+%optimistische Szenario aus Abschnitt~\xcom zutrifft.
 
 \subsection{Das pessimistische Szenario}
 
@@ -273,7 +278,7 @@ bezeichnet. Der Spieler, der die Einführung nicht wünscht, wird hingegen der \
 \end{figure}
 
 Abbildung~\ref{pic:Deadlock} zeigt die Auszahlungsmatrix für das Spiel \glqq{Stillstand}\grqq{}
-(\emph{Deadlock}; vgl. \cite{Poundstone}, S.~218). Die Spieler haben hier zwei Strategien zur Auswahl\footnote{
+(\emph{deadlock}; vgl. \cite{Poundstone}, S.~218). Die Spieler haben hier zwei Strategien zur Auswahl\footnote{
 Diese zwei Strategien sind für alle hier betrachteten Spiele gleich.
 }. Jeder Spieler kann sich für eine Kooperation mit dem anderen Spieler entscheiden, oder sich dazu entschließen
 den anderen Spieler zu hintergehen. Die Auszahlungen (der Nutzen) sind so definiert, dass die erste Zahl in einem Matrixeintrag
@@ -291,10 +296,42 @@ zu kooperieren (vgl. \cite{Poundstone}, S.~218). Die Spieler erhalten mehr Punkt
 als wenn sie kooperieren würden. Ferner ist gegenseitiger Verrat ein Nash-Gleichgewicht und keiner der Spieler hat eine Motivation davon
 abzuweichen.
 
-Deadlock ist hier das Modell für das pessimistische Szenario (siehe Abschnitt~\xcom)
+Kooperieren bedeutet für diesen Anwendungsfall, evidenzbasierte Methoden einzuführen. Dies wird im
+folgenden Text als \glqq{progressive}\grqq{} Strategie bezeichnet. Hintergehen bedeutet dagegen, die
+Einführung der neuen Methoden zu verhindern, was \glqq{traditionelle}\grqq{} Strategie genannt wird.
+ 
+Somit ist Deadlock das Modell für das pessimistische Szenario (siehe Abschnitt~\xcom). 
+Hier wollen beide Teilnehmer traditionell spielen, da sie kein Interesse daran haben, evidenzbasierte Methoden
+in der Organisation einzuführen. Die Präferenzen für das Spielergebnis beider Spieler bei Deadlock sind:
+\begin{description}
 
+\item[(1) Der andere Spieler läuft ins offene Messer:] \hfill \\
+Der andere Spieler begreift die Situation nicht (spielt nicht rational) und versucht eine Einführung.
+Der Gegenspieler zieht nicht mit und der 
+\item[(2) Stillstand:] \hfill \\
+
+\item[(3) Kooperation:] \hfill \\
+
+\item[(4) Selbst ins offene Messer laufen:] \hfill \\
+
+\end{description}
+Die Strafen, die aus der Verwirklichung des
+pessimistischen Szenarios entstehen, können von den Vorteilen einer Einführung nicht kompensiert werden.
+Der Versuch einer Einführung wird bei einer solchen Konstellation scheitern, falls nicht externe Kräfte die
+Spielregeln verändern.
 
 \subsection{Das optimistische Szenario}
+
+Abbildung~\ref{pic:StagHunt} illustriert das Spiel \glqq{Hirschjagd}\grqq{} (\emph{stag hunt}; vgl. \cite{Poundstone}, S.~220).
+Einen Hirsch zu jagen, verspricht den größten Gewinn (jeweils 3 Punkte). Für die Hirschjagd ist jedoch die Kooperation der Jäger
+erforderlich. Weiterhin besteht für jeden Jäger die Möglichkeit, anstatt eines Hirsches einen Hasen alleine zu jagen. Gehen manche
+Jäger auf die Hasenjagd, dann erhalten sie einen moderaten Gewinn (2 Punkte). Die Jäger hingegen, die weiter den Hirsch jagen, können
+ihn nicht erbeuten und gehen leer aus. Falls alle Jäger sich entscheiden Hasen zu jagen, dann gibt es weniger Beute für alle (nur jeweils
+1 Punkt).
+
+% temptation to defect when you think the other will defect (S. 220)
+
+
 % stag hunt (S. 220)
 \begin{figure}%[!hbt]
 \centering

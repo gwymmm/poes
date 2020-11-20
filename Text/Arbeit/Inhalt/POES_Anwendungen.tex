@@ -1,7 +1,9 @@
 \chapter{Anwendungen von Predictive Analytics im öffentlichen Sektor}
 
-% Auswahl
-% TODO Fallstudien einfach ausführlichere Beispiele
+Zum Schluss werden einige Anwendungen von Predictive Analytics im öffentlichen
+Sektor vorgestellt. Es wurden Anwendungsfälle in den Bereichen öffentliche Verwaltung,
+Gesundheit und Bildung betrachtet. Zudem wurden zwei Fallstudien erstellt, bei denen
+zwei konkrete Anwendungen besonders ausführlich untersucht wurden.
 
 % TODO
 % 2 grundlegende Probleme
@@ -58,7 +60,7 @@ Beim traditionellen Debt Management werden Gruppen von Hochrisikoschuldnern iden
 konzentrieren (vgl. \cite{OECD}, S.~26). Bei einer neueren Methode (\emph{Uplift Modelling}) werden Fälle selektiert, die
 mit möglichst hoher Wahrscheinlichkeit auf eine Intervention seitens der Behörde reagieren werden. 
 
-\subsubsection{Verbesserung der Service für Steuerzahler}
+\subsubsection{Verbesserung der Serviceleistungen für Steuerzahler}
 
 Text Mining (inklusive \emph{Sentiment Analysis}) kommt bei den Steuerbehörden zum Einsatz, um die Kommunikation mit den
 Steuerzahlern zu verbessern (vgl. \cite{OECD}, S.~27). So werden beispielsweise ankommende E-Mails in Singapur mit Hilfe
@@ -86,30 +88,17 @@ Der Bericht des FTA enthält auch eine Diskussion einiger Probleme, die im Zusam
 festgestellt wurden.
 
 So gibt es Bedenken, ob die gesammelten Daten, die anschließend für das Training der Modelle verwendet werden,
-repräsentativ sind (vgl. \cite{OECD}, S.~51).
+repräsentativ sind (vgl. \cite{OECD}, S.~51). Denn die verwendeten Daten stammen oft von stark verzerrten
+Stichproben, wie beispielsweise alten Untersuchungsfällen. Somit wird nur ein kleiner Ausschnitt aus der
+Gesamtpopulation zum Training der Modelle verwendet, was zu Selektionseffekten und schließlich zu Verzerrungen
+im Modell führt. Um dieses Problem zu beheben, beziehen US-Steuerbehörden ihre Daten aus zufällig ausgewählten
+Stichproben von Steuerprüfungen, um die Daten repräsentativer zu gestalten (vgl. \cite{OECD}, S.~52).
 
-% TODO
-% DATENPROBLEME
-
- % S. 51
-% concerns about representativeness of data
-
-% data from highly biased samples (alte interventionsfälle) -> nur kleiner ausschnitt aus gesamtpopulation
-
-% selection effects -> biases
-
- % S. 52
-
-% data from randomly selected audits in US to improve representativeness
-
-% DATA COMPREHENSIVENESS (S. 52)
-
-% data for analytics project from data collected and stored for
-%   operational purposes
-
-% -> missed opportunities: not useful information for operational purposes
-%     (e. g. type of non-compliance in audit) but would be useful for analytical purposes
-%     distinct models for each risk type possible
+Weiterhin werden die Daten für Predictive Analytics Projekte eigentlich für operative Zwecke erhoben und
+gespeichert (vgl. \cite{OECD}, S.~52). Aus diesem Grund ergeben sich verpasste Gelegenheiten, denn manche Daten, die nicht sinnvoll
+für operative Zwecke sind, können nützlich für Datenanalysen sein. Zum Beispiel werden Beanstandungsgründe nach
+einer Steuerprüfung typischerweise nicht gespeichert. Diese Information wäre jedoch hilfreich, um gesonderte Modelle
+für verschiedene Beanstandungsgründe zu erstellen (vgl. \cite{OECD}, S.~52). 
 
 \subsection{Predictive Policing}
 
