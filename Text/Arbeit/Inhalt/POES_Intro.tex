@@ -216,6 +216,7 @@ Zudem können die Gefahren amgemildert werden, indem loyale und ideologisch moti
 Personen mit der Durchführung beauftragt werden. Diese sind vertraut mit den
 Besonderheiten und Tabus einer Weltanschauung und können diese umgehen.
 
+% TODO besseren Entscheidungen im politischen Umfeld besser (siehe Linux in München)
 %-------------------------------------------------------------------------------
 %Bessere Prognosen und Urteile führen zu besseren Entscheidungen. Dies bringt
 %wiederum sowohl Vorteile gegenüber Konkurrenten als auch Vorteile bei der
@@ -247,17 +248,50 @@ Forecasting und Predictive Analytics, bietet es sich an, die
 präsentiert, die die obigen Szenarien verdeutlichen sollen.
 
 \subsection{Einleitung zur Spieltheorie}
-% TODO
-% name metaphorisch
+
+Der Name Spieltheorie hat eher einen metaphorischen Charakter. Tatsächlich
+werden in der Spieltheorie Konfliktsituationen zwischen zwei oder mehreren Agenten (Spieler) beschrieben,
+die dann als Spiel bezeichnet werden. Die Konfliktsituationen zwischen zwei Spielern können in einer Matrixform (Auszahlungsmatrix)
+dargestellt werden. Die Zeilen der Matrix stellen dann die Optionen (Strategien) des ersten Spielers, die Spalten dagegen die
+Optionen des zweiten Spielers dar. Das Spiel wird gespielt, indem beide Spieler sich jeweils für eine Strategie entscheiden. 
+Die gewählten Strategien definieren einen Eintrag in der Matrix, der den Spielausgang (Auszahlungen für beide Spieler) beschreibt.
+Die Auszahlungen sind dabei nicht unbedingt als Geld zu sehen, sondern stellen im Allgemeinen einen abstrakten Nutzen dar. Dabei
+wird davon ausgegangen, dass die Spieler das Spiel spielen, um ihren Nutzen zu optimieren.
+
+In den folgenden Abschnitten wird die Einführung evidenzbasierter Methoden wie Predictive Analytics oder Forecasting innerhalb einer
+Organisation modelliert. Die Spieler können dabei einzelne Entscheidungsträger oder Gruppen sein. Weiterhin werden zwei Spieler
+betrachtet. Der Spieler, der die Einführung evidenzbasierter Methoden befürwortet, wird als der \glqq{progressive Spieler}\grqq{}
+bezeichnet. Der Spieler, der die Einführung nicht wünscht, wird hingegen der \glqq{traditionelle Spieler}\grqq{} genannt.  
 
 \subsection{Das pessimistische Szenario}
-% deadlock (S. 218(
+
 \begin{figure}%[!hbt]
 \centering
 \caption{Deadlock Auszahlungsmatrix}
 \includegraphics[scale=0.8]{Grafiken/Deadlock_Ink.pdf} 
 \label{pic:Deadlock}
 \end{figure}
+
+Abbildung~\ref{pic:Deadlock} zeigt die Auszahlungsmatrix für das Spiel \glqq{Stillstand}\grqq{}
+(\emph{Deadlock}; vgl. \cite{Poundstone}, S.~218). Die Spieler haben hier zwei Strategien zur Auswahl\footnote{
+Diese zwei Strategien sind für alle hier betrachteten Spiele gleich.
+}. Jeder Spieler kann sich für eine Kooperation mit dem anderen Spieler entscheiden, oder sich dazu entschließen
+den anderen Spieler zu hintergehen. Die Auszahlungen (der Nutzen) sind so definiert, dass die erste Zahl in einem Matrixeintrag
+die Auszahlung für den Zeilenspieler angibt, während die zweite Zahl die Auszahlung für den Spaltenspieler liefert.
+Das rote Feld markiert das Nash-Gleichgewicht. In einem Nash-Gleichgewicht kann kein Spieler eine bessere Auszahlung erwarten, wenn
+nur er seine Strategie wechselt\footnote{
+Will beispielsweise der Spaltenspieler bei Deadlock (Abbildung~\ref{pic:Deadlock}) vom Nash-Gleichgewicht (beide Spieler hintergehen
+einander) alleine zur Strategie der Kooperation wechseln, so zeigt der Spielausgang (Eintrag links, unten), dass er statt 2 Punkten
+im Nash-Gleichgewicht gar keine Punkte erhalten würde. Dies gilt bei einem Nash-Gleichgewicht für alle Optionen, die ein
+\glqq{Abweichler}\grqq{} nutzen könnte.
+} (vgl. \cite{Poundstone}, S.~98-99).
+
+Deadlock ist ein frustrierendes Spiel und damit eine frustrierende Konfliktsituation. Keiner der Spieler hat einen Anreiz
+zu kooperieren (vgl. \cite{Poundstone}, S.~218). Die Spieler erhalten mehr Punkte (jeweils 2, statt nur 1) wenn sie einander hintergehen,
+als wenn sie kooperieren würden. Ferner ist gegenseitiger Verrat ein Nash-Gleichgewicht und keiner der Spieler hat eine Motivation davon
+abzuweichen.
+
+Deadlock ist hier das Modell für das pessimistische Szenario (siehe Abschnitt~\xcom)
 
 
 \subsection{Das optimistische Szenario}
