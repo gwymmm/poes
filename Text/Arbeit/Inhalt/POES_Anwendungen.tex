@@ -42,47 +42,39 @@ Deutschland ist bei dieser Studie allerdings nicht dabei.
 Steuerbehörden führen Kontrollen von Unternehmen und Personen durch, um Steuerbetrug
 aufzudecken und zu verringern. Um verfügbare Ressourcen besser einzusetzen, werden mit Hilfe
 von Predictive Analytics die Fälle für die Prüfung priorisiert, bei denen der größte Betrugsverdacht
-besteht.
+besteht (Risikogruppen). Dieser Prozess wird als \emph{Audit Case Selection} bezeichnet und ist das hauptsächliche
+Anwendungsgebiet von Predictive Analytics in der Steuerverwaltung (vgl. \cite{OECD}, S.~20).
+
+Eine Besonderheit dabei ist die Analyse sozialer Netzwerke (\emph{Social Network Analysis}; \cite{OECD}, S.~21-22),
+die zur Aufdeckung besonderer Formen von Einkommenssteuerbetrug eingesetzt wird. Die Analyse sozialer Netzwerke kann
+Risikogruppen finden, die von Analysen auf individueller Ebene übersehen werden. Bei der Analyse werden die Beziehungen
+zwischen Individuen erkennbar und können als visualisierte Netzwerke betrachtet werden. Die weitere Analyse dieser Netzwerke
+kann durch Sachbearbeiter erfolgen oder mit Hilfe von regelbasierten oder statistischen Modellen durchgeführt werden.
+
+\subsubsection{Payment Compliance}
+
+Das Ziel der Payment Compliance ist es, ausstehende Zahlungen möglichst einzufordern oder das Problem gar nicht erst
+entstehen zu lassen (vgl. \cite{OECD}, S.~24). Die typische Aufgabe von Predictive Analytics ist hierbei, die
+Steuerzahler herauszufiltern, bei denen das größte Risiko besteht, dass sie ihre Zahlungsverpflichtungen nicht erfüllen werden. 
+Eine weitere Anwendung, ist herauszufinden, wie am effektivsten mit dieser Gruppe kommuniziert werden kann (Prescriptive Analytics).
+
+\subsubsection{Debt Management}
+
+Beim traditionellen Debt Management werden Gruppen von Hochrisikoschuldnern identifiziert, um vorhandene Ressourcen auf sie zu
+konzentrieren (vgl. \cite{OECD}, S.~26). Bei einer neueren Methode (\emph{Uplift Modelling}) werden Fälle selektiert, die
+mit möglichst hoher Wahrscheinlichkeit auf eine Intervention seitens der Behörde reagieren werden. 
+
+\subsubsection{Taxpayer Service}
+
+Text Mining (inklusive \emph{Sentiment Analysis}) kommt bei den Steuerbehörden zum Einsatz, um die Kommunikation mit den
+Steuerzahlern zu verbessern (vgl. \cite{OECD}, S.~27). So werden beispielsweise ankommende E-Mails in Singapur mit Hilfe
+von Text Mining bearbeitet, um die Art der Anfrage herauszufinden (vgl. \cite{OECD}, S.~27-28). In einem Fall konnte eine
+Gruppe ähnlicher Anfragen identifiziert werden, nachdem eine Steuerrichtlinie verändert worden war. Die Behörde war dann in
+der Lage frühzeitig zu reagieren und die Steuerzahler zusätzlich zu informieren. Text Mining hat in Singapur die manuelle
+Bearbeitung von E-Mail Anfragen abgelöst. Dies ermöglicht eine objektivere Verarbeitung der Anfragen, da weniger Missverständnisse
+entstehen. Zusätzlich wird die Arbeitszeit der Sachbearbeiter eingespart.
+
 % TODO
-
-% FTA: Forum on Tax Administration Survey (DE leider nicht dabei)
-
-% EINSATZGEBIETE VON PA
-
-% 1) Audit Case Selection
-
-% hauptsächliches Anwendungsgebiet (S. 20)
-%  prioritise cases for investigation, audits
-
-%  social network analysis (für bestimmte fälle, z. B. VAT carousel fraud)(S. 21-22)
-% identify risk groups where individual-level assessments may fail
-% identify links between individuals, assemble connected individuals to visualised networks
-% Analyse der networks (risk score) per Hand, rule based oder statistical model
-
-% 2) Filing (Aktenablage) and payment compliance (S. 24)
-
-% aim: secure outstanding payment or return or prevent the problem from occurring
-% predictive: identify taxpayers who are likeliy to fail to meet their obligations
-% prescriptive: how communicate most effectively with this group
-
-% 3) Debt management (S. 26)
-
-% resource priorization
-% traditional: identify groups of potentially high-risk debtors
-% new (u. A. uplift modelling): identify cases that are most likely to respond to
-%   debt-management intervention
-
-% 4) Taxpayer Service (S. 27)
-
-% z. B. Text mining and sentiment analysis
-
-% Text minining of inbound email in Singapore (S. 27-28)
-
-% identify the nature of taxpayer inquiries
-% example: identify common queries of taxpayers after policy has changed
-%   -> able to react: infos on website, updates to taxpayers (vorsorglich)
-% Text Mining replaced manual tracking of email enquiries + track enquiries more objectively
-
 % 5) Policy evaluation (S. 28)
 
 % most analytics work carried out to support operational decision-making
