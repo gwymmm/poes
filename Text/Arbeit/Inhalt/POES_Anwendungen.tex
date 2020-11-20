@@ -3,8 +3,6 @@
 % Auswahl
 % TODO Fallstudien einfach ausführlichere Beispiele
 
-\section{Daten}
-
 % TODO
 % 2 grundlegende Probleme
 % - Datenschutz: Achtung Privatsphäre + Angst vor Missbrauch
@@ -17,7 +15,6 @@
 % Daten in der öffentlichen Verwaltung
 % Open Data Portale ( GovData.de )
 % Abgrenzung zu 'Nowcasting'
-% Predictive Analytics in Finanzbehörden
 % Predictive Policing
 % Einschätzung der politischen Stimmungslage
 % Vorhersage kultureller Unterschiede
@@ -28,9 +25,6 @@
 % Thapa_Parycek S. 46
 
 \subsection{Predictive Analytics in der Steuerverwaltung}
-
-Hier \cite{OECD}.
-
 
 Die Anwendungen von Predictive Analytics in der Steuerverwaltung werden in einer
 Studie des \emph{Forum on Tax Administration} (FTA) diskutiert\footnote{
@@ -64,7 +58,7 @@ Beim traditionellen Debt Management werden Gruppen von Hochrisikoschuldnern iden
 konzentrieren (vgl. \cite{OECD}, S.~26). Bei einer neueren Methode (\emph{Uplift Modelling}) werden Fälle selektiert, die
 mit möglichst hoher Wahrscheinlichkeit auf eine Intervention seitens der Behörde reagieren werden. 
 
-\subsubsection{Taxpayer Service}
+\subsubsection{Verbesserung der Service für Steuerzahler}
 
 Text Mining (inklusive \emph{Sentiment Analysis}) kommt bei den Steuerbehörden zum Einsatz, um die Kommunikation mit den
 Steuerzahlern zu verbessern (vgl. \cite{OECD}, S.~27). So werden beispielsweise ankommende E-Mails in Singapur mit Hilfe
@@ -74,18 +68,27 @@ der Lage frühzeitig zu reagieren und die Steuerzahler zusätzlich zu informiere
 Bearbeitung von E-Mail Anfragen abgelöst. Dies ermöglicht eine objektivere Verarbeitung der Anfragen, da weniger Missverständnisse
 entstehen. Zusätzlich wird die Arbeitszeit der Sachbearbeiter eingespart.
 
+\subsubsection{Entscheidungsunterstützung}
+
+Die meisten Datenanalysen bei den Steuerbehörden werden durchgeführt, um operative
+Entscheidungen zu unterstützen (vgl. \cite{OECD}, S.~28). Allerdings exisitieren auch
+Anwendungen, die strategische und politische Entscheidungen unterstützen. So werden
+Analysen zur Abschätzung der Steuerlücke (\emph{tax gap analysis};vgl. \cite{OECD}, S.~28) durchgeführt.
+Weiterhin wird versucht, den Einfluss von Änderungen in der Steuerpolitik vorherzusagen. Ein Beispiel
+dafür, wenn auch streng genommen keine Predictive Analytics Anwendung, ist das ökonomische Modell, das
+2012 von den chinesischen Behörden erstellt wurde, um die Effekte einer Steuerreform auf die Wirtschaft
+und die soziale Wohlfahrt abzuschätzen (vgl. \cite{OECD}, S.~29). Der entsprechende Bericht der
+Datenanalysten spielte eine wichtige Rolle in dem folgenden Reformprozess.
+
+\subsubsection{Probleme mit Daten}
+
+Der Bericht des FTA enthält auch eine Diskussion einiger Probleme, die im Zusammenhang mit Daten
+festgestellt wurden.
+
+So gibt es Bedenken, ob die gesammelten Daten, die anschließend für das Training der Modelle verwendet werden,
+repräsentativ sind (vgl. \cite{OECD}, S.~51).
+
 % TODO
-% 5) Policy evaluation (S. 28)
-
-% most analytics work carried out to support operational decision-making
-% but too for decision-making in relation to strategy and policy
-
-% tax gap analysis (Steuerlücke), forecasting the impact of changes in tax policy
-
-% (S. 29) 2012 model (macro-economic) for assessment the effects of tax-reform on economy and social-welfare
-% estimate economic and social consequences of tax reform, 
-% report of analytics team played a key role in the policy reform process
-
 % DATENPROBLEME
 
  % S. 51
@@ -119,9 +122,12 @@ Grafik aus \cite{Bode}, S.~2.
 \label{pic:Predictive_Policing}
 \end{figure}
 
-\subsection{Weitere Anwendungen}
+\subsection{Wahlen und Parteiarbeit}
 
-\subsection{Cambridge Analytica - Fallstudie}
+Ein bekannteres (und umstritteneres) Beispiel für die Anwendung von Datenanalysen
+für politische und wahlkampftaktische Ziele ist der Fall von Cambridge Analytica.
+
+\subsubsection{Cambridge Analytica - Fallstudie}
 
 \begin{figure}%[!hbt]
 \centering
