@@ -260,7 +260,7 @@ Die Auszahlungen sind dabei nicht unbedingt als Geld zu sehen, sondern stellen i
 wird davon ausgegangen, dass die Spieler das Spiel spielen, um ihren Nutzen zu optimieren.
 
 In den folgenden Abschnitten wird die Einführung evidenzbasierter Methoden wie Predictive Analytics oder Forecasting innerhalb einer
-Organisation modelliert. Die Spieler können dabei einzelne Entscheidungsträger oder Gruppen sein. Weiterhin werden zwei Spieler
+Organisation modelliert. Die Spieler können dabei einzelne Entscheidungsträger oder Gruppen sein. Weiterhin werden immer nur zwei Spieler
 betrachtet. 
 
 %Der Spieler, der die Einführung evidenzbasierter Methoden befürwortet, wird als der \glqq{progressive Spieler}\grqq{}
@@ -300,21 +300,33 @@ Kooperieren bedeutet für diesen Anwendungsfall, evidenzbasierte Methoden einzuf
 folgenden Text als \glqq{progressive}\grqq{} Strategie bezeichnet. Hintergehen bedeutet dagegen, die
 Einführung der neuen Methoden zu verhindern, was \glqq{traditionelle}\grqq{} Strategie genannt wird.
  
-Somit ist Deadlock das Modell für das pessimistische Szenario (siehe Abschnitt~\xcom). 
+Somit ist Deadlock das Modell für das pessimistische Szenario (aus Abschnitt~\xcom). 
 Hier wollen beide Teilnehmer traditionell spielen, da sie kein Interesse daran haben, evidenzbasierte Methoden
 in der Organisation einzuführen. Die Präferenzen für das Spielergebnis beider Spieler bei Deadlock sind:
+
 \begin{description}
 
 \item[(1) Der andere Spieler läuft ins offene Messer:] \hfill \\
-Der andere Spieler begreift die Situation nicht (spielt nicht rational) und versucht eine Einführung.
-Der Gegenspieler zieht nicht mit und der 
+Der andere Spieler begreift die Situation nicht (spielt nicht rational) und versucht die progressive Strategie (Einführung).
+Der Gegenspieler bleibt bei der traditionellen Strategie. Der progressive Spieler entblößt seine Schwächen und erhält die
+niedrigste Auszahlung, die möglich ist (0 Punkte), wohingegen der traditionelle Spieler von der Schwäche seines Rivalen
+profitieren kann und die maximale Auszahlung erhält (3 Punkte).
+ 
 \item[(2) Stillstand:] \hfill \\
+Beide Spieler sind sich der Situation bewusst und spielen die traditionelle Strategie.
+Beider erhalten eine mittlere Auszahlung (jeweils 2 Punkte) und es gibt keine Veränderung.
 
 \item[(3) Kooperation:] \hfill \\
+Beide Spieler sind irrational und kooperieren, indem beide die progressive Strategie spielen.
+Nachträglich müssen beide feststellen, dass die Kooperation sich nicht gelohnt hat, da jeder
+lediglich einen Punkt erhalten hat.
 
 \item[(4) Selbst ins offene Messer laufen:] \hfill \\
+Der Spieler selbst begreift die Situation nicht und endet, wie sein Rivale in Fall (1), mit dem
+schlechtesten Ergebnis, das möglich ist.
 
 \end{description}
+
 Die Strafen, die aus der Verwirklichung des
 pessimistischen Szenarios entstehen, können von den Vorteilen einer Einführung nicht kompensiert werden.
 Der Versuch einer Einführung wird bei einer solchen Konstellation scheitern, falls nicht externe Kräfte die
@@ -329,10 +341,13 @@ Jäger auf die Hasenjagd, dann erhalten sie einen moderaten Gewinn (2 Punkte). D
 ihn nicht erbeuten und gehen leer aus. Falls alle Jäger sich entscheiden Hasen zu jagen, dann gibt es weniger Beute für alle (nur jeweils
 1 Punkt).
 
-% temptation to defect when you think the other will defect (S. 220)
+Im Gegensatz zu Deadlock ist bei Stag Hunt die gemeinsame Kooperation ein Nash-Gleichgewicht. Die Möglichkeit den anderen Spieler zu
+hintergehen sollte nur in Betracht gezogen werden, wenn man glaubt, dass der andere Spieler einen hintergehen wird
+(vgl. \cite{Poundstone}, S.~220).
 
+Stag Hunt ist das Modell für das optimistische Szenario. Beide Spieler werden die progressive Strategie wählen, weil sie ihnen
+den meisten Nutzen bringt. Die Präferenzen für das Spielergebnis beider Spieler bei Stag Hunt sind:
 
-% stag hunt (S. 220)
 \begin{figure}%[!hbt]
 \centering
 \caption{Stag Hunt Auszahlungsmatrix}
@@ -340,8 +355,43 @@ ihn nicht erbeuten und gehen leer aus. Falls alle Jäger sich entscheiden Hasen 
 \label{pic:StagHunt}
 \end{figure}
 
+\begin{description}
+
+\item[(1) Progressive Revolution:] \hfill \\
+Beide Spieler wählen die progressive Strategie und erhalten die beste Auszahlung (3 Punkte).
+Keiner der Spieler hat einen Grund, seine Meinung nachträglich zu ändern.
+
+\item[(2) Verrat:] \hfill \\
+Ein Spieler spielt irrational und wählt die traditionelle Strategie, während der andere die
+progressive wählt. Der progressive Spieler wird entblößt und endet mit nichts (0 Punkte),
+während der traditionelle Spieler sich über die zweitbeste Auszahlung freuen kann (2 Punkte).
+
+Ein progressiver Spieler kann im Fall des Forecasting entblößt werden, indem er zum Beispiel
+allein seine Wertung (Brier Score) preisgibt. Aus Abbildung~\ref{pic:Tetlock_2} ist ersichtlich,
+dass selbst die besseren Forecaster weit davon entfernt sind, unfehlbar zu sein. Wenn die Liste
+seiner Fehlprognosen explizit veröffentlicht wird, wird der progressive Spieler im Gegensatz
+zu seinem traditionellen Kollegen entzaubert und verliert an Glaubwürdigkeit und Autorität.
+Im Bereich von Predictive Analytics kann ein ähnlicher Zustand eintreten, wenn beispielsweise
+ein Prognosemodell Ergebnisse liefert, die zeigen, dass früher getroffene Entscheidungen in
+ähnlichen Fällen falsch oder zumindest suboptimal waren.
+
+\item[(3) Ungewollter Stillstand:] \hfill \\
+Beide Spieler trauen einander nicht zu, dass der jeweils andere sich vernünftig verhalten wird. 
+Sie spielen beide traditionell und enden beide mit dem zweitschlechtesten Ergebnis (jeweils 1 Punkt).
+
+\item[(4) Opfer von Verrat werden:] \hfill \\
+Das Letzte, was man will, ist Opfer eines Verrates werden. Das Ergebnis ist zwar für beide Spieler
+nicht optimal. Man ist jedoch das Opfer in Fall (2) und erhält nichts, während der andere Spieler 
+relativ glimpflich davonkommt (2 Punkte). Aus diesem Grund lohnt es sich, traditionell zu spielen, wenn man
+dem anderen Spieler nicht traut.
+
+\end{description}
+
+Der Wille, in Zukunft bessere Entscheidungen zu treffen, kompensiert bei Stag Hunt die verschiedenen Ängste.
+Evidenzbasierte Methoden werden eingeführt und bleiben, falls sich die beteiligten Akteure vernünftig verhalten.
+
 \subsection{Gemischtes Szenario}
-% mixed
+
 \begin{figure}%[!hbt]
 \centering
 \caption{Gemischte 'Stag Hunt - Deadlock' Auszahlungsmatrix}
@@ -349,17 +399,58 @@ ihn nicht erbeuten und gehen leer aus. Falls alle Jäger sich entscheiden Hasen 
 \label{pic:Mixed}
 \end{figure}
 
+Es sind auch asymmetrische Spiele möglich, bei denen die Spieler jeweils verschiedene Spiele \glqq{sehen}\grqq{}
+(vgl. \cite{Poundstone}, S.~221-222). Hier wurde eine Mischung aus Stag Hunt und Deadlock betrachtet (siehe
+Abbildung~\ref{pic:Mixed}). Hierbei gelten für den Zeilenspieler die Auszahlungen von Stag Hunt, während für den
+Spaltenspieler die Auszahlungen von Deadlock gelten.
+
+Dieses asymmetrische Spiel unterscheidet sich nicht stark von Deadlock. Ein Nash-Gleichgewicht liegt vor, wenn
+beide Spieler traditionell spielen. Allerdings würde der Zeilenspieler gerne progressiv spielen, um für sich die
+größtmögliche Auszahlung zu erhalten (3 Punkte). Dies kann er aber nicht, da der Spaltenspieler (Deadlock) keinen Anreiz hat,
+zu kooperieren. Wechselt er von der progressiven zur traditionelle Strategie, während der Zeilenspieler bei der progressiven
+Strategie bleibt, so gewinnt der Spaltenspieler zwei Punkte mehr (3 anstatt nur von 1 Punkt).
+
+Liegt eine gemischte Situation vor, bei der ein Akteur optimistisch ist, während der andere Akteur evidenzbasierte Methoden
+ablehnt, so kann bei gleicher Kräfteverteilung ein zu Deadlock ähnlicher Zustand entstehen. Die vernünftige, jedoch auch frustrierende
+Strategie für den potentiell progressiven Spieler ist, bei der traditionellen Strategie zu bleiben. 
+
 \subsection{Kritische Würdigung der spieltheoretischen Betrachtung}
+
+Für kein Problem in der realen Welt kann eindeutig geklärt werden, welches Spiel dafür tatsächlich zutrifft
+(vgl. \cite{Poundstone}, S.~171). Hier wurden drei Spielvarianten vorgestellt, die plausibel erscheinen. Nichtsdestotrotz sollte
+der erste Punkt immer bedacht werden.
+
+Weiterhin liegt der größte Wert eines solchen spieltheoretischen Modells darin, die Situation klar darzustellen
+(vgl. \cite{Poundstone}, S.~253). Für Probleme in der realen Welt können andere Faktoren wichtiger sein, was in den
+konkreten Fällen berücksichtigt werden muss.
 
 \subsubsection{Alternative Spielvarianten}
 
-% TODO spielen implizit spieltheorie (s. Poundstone ?)
-
-% prisoners dilemma (S.237)
-% mixed
 \begin{figure}%[!hbt]
 \centering
 \caption{Gefangenendilemma Auszahlungsmatrix}
 \includegraphics[scale=0.8]{Grafiken/Prisoner_Ink.pdf} 
 \label{pic:Prisoner}
 \end{figure}
+
+Wieso ist die Situation nicht die eines Gefangenendilemmas?
+
+Abbildung~\ref{pic:Prisoner} zeigt die Auszahlungsmatrix eines Gefangenendilemmas\footnote{
+Das typische Narrativ des Spiels sind zwei Gefangene, denen angeboten wird, jeweils den anderen zu hintergehen,
+um die eigene Strafe abzumildern.
+} (vgl. \cite{Poundstone}, S.~237).
+Das Dilemma liegt darin, dass die Kooperation beider Spieler für jeden einzelnen von ihnen mehr Nutzen hat (jeweils 3 Punkte),
+als der gegenseitige Verrat (jeweils nur 1 Punkt). Allerdings ist gegenseitiger Verrat ein Nash-Gleichgewicht, die
+gemeinsame Kooperation allerdings nicht. Somit hinterlässt das \glqq{vernünftige}\grqq{} Spiel in diesem Fall ein negatives
+Gefühl bei beiden Spielern.
+
+Der Grund, wieso ein Gefangenendilemma für diesen Anwendungsfall nicht plausibel erschien, ist, dass wiederholte Spiele
+eines Gefangenendilemmas tendenziell zu einer dynamischen Situation führen. Die Spieler entscheiden sich situativ für
+Kooperation oder Verrat, je nachdem wie der andere Spieler sich zuvor verhalten hat\footnote{
+Siehe dazu den Wettbewerb von Robert Axelrod, der die beste Strategie für das Gefangenendilemma ermitteln sollte
+(vgl. \cite{Poundstone}, S.~236-246).
+}. Dies scheint hier nicht der Fall zu sein. Entweder man ist ein Fürsprecher evidenzbasierter Methoden\footnote{
+Wie beispielsweise der Superforecaster Nick Hare, der zuvor im britischen Verteidigungsministerium gearbeitet hat (vgl. \cite{Burton}).
+} oder nicht. Ein häufiges \glqq{Wechseln der Seiten}\grqq{} scheint nicht stattzufinden.
+
+
