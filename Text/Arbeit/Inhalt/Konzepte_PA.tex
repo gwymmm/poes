@@ -1016,21 +1016,26 @@ Zusätzlich werden für die Datenanalyse Kenntnisse aus verschiedenen
 Fachrichtungen benötigt. So sind einerseits anwendungsspezifische Kenntnisse
 zur Interpretation der Daten und der Ergebnisse wünschenswert. Andererseits
 werden zur Durchführung der Datenanalyse Kenntnisse in Mathematik, Statistik und
-Informatik benötigt. \\ \\
+Informatik benötigt.
+
 Aus diesem Grund besteht das Risiko, dass die Kosten einer Anwendung von
 Predictive Analytics den Nutzen übersteigen. Es ist auch möglich, dass das
 gleiche Ergebnis mit einer einfacheren, kostengünstigeren Methode erreicht
 werden kann. In diesem Fall würde die Anwendung eines aufwändigen Predictive
 Analytics Verfahrens wertvolle Ressourcen binden, die an anderer Stelle stärker
-gebraucht werden. \\ \\
+gebraucht werden. 
+
 Somit ist es wichtig, Betrachtungen zu Alternativkosten\footnote{
-kommt noch...
+Alternativkosten, auch als Opportunitätskosten bezeichnet, sind die Mehrkosten,
+die entstehen wenn eine Handlungsoption einer anderen vorgezogen
+wird. % siehe 'Schlüsselideen der Wirtschaftswissenschaft'
 }
-in die Planung von \emph{predictive analytics} Anwendungen einzubeziehen. 
+in die Planung von Predictive Analytics Anwendungen einzubeziehen. 
 
 \subsection{Risiken bei der Datenerhebung}
 
 Trainingsdaten spiegeln nicht (mehr) das Verhalten des Systems wider.
+% corona beispiel
 
 \subsection{Risiken bei der Interpretation der Daten}
 
@@ -1038,8 +1043,7 @@ Trainingsdaten spiegeln nicht (mehr) das Verhalten des Systems wider.
 
 Wenn die Ergebnisse der Datenanalyse zur Entscheidungsunterstützung herangezogen
 werden, beeinflussen sie das Verhalten der Entscheidungsträger. Dies kann zur
-Entstehung problematischer psychosozialer Effekte führen. Zwei Beispiele hierfür
-werden nun erläutert.
+Entstehung problematischer Effekte führen.
 
 \subsubsection{Prognose verändert das Verhalten des Systems }
 
@@ -1047,7 +1051,9 @@ Die Ergebnisse von Vorhersagen werden von Menschen interpretiert,
 die daraufhin ihr Verhalten anpassen. Dies kann zu Rückkopplungseffekten führen,
 die von negativen Auswirkungen im Sinne einer selbsterfüllenden Prophezeiung
 \glqq{Selffulfilling} Prophecy\grqq{} begleitet werden können
-(vgl. \cite{Crossman}). Bestimmte Prognosen können beispielsweise von einer 
+(vgl. \cite{Crossman}). 
+% TODO beispiel uniscore (WMD)
+Bestimmte Prognosen können beispielsweise von einer 
 Interessengruppe als Bestätigung ihrer Agenda interpretiert werden, wobei
 anders lautende Vorhersagen ignoriert werden. Dadurch bestärkt, setzt die Gruppe
 ihre gewünschten Handlungsoptionen um. Dies ruft den vorhergesagten Effekt
@@ -1063,27 +1069,65 @@ in der Zukunft nicht genügend Handlungsoptionen zur Verfügung stehen.
 
 \section{Kritische Würdigung von Forecasting und Predictive Analytics}
 
-\cite{Iffert}
-% TODO
+Sowohl Predictive Analytics als auch Forecasting sind evidenzbasierte Methoden,
+die die Möglichkeit bieten, das menschliche Urteilsvermögen zu verbessern. Dies
+kann dabei helfen, die Qualität von Entscheidungen zu verbessern.
 
-% Forecasting eher für strategische und taktische Entscheidungen
-% auf operativer Ebene mehr Erfahrungswerte
+Dabei eignet sich Forecasting besser für strategische und taktische Entscheidungen,
+da auf operativer Ebene mehr Erfahrungswerte vorliegen, was den Nutzen von
+Predictive Analytics ermöglicht. Forecasting hat allerdings den Vorteil, dass
+keine strukturierten Daten gesammelt werden müssen. Forecaster analysieren unstrukturierte
+Dokumente und erstellen sich auf dieser Basis einfache Modelle (siehe S.~\xcom).
+Dies ist insbesondere dann die einzige Alternative, wenn keine oder nur sehr wenige
+Daten vorliegen.
 
-% Forecasting für kleinere Gruppen (Unternehmen) bezahlbar, mit Taschenrechner machbar
-% -> leichtere Methode 
+Forecasting kann prinizipiell von einer Person mit einem Taschenrechner praktiziert
+werden. Die Methoden sind leichter zu verstehen und es werden nur wenige Formeln benötigt.
+Predictive Analytics wird hingegen typischerweise von ausgebildeten Spezialisten in Fächern wie
+Mathematik, Statistik oder Informatik praktiziert (\cite{Gluchowski}, S.~107).
 
-% PA teuer (siehe Iffert, S. 22)
-% Preise für Software-Lizenzen für Predictive Analytics so-
-% wie die Kosten für Beratungsleistungen der Anbieter und Ser-
-% vice-Dienstleister für viele Unternehmen schwer rechnen
-
-% subjektive Wsk füllen Entscheidungsbaum (S. 319) und Entscheidungsmatrix
-
-% Große Zahlen erforderlich
-
-% Meisten nicht genügend Daten für PA
-
-% Forecasting leichter zu verstehen, für jemanden der kein Studium in Mathe etc hat.
-
+Predictive Analytics ist teuer. Es benötigt teures Personal, Anwendungen (vgl. \cite{Iffert}, S.~22) und eine
+Dateninfrastruktur. Dafür kann Predictive Analytics bei der
+Genauigkeit der Vorhersagen die besten menschlichen Forecaster schlagen (siehe Abbildung~\xcom in Abschnitt~\xcom).
 % short term predictions are possible and reasonably accurate (s. unclouded vision)
 % like weather forecasts
+
+% TODO
+
+% Reaktionszeit Forecaster: Tage bis Wochen, PA: Monate bis Jahre.
+
+Der Nutzen erkenntnisbasierter Methoden ist universell. Somit könnten viele profitieren,
+falls diese Methoden sich weit verbreiten würden. Allerdings werden nur wenige Personen
+(oder Organisationen) den gesamten Weg bis zur Implementierung von Predictive Analytics
+Anwendungen gehen. Aus diesem Grund werden im folgenden Text vier Punkte vorgeschlagen,
+die helfen können bessere Urteile zu fällen und bessere Entscheidungen zu treffen. Mit jedem
+Punkt erhöht sich der Schwierigkeitsgrad, allerdings verbessern sich auch die Ergebnisse.
+
+\begin{description}
+
+\item[(1) Kenntnis der Probleme menschlicher Urteile:] \hfill \\
+Man sollte wissen, dass Menschen, insbesondere was Prognosen betrifft, oft zu Fehlurteilen verführt werden.
+Manchmal ist es sogar besser, eine Münze zu werfen, als sich auf die Vorhersagen von Experten zu verlassen
+(siehe Abschnitt~\xcom).
+
+\item[(2) Befolgen narrativer Regeln:] \hfill \\
+Man sollte sein Bewusstsein dafür schärfen, dass es kognitive Verzerrungen gibt, die das menschliche Urteilsvermögen
+schwächen. Folglich sollte versucht werden, kognitive Verzerrungen zu meiden (siehe Anhang~\xcom). Es können weitere
+narrative Regeln befolgt werden, mit denen das Urteilsvermögen verbessert werden kann (siehe Abschnitt~\xcom und % Grundprinzipien des Forecasting
+Anhang~\xcom).
+
+\item[(3) Forecasting praktizieren:] \hfill \\
+Forecasting zu praktizieren, bedeutet subjektive Wahrscheinlichkeiten in Zahlen auszudrücken
+und mit Hilfe des Brier Score die Genauigkeit der Vorhersagen prüfen (siehe Anhang~\xcom). Ferner muss
+das Belief Updating nach der Formel von Bayes und die Einhaltung der weiteren Formeln aus der Wahrscheinlichkeitstheorie
+quantitativ überprüft werden (siehe Anhang~\xcom).
+
+\item[(4) Predictive Analytics anwenden:] \hfill \\ 
+Dies ist die anspruchsvollste Methode, die am meisten Ressourcen verbraucht.
+Aus diesem Grund sollte genau überlegt werden, ob und für welche Zwecke sie
+zum Einsatz kommt.
+
+\end{description}
+
+% TODO
+% subjektive Wsk füllen Entscheidungsbaum (S. 319) und Entscheidungsmatrix
