@@ -297,8 +297,6 @@ Einschätzungen dazu, wie effektiv das christliche Mikrotargeting funktioniert, 
 
 \section{Gesundheit}
 
-
-
 Schon seit dem letzten Jahrhundert können statistische Methoden von Wissenschaftlern
 genutzt werden, um Gefahren für die öffentliche Gesundheit zu untersuchen (vgl. \cite{Proctor}, S.~216).
 
@@ -309,37 +307,73 @@ starke Indizien, wodurch der Fortschritt manchmal blockiert wird. Dies war bei d
 von Asbest der Fall (vgl. \cite{Proctor}, S.~112-113). Im Jahr 1938 lag die Zahl der bekannten Krebserkankungen im Zusammenhang mit
 Asbest weltweit bei 6. Somit konnten Epidemiologen behaupten, dass die Fallzahl nicht reiche, um einen signifikanten Zusammenhang
 zwischen Asbest und Lungenkrebs herzustellen. Die Beweiskraft einer klinischen Studie, die den Zusammenhang hergestellt hat, indem sie
-zwei Einzelfälle untersucht hat, galt als zu schwach (vgl. \cite{Proctor}, S.~113).
+zwei Einzelfälle untersucht hat, galt als zu schwach (vgl. \cite{Proctor}, S.~113). Somit wurde die krebserregende Wirkung von Asbest
+in Großbritannien und den Vereinigten Staaten nicht in den frühen 1940er Jahren sondern mehr als 20 Jahre danach anerkannt.
 
-
-% TODO siehe Proctor
-
-Diese Haltung war überraschend genug, um eine Nachfrage des Journalisten
-auszulösen.
+Die Geschichte scheint sich während der COVID-19 Pandemie wiederholt zu haben. Es wurde damit gehadert, Ergebnisse von Studien anzuerkennen,
+die behaupteten, dass einfache Masken das Infektionsrisiko senken, weil sie nicht die strengen Kriterien der evidenzbasierten Medizin
+entsprachen (vgl. \cite{Jotten}). Somit wurde das Tragen von Masken anfangs nicht vom Robert-Koch-Insitut empfohlen.
 
 \subsection{Datenschutzbedenken}
+% TODO Datenquellen
 
 Das Thema Datenschutz bestimmt in Deutschland die Diskussion von Datenanalysen
-im Gesundheitssektor.
+im Gesundheitssektor (vgl. \cite{Jorzig}, S.~138-139 und \cite{Weichert}, S.~835-836 und \cite{Moebus}, S.~903). 
+Insbesondere der Grundsatz der Datensparsamkeit, wozu Datenvermeidung, Datenlöschung und das Prinzip der Nichtverkettbarkeit gehören,
+steht im Gegensatz zu den Bedürfnissen von des Big Data Konzepts, das durch Anhäufung und Verknüpfung vieler Daten Erkenntnisgewinne
+sucht (vgl. \cite{Weichert}, S.~836). Aus diesem Grund müssen Gesundheitsdaten entweder annonymisiert oder pseudonymisiert werden:
 
-\subsection{Befundbilder - Fallstudie}
+\begin{description}
+
+\item[Anonymisierung:] \hfill \\
+Bei der Anonymisierung der Daten darf die Reidentifizierung nicht mehr erfolgen können.
+Somit müssen bei Patientendaten nicht nur die Identifikationsmerkmale der Patienten entfernt werden, sondern
+auch die Identifikatoren sämtlicher Dienstleister, die eine Zuordnung des Patienten vornehmen könnten,
+entfernt werden (vgl. \cite{Weichert}, S.~836). Zu solchen Dienstleistern zählen beipielsweise Ärzte oder Apotheker.
+Zusätzlich muss für eine vollständige Anonymisierung eine Aggregierung der Daten erfolgen, wobei z. B. Individualdatensätze
+zu Gruppendatensätzen zusammengefasst werden, was allerdings die Datenqualität senkt (vgl. \cite{Weichert}, S.~836).
+
+\item[Pseudonymisierung:] \hfill \\
+Eine weitere Möglichkeit, die Daten datenschutzrechtlich nutzbar zu machen, ist die Pseudonymisierung.
+Dabei werden die Identifikationsmerkmale von Patienten durch Kennzeichen ersetzt, was die Wiederzuordnung der Daten
+erschweren soll (vgl. \cite{Weichert}, S.~836). Die Auswertung der pseudonymisierten Daten muss dann in einer geschützen
+Umgebung erfolgen, die die Wiederzuordnung der Daten ausschließen soll (vgl. \cite{Weichert}, S.~837).
+Dieser Ansatz wird auch als \emph{Differential Privacy} bezeichnet (vgl. \cite{Jorzig}, S.~140-141).
+
+\end{description}
+
+Hierbei sei jedoch erwähnt, dass die Datenschutzgrundverordnung, Datenanalysen zu wissenschaftlichen Zwecken erlaubt
+(vgl. \cite{Jorzig}, S.~139). Dies wird als Forschungsprivileg bezeichnet. Allerdings sind müssen die oben genannten
+strengen Einschränkungen beachtet werden.
+
+\subsection{}
+
+
+
+
+% Computertomographie 111-112
+Buch: \cite{Jorzig}
+
+Dud: \cite{Weichert}
+
+
+
+% TODO Missbrauch -> Proctor
+
 
 
 \subsection{Seuchenerkennung mit AI}
 % TODO
 % Google Flu Trends (vorerst gescheitert)
 
-% Kohortenstudien: nicht persönlich (s. Watson, Abschnitt Cohort treatment),
-%   aber Sicherheitsbedenken bleiben (Anonymisierung nicht möglich, Sicherheits
-%   risiken ...)
-
-\subsection{Flint Trinkwasserskandal - Fallstudie}
+% TODO
+%\subsection{Flint Trinkwasserskandal - Fallstudie}
 
 \section{Bildung}
 Abschließend sollen noch die Anwendungsmöglichkeiten von Predictive Analytics
 im Bildungssektor kurz skizziert werden.
 
-Eine weitere konkrete Anwendung ist E$^2$Coach, ein System zur Studienunterstützung.
+Eine weitere Anwendung ist E$^2$Coach, ein System zur Studienunterstützung.
 
 \subsection{University of Michigan E$^2$Coach - Fallstudie}
 
