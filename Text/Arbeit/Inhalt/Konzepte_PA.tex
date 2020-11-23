@@ -3,13 +3,13 @@
 
 \section{Begriffsdefinition}
 
-Das primäre Ziel von \emph{\gls{glos:Predictive_Analytics}} ist das Treffen von
+Das primäre Ziel von Predictive Analytics ist das Treffen von
 Vorhersagen.
 Hierbei sind nicht nur Prognosen für die Zukunft gemeint, sondern
 auch Einschätzungen und Beurteilungen unklarer Situationen, bei denen die für
 die Entscheidungsfindung wichtigen Daten fehlen (vgl. \cite{Dinov}, S.~9~f.).
-Hier sind einige Anwendungsbeispiele, die verdeutlichen, wie \emph{predictive
-analytics} eingesetzt werden kann (vgl. \cite{Schmitz}):
+Hier sind einige Anwendungsbeispiele, die verdeutlichen, wie Predictive
+Analytics eingesetzt werden kann (vgl. \cite{Schmitz}):
 
 \begin{description}
 
@@ -70,7 +70,7 @@ unterschieden (vgl. \cite{Martin}):
 
 \item[Descriptive Analytics:] \hfill \\
 Damit wird der Prozess der Beschreibung von Daten bezeichnet. Dies soll ein
-Verständnis für die Daten und ihre Zusammenhänge liefern (siehe Abschnitt\xcom).
+Verständnis für die Daten und ihre Zusammenhänge liefern.
 Descriptive Analytics kann als eigenständiger Prozess durchgeführt werden, oder
 als Vorstufe für weitere Analysen dienen.
 
@@ -116,9 +116,7 @@ Bei Big Data werden die großen Dimensionen der analysierten Daten betont, wobei
 drei charakteristische Eigenschaften im Vordergrund stehen, nämlich Volume, Velocity 
 und Variety (als \emph{3 Vs} abgekürzt; vgl. \cite{McCarthy}, S.~7-8). Dabei bezeichnet Volume
 besonders große Mengen an Daten, Velocity die hohe Geschwindigkeit der Datenverarbeitung
-und Variety die große Vielfalt der Datenquellen\footnote{
-Die Vielfalt der Daten wird in Abschnitt~\xcom noch genauer erläutert.
-}. 
+und Variety die große Vielfalt der Datenquellen.
 
 Business Analytics wird als Oberbegriff für Prozesse definiert, die
 Analysemodelle im geschäftlichen Kontext erstellen (vgl. \cite{McCarthy}, S.~6)). 
@@ -141,7 +139,7 @@ die Erstellung von Prognosen durch menschliche Beobachter. Im nächsten Abschnit
 wird diese Form von Vorhersagen genauer beschrieben und anschließend mit
 Predictive Analytics verglichen.  
 
-\section{Probleme menschlicher Urteile}
+\section{Probleme menschlicher Urteile} \label{Probs}
 
 Die meisten Urteile und Prognosen werden von Menschen gefällt, ohne statistische
 Modelle und Vorhersagealgorithmen zu nutzen. Grundsätzlich fällt jeder Mensch
@@ -174,15 +172,17 @@ Einsichten liefern (vgl. \cite{Tetlock}, S.~8).
 \subsection{Tetlocks Forecasting Exercises}
 
 Für die empirischen Korresponenztests führten Tetlock und sein Team eine Reihe
-von \emph{forecasting exercises} mit Experten durch. Diese Expertenbefragungen
+von Forecasting Exercises mit Experten durch. Diese Expertenbefragungen
 wurden bereits in Teil~\ref{part:Schw_Vorhersagen} thematisiert und sollen nun
-detaillierter erläutert werden. \\ \\
+detaillierter erläutert werden.
+
 Insgesamt wurden die Urteile von 284 Experten analysiert. Diese hatten im
 Durchschnitt 12 Jahre Berufserfahrung und die Hälfte (52~\%) besaß einen
 Doktortitel. Etwa 61~\% der Teilnehmer wurden mindestens einmal von den Medien
 interviewt und 21~\% mehr als zehnmal. Etwa 80~\% der Experten waren mindestens
 einmal als Berater für internationale politische oder wirtschaftliche
-Angelegenheiten tätig. (vgl. \cite{Tetlock}, S.~239-240)\\ \\
+Angelegenheiten tätig. (vgl. \cite{Tetlock}, S.~239-240)
+
 Die Befragten sollten Prognosen erstellen, indem sie auf Fragen zu zukünftigen
 Entwicklungen in Politik und Wirtschaft antworteten. Dabei handelte es sich um
 feste Fragestellungen, die von den Forschern zuvor ausgewählt wurden. Zu den in
@@ -190,10 +190,12 @@ den Fragen formulierten Szenarien sollten die Befragten subjektive
 Wahrscheinlichkeiten\footnote{
 Eine subjektive Wahrscheinlichkeit wird als Grad des Vertrauens einer Person in
 den Eintritt eines Ereignisses interpretiert (vgl. \cite{Eisenfuehr}, S.~152).}
-angeben. (vgl. \cite{Tetlock}, S.~245)\\ \\
+angeben. (vgl. \cite{Tetlock}, S.~245)
+
 Die Sammlung der Expertenprognosen begann 1987 und erstreckte sich über mehr als
 zehn Jahre. Dabei wurden Fragen über die zukünftige Entwicklung von etwa 60
-Nationen gestellt. (vgl. \cite{Tetlock}, S.~242)\\ \\
+Nationen gestellt. (vgl. \cite{Tetlock}, S.~242)
+
 Weiterhin wurden die Fragen in folgende Themenbereiche untergliedert
 (vgl. \cite{Tetlock}, S.~246-248):
 \begin{description}
@@ -205,9 +207,9 @@ Weiterhin wurden die Fragen in folgende Themenbereiche untergliedert
 Insgesamt wurden 82 361 subjektive Wahrscheinlichkeiten eingeholt, die als
 Antwort auf circa 27 450 Fragen gegeben wurden. (vgl. \cite{Tetlock}, S.~246)
 
-\subsection{Der Probability Score als Maß der Genauigkeit von Vorhersagen}
+\subsection{Der Brier Score als Maß der Genauigkeit von Vorhersagen}
 
-Die Fragen der \emph{forecasting exercises} wurden so formuliert, dass bei allen
+Die Fragen der Forecasting Exercises wurden so formuliert, dass bei allen
 nach einer gewissen Zeitspanne festgestellt werden konnte, ob und welches der
 möglichen Szenarien\footnote{
 Die möglichen Szenarien müssen dabei logisch vollständig sein und sich
@@ -215,11 +217,10 @@ gegenseitig ausschließen (\emph{logically exhaustive and mutually exclusive};
 vgl. \cite{Tetlock}, S.~245).
 } tatsächlich eingetreten ist. Um dann die, auf Seite~\pageref{misc:Emp_Korr}
 erwähnte, Richtigkeit der Vorhersagen zu überprüfen, müssen die subjektiven
-Wahrscheinlichkeiten mit der eingetretenen Wirklichkeit verglichen werden. \\ \\
+Wahrscheinlichkeiten mit der eingetretenen Wirklichkeit verglichen werden. 
+
 Das Werkzeug zur Durchführung dieses Vergleichs und zur Bewertung der
-Genauigkeit der erstellten Prognosen ist der \emph{probability score}\footnote{
-  Auch \emph{Brier score} genannt (siehe \xcom)
-} (vgl. \cite{Tetlock}, S.~46). Dabei werden die subjektiven
+Genauigkeit der erstellten Prognosen ist der Brier Score (vgl. \cite{Tetlock}, S.~46). Dabei werden die subjektiven
 Wahrscheinlichkeiten (die Vorhersagen) mit den tatsächlich eingetretenen
 Ereignissen (der Wirklichkeit) verrechnet\footnote{
   Es wird 0 eingesetzt, falls ein Szenario nicht eingetreten ist und 1 falls es
@@ -227,13 +228,13 @@ Ereignissen (der Wirklichkeit) verrechnet\footnote{
 }. Das Ergebnis ist eine Zahl zwischen 0 und 1, wobei 0 die beste und 1 die
 schlechteste Wertung darstellt. Wenn ein Prognostiker jedes Ereignis, das
 schließlich eintritt, als unmöglich eingestuft hat und jedes Ereignis, welches
-ausbleibt, als sicher, dann endet er beim schlechtesten \emph{probability
-score} von 1. Die beste Wertung von 0 kann hingegen nur erreicht werden, indem
+ausbleibt, als sicher, dann endet er beim schlechtesten Brier Score von 1. Die beste Wertung von 0 kann hingegen nur erreicht werden, indem
 man, zumindest was die gestellten Fragen betrifft, hellseherische Fähigkeiten
 beweist und jedes eingetretene Ereignis mit einer subjektiven Wahrscheinlichkeit
 von 1 bewertet und jedem ausgebliebenen Ereignis eine 0 zugewiesen hat (vgl.
-\cite{Tetlock}, S.~47). \\ \\
-Zudem lässt sich der \emph{probability score} in zwei Komponenten zerlegen, die
+\cite{Tetlock}, S.~47).
+
+Zudem lässt sich der Brier Score in zwei Komponenten zerlegen, die
 von den Fähigkeiten des Prognostikers abhängen: Kalibrierung
 (\emph{calibration}) und Diskriminierung (\emph{discrimination})\footnote{
   Die Bedeutung dieser beiden Komponenten wurde auch im einleitenden
@@ -244,30 +245,35 @@ Ereignisse in Wahrscheinlichkeitskategorien einordnen kann\footnote{
   10~\% der Ereignisse aus der 0.1 Kategorie treten ein, 20~\% der Ereignisse
   aus der 0.2 Kategorie usw. 
 }. Der Wertebereich der Kalibrierung liegt zwischen 0 und 1, wobei 0 den besten
-und 1 den schlechtesten Wert darstellt (vgl. \cite{Tetlock}, S.~275). \\ \\
+und 1 den schlechtesten Wert darstellt (vgl. \cite{Tetlock}, S.~275). 
+
 Die Diskriminierung misst wie gut sich die subjektiven Wahrscheinlichkeiten des 
 Prognostikers von der relativen Häufigkeit (\emph{base-rate}) aller betrachteten
 Ereignisse abheben. Der Wertebereich der Diskriminierung reicht von 0 bis zu
 einem Wert, der die Unsicherheit der Umgebung, für die die Prognosen erstellt
 werden, widerspiegelt (vgl. \cite{Tetlock}, S.~278). Im Falle der
 Diskriminierung ist 0 der schlechteste Wert. Im besten Fall ist der Wert der
-Diskriminierung gleich dem Wert der Unsicherheit. \\ \\
-Die Kernidee bei der Anwendung des \emph{probability score} ist das Nutzen
+Diskriminierung gleich dem Wert der Unsicherheit. 
+
+Die Kernidee bei der Anwendung des Brier Score ist das Nutzen
 des Gesetzes der großen Zahlen (\emph{law of large numbers})
 (vgl. \cite{Tetlock}, S.~12-13). Einzelne Urteile mit subjektiven
 Wahrscheinlichkeiten, die nicht 0 oder 1 sind, können nicht widerlegt werden,
 da seltene Ereignisse eintreten können und häufige Ereignisse ausbleiben können.
 Betrachtet man hingegen eine große Zahl an Vorhersagen, dann kann mit Hilfe
-des \emph{probability score} die Genauigkeit des Prognostiker aus der Gesamtheit
-seiner Vorhersagen eingeschätzt werden. \\ \\
-Der Anhang~\xcom liefert die Formeln für den \emph{probability score}, wobei
-dessen Berechnung zusätzlich anhand von Beispielen erläutert wird. \\ \\
+des Brier Score die Genauigkeit des Prognostiker aus der Gesamtheit
+seiner Vorhersagen eingeschätzt werden. 
+
+Der Anhang~\ref{Anhang_Brier} liefert die Formeln für den Brier Score, wobei
+dessen Berechnung zusätzlich anhand von Beispielen erläutert wird. 
+
 
 \subsection{Detaillierte Ergebnisse der Forecasting Exercises}
 
 Die Analyse der Ergebnisse der Forecasting Exercises konnte Aufschluss
 darüber geben, welche Attribute der Teilnehmer einen Einfluss auf die
-Genauigkeit ihrer Vorhersagen haben und welche nicht. \\ \\
+Genauigkeit ihrer Vorhersagen haben und welche nicht. 
+
 Zu den Attributen, die \emph{keinen} Einfluss auf die Fähigkeiten der Experten
 hatten, gehörten überraschenderweise (vgl. \cite{Tetlock}, S.~68):
 
@@ -293,7 +299,8 @@ anderen Teilnehmern in Bezug auf die Genauigkeit ihrer Prognosen hatten.
 
 \end{description}
 Zudem hat Medienberühmtheit einen starken negativen Effekt auf die Fähigkeiten
-der Prognostiker (vgl. \cite{Tetlock}, S.~68). \\ \\
+der Prognostiker (vgl. \cite{Tetlock}, S.~68). 
+
 Ein entscheidender Faktor, der gute von schlechte Prognostikern unterscheidet,
 ist nicht ihr Weltbild, sondern ihre Art zu Denken (\emph{cognitive style})
 (vgl. \cite{Tetlock}, S.~72 und S.~75). Tetlock unterteilt die Experten in
@@ -301,12 +308,12 @@ Abhängigkeit von ihrer Art zu Denken in Füchse (\emph{foxes}) und Igel
 (\emph{hedgehogs})\footnote{
 In Anlehnung an das Essay \emph{The Hedgehog and the Fox} des Philosophen Isaiah
 Berlin.
-}. Genauer ausgedrückt, ist das wichtigste Maß für den \emph{cognitive style}
+}. Genauer ausgedrückt, ist das wichtigste Maß für den Kognitive Style
 eines Experten ein Wert auf einer kontinuierlichen Skala (vgl. \cite{Tetlock},
-S.~87). An einem Ende der Skala befinden sich die \emph{foxes}, an dem anderen
-die \emph{hedgehogs}. Dazwischen befinden sich die hybriden Ausprägungen
-\emph{fox-hog} (eher \emph{fox} als \emph{hedgehog}) und \emph{hedge-fox} (eher
-\emph{hedgehog} als \emph{fox}). Bestimmt wird der Wert als Ergebnis eines
+S.~87). An einem Ende der Skala befinden sich die Foxes, an dem anderen
+die Hedgehogs. Dazwischen befinden sich die hybriden Ausprägungen
+Fox-Hog (eher Fox als Hedgehog) und Hedge-Fox (eher
+Hedgehog als Fox). Bestimmt wird der Wert als Ergebnis eines
 Fragebogens (siehe \cite{Tetlock}, S.~241). Dabei ist der Punkt, der am
 stärksten in die Gewichtung einfließt, die Frage nach der Selbstidentifikation
 (vgl. \cite{Tetlock}, S.~74 Tabelle~3.3)\footnote{
@@ -314,8 +321,8 @@ Hierbei werden Gewichtungen angegeben, mit denen die einzelnen Fragen in
 die Bewertung einfließen. Je höher der Betrag des Gewichts, desto stärkeren
 Einfluss hat die Frage auf das Ergebnis. Das Vorzeichen des Gewichts gibt an,
 in welche Richtung die jeweilige Frage das Ergebnis verschiebt. Ein negatives
-Vorzeichen verschiebt den Wert auf der Skala in \emph{hedgehog} Richtung, ein
-positives Vorzeichen hingegen in \emph{fox} Richtung.   
+Vorzeichen verschiebt den Wert auf der Skala in Hedgehog Richtung, ein
+positives Vorzeichen hingegen in Fox Richtung.   
 }. Diese Frage lautet übersetzt (siehe \cite{Tetlock}, S.~241):
 \begin{quotation}
 %\begin{spacing}{1.2}
@@ -332,44 +339,46 @@ finden. Ich positioniere mich zum Igel- oder Fuchsende dieser Skala.
 % scale
 %\end{spacing}
 \end{quotation}
-Abbildung~\ref{pic:Hedgehog_Fox} erläutert die Skala des \emph{cognitive style}.
-\\ \\
+Abbildung~\ref{pic:Hedgehog_Fox} erläutert die Skala des Cognitive Style.
+
 \begin{figure}%[!hbt]
 \centering
-\caption{Skala des \emph{cognitive style}%, mit den Charakterisierungen
+\caption{Skala des Cognitive Style}%, mit den Charakterisierungen
 %  \emph{Fox} und \emph{Hedgehog} als Gegenpole}
-}
 \includegraphics[scale=1]{Grafiken/Hedgehog_Fox.pdf} 
 \label{pic:Hedgehog_Fox}
 \end{figure}
-\emph{Hedgehogs} haben einige wenige Glaubenssätze, die sie nutzen um
+Hedgehogs haben einige wenige Glaubenssätze, die sie nutzen um
 Erklärungen für die unterschiedlichsten Dinge abzuleiten (vgl. \cite{Tetlock},
 S.~73). Sie bemühen sich, Fakten in Einklang mit ihren präferierten Grundsätzen
 zu bringen und fällen ihre Urteile, indem sie Schlussfolgerungen aus einer
-kleinen Menge an Überzeugungen ziehen. Zudem tendieren \emph{hedgehogs}
+kleinen Menge an Überzeugungen ziehen. Zudem tendieren Hedgehogs
 zu intellektuellem \glqq{Geiz}\grqq (\emph{parsimony}) (vgl.\cite{Tetlock}, 
 S.~20). Dies bedeutet, dass sie nur ungerne neue Grundsätze
 aufstellen und stattdessen versuchen, mit ihren wenigen, schon vorhandenen
 Glaubenssätzen weitreichende Erklärungen für eine große Bandbreite an Phänomenen
-zu erhalten. Zudem zeichnen sich \emph{hedgehogs} durch eine starke
+zu erhalten. Zudem zeichnen sich Hedgehogs durch eine starke
 Selbstsicherheit in Bezug auf die Genauigkeit ihrer Prognosen und Urteile aus
-(vgl. \cite{Tetlock}, S.~73). \\ \\
-\emph{Foxes} hingegen sind skeptisch bezüglich starker Glaubenssätze, die alles
+(vgl. \cite{Tetlock}, S.~73). 
+
+Foxes hingegen sind skeptisch bezüglich starker Glaubenssätze, die alles
 umspannende Erklärungen liefern sollen. Stattdessen vertrauen sie auf viele
 Grundsätze mit begrenzter Aussagekraft (\emph{tricks of their trade}) (vgl.
-\cite{Tetlock}, S.~73). Weiterhin ist die Urteilsfindung bei \emph{foxes} keine
+\cite{Tetlock}, S.~73). Weiterhin ist die Urteilsfindung bei Foxes keine
 reine Übung in deduktiver Logik (vgl. \cite{Tetlock}, S.~73), sondern benötigt
-die Integration diverser Informationsquellen. \emph{Foxes} sind eher zaghaft,
+die Integration diverser Informationsquellen. Foxes sind eher zaghaft,
 wenn es darum geht, ihre eigenen Fähigkeiten als Prognostiker zu loben (vgl.
-\cite{Tetlock}, S.~73-74). \\ \\
+\cite{Tetlock}, S.~73-74). 
+
 \begin{figure}%[!hbt]
 \centering
-\caption{Leistungsunterschiede bei den \emph{forecasting exercises} in
-  Abhängigkeit vom \emph{cognitive style} der Teilnehmer}
+\caption{Leistungsunterschiede bei den Forecasting Exercises in
+  Abhängigkeit vom Cognitive Style der Teilnehmer}
 \includegraphics[scale=0.88]{Grafiken/Tetlock_2_Ink.pdf} 
 \label{pic:Tetlock_2}
 \end{figure}
-Ein Ergebnis von Tetlocks \emph{forecasting exercises} wurde bereits in
+
+Ein Ergebnis von Tetlocks Forecasting Exercises wurde bereits in
 Abbildung~\ref{pic:Tetlock_1} aus Teil~\ref{part:Schw_Vorhersagen} erläutert.
 Dort war ersichtlich, dass die Experten im Vergleich zu statistischen
 Algorithmen schlecht abschnitten. 
@@ -378,10 +387,10 @@ Abbildung~\ref{pic:Tetlock_2} zeigt nun ein differenzierteres Bild von der
 Leistung der Experten\footnote{
 Graphik basierend auf dem Original aus \cite{Tetlock} auf S.~77.
 }. Abgebildet wird die Streuung der Leistung der Prognostiker in Abhängigkeit
-von ihrem jeweiligen \emph{cognitive style}\footnote{
+von ihrem jeweiligen Cognitive Style\footnote{
 Wie in Abbildung~\ref{pic:Hedgehog_Fox} wird eine Unterscheidung zwischen
-\emph{foxes}, \emph{fox-hogs}, \emph{hedge-foxes} und \emph{hedgehogs} gemacht.
-}. Abbildung~\ref{pic:Tetlock_2} ist analog zu Abbildung~\ref{pic:Tetlock_1}.
+Foxes}, Fox-Hogs, Hedge-Foxes und Hedgehogs gemacht.
+Abbildung~\ref{pic:Tetlock_2} ist analog zu Abbildung~\ref{pic:Tetlock_1}.
 Insbesondere sind wieder Kalibrierung und Diskriminierung\footnote{
 Kalibrierung und Diskriminierung messen die Qualität der Vorhersagen eines
 menschlichen Prognostikers oder eines (statistischen) Prognosemodells
@@ -393,25 +402,25 @@ die Auftrittswahrscheinlichkeit einzelner Ereignisse von der Basisrate (
 \emph{base rate}) aller Ereignisse unterscheiden kann. 
 } in derselben Weise auf den Achsen abgebildet. Je weiter rechts-oben die
 Wertung eines Prognostikers liegt, desto besser hat er bei den
-\emph{forecasting exercises} abgeschnitten.
+Forecasting Exercises abgeschnitten.
 
 In Abbildung~\ref{pic:Tetlock_2} wird deutlich, dass die Urteilskraft der
 Expertengruppen im Hinblick auf Kalibrierung und Diskriminierung variiert. Die
-\emph{hedgehogs} erzielen die schlechtesten Wertungen unter den Experten,
-während \emph{foxes} und \emph{fox-hogs} die besten Wertungen erhalten.
-Insbesondere sind \emph{foxes} den \emph{hedgehogs} sowohl bezüglich der
+Hedgehogs erzielen die schlechtesten Wertungen unter den Experten,
+während Foxes und Fox-Hogs die besten Wertungen erhalten.
+Insbesondere sind Foxes den Hedgehogs sowohl bezüglich der
 Kalibrierungs- als auch bezüglich der Diskriminierungswertung überlegen.
 
-Die statistischen Algorithmen waren allerdings besser als \emph{foxes} und
-\emph{hedgehogs}. Die besten \emph{foxes} erhielten ähnliche Wertungen wie
-Extrapolationsalgorithmen. \emph{Hedgehogs} machten hingegen so große Fehler,
+Die statistischen Algorithmen waren allerdings besser als Foxes und
+Hedgehogs. Die besten Foxes erhielten ähnliche Wertungen wie
+Extrapolationsalgorithmen. Hedgehogs machten hingegen so große Fehler,
 dass ihre Wertungen in der Nähe des zufallsbasierten Algorithmus liegen
 \footnote{
 Tetlock gebraucht als Umschreibung für den zufallsbasierten Algorithmus die
 Metapher des \glqq{Dart spielenden Schimpansen}\grqq
 (\emph{dart-throwing chimp}).
-}. Insgesamt konnte keiner der Experten, weder \emph{foxes} noch
-\emph{hedgehogs} auch nur annähernd in die Nähe der Wertung kommen, die vom
+}. Insgesamt konnte keiner der Experten, weder Foxes noch
+Hedgehogs auch nur annähernd in die Nähe der Wertung kommen, die vom
 autoregressiven Modell\footnote{
 Als Stufe 3 Algorithmus in Abbildung~\ref{pic:Tetlock_1} und als formales
 Modell in Abbildung~\ref{pic:Tetlock_2} bezeichnet.
@@ -468,7 +477,7 @@ Produkt der Einzelwahrscheinlichkeiten.
 \item[(3) Würdigung rivalisierender Weltsichten:] \hfill \\
 Bei zwei konkurrierenden Weltsichten (Hypothesen)\footnote{
 Die Weltsichten  müssen vollständig sein und sich gegenseitig
-ausschließen (siehe Anhang~\xcom)
+ausschließen
 } sollten beide Ansichten in die Berechnung der Wahrscheinlichkeit für den
 Eintritt eines Ereignisses fließen. Eine Hypothese braucht nur dann nicht
 beachtet werden, wenn man sicher ist, dass ihr Wahrheitsgehalt bei 0 liegt.
@@ -483,7 +492,7 @@ dieses Ereignisses vorhergesagt hat oder nicht.
 Die Regeln (3) und (4) basieren auf den Rechenregeln für bedingte
 Wahrscheinlichkeiten und insbesondere auf der Formel von Bayes. Ausführlichere
 Erläuterungen zu den vier Prinzipien der logischen Konsistenz befinden sich in
-Anhang~\xcom. Dort werden die relevanten Formeln vorgestellt und es werden
+Anhang~\ref{Anhang_Bayes}. Dort werden die relevanten Formeln vorgestellt und es werden
 einige Beispiele präsentiert.
 
 Tetlocks Untersuchungen haben unter Anderem gezeigt, dass die befragten Experten
@@ -665,7 +674,7 @@ Die Ergebnisse des Good Judgement Project wurden von Tetlock und Gardner
 in dem Buch \emph{Superforecasting: the art and science of prediction} festgehalten (siehe \cite{Super}).
 Zu dem Kern des Buches gehören zehn\footnote{Eigentlich sind es elf Prinzipien (vgl. z. B. \cite{Jackson}, S.~292).}
 Prinzipien, die beschreiben, was einen guten Forecaster ausmacht (\emph{The Ten Commandments of Superforecasting};
-vgl. \cite{Jackson}, S.~292). Im Anhang~\xcom werden diese Prinzipien vorgestellt und diskutiert.
+vgl. \cite{Jackson}, S.~292). Im Anhang~\ref{Ten} werden diese Prinzipien vorgestellt und diskutiert.
 
 Zudem existiert ein Unternehmen, das sich auf die Ergebnisse des Good Judgement Project bezieht,
 Teams von Forecastern beschäftigt und ihre Prognosen verkauft, \emph{Good Judgment Inc.} (vgl. \cite{GJP_Ink}).
@@ -677,9 +686,7 @@ Gelegentlich werden Superforecaster interviewt, wobei sie Einblicke in diesen
 relativ neuen Berufszweig geben. So verrät Reed Roberts in einem Interview,
 dass Foxes wie er bessere Forecaster seien (vgl. \cite{Burton}). Weiterhin erklärt sein Kollege Nick Hare im
 gleichen Artikel, wie er ein mathematische Modell erstellt, um die Wahrscheinlichkeit von Nukleartests in
-Nordkorea abzuschätzen\footnote{ 
-Dieses Modell wird noch auf Seite~\xcom genauer diskutiert.
-} (vgl. \cite{Burton}). Roman Hagelstein, ein weiterer Superforecaster,
+Nordkorea abzuschätzen (vgl. \cite{Burton}). Roman Hagelstein, ein weiterer Superforecaster,
 erläutert in einem \emph{FAZ}-Artikel, wie man ein komplexes Problem in kleinere Teilprobleme zerlegen kann, um
 es besser zu verstehen (vgl. \cite{Juergs}). Dabei handelt es sich um das zweite Prinzip des Forecasting
 (\emph{commandment of superforecasting}; vgl. \cite{Jackson}). Hagelstein selbst 
@@ -708,7 +715,7 @@ immer zu 100~\% egänzen müssen.
 \label{pic:Forecast}
 \end{figure}
 
-\subsection{Grundprinzipien des Forecasting}
+\subsection{Grundprinzipien des Forecasting} \label{Grund_Fo}
 
 Tetlocks Forecasting Exercises haben gezeigt, dass sogar bei Experten mit
 langjähriger Erfahrung viel Verbesserungspotential bezüglich
@@ -723,15 +730,13 @@ zusammengefasst und in Kürze erläutert:
 Mit Hilfe des Brier Score kann die Genauigkeit von Prognosen einzelner Forecaster überprüft werden.
 Zudem kann die Leistung verschiedener Forecaster miteinander vergleichen werden. Hierzu müssen allerdings
 viele Prognosen gesammelt, die dann im Brier Score verrechnet werden. Zusätzlich ist die Auswahl der
-Fragen und die richtige Fragestellung entscheidend. Genauere Erläuterungen hierzu sind in
-Anhang~\xcom zu finden.
-
+Fragen und die richtige Fragestellung entscheidend.
 \item[Formel von Bayes:] \hfill \\
 Die Formel von Bayes kann dazu genutzt werden, menschliche Prognosemodelle mit Hilfe neuer
 Erkenntnisse zu verbessern (Belief Updating). Zudem kann mit weiteren Formeln aus der
 Wahrscheinlichkeitstheorie die Konsistenz menschlicher Denkmodelle zusätzlich verbessert werden.
 Umgekehrt kann mit Hilfe dieser Werkzeuge auch festgestellt werden, ob bestimmte Forecaster
-logisch konsitent denken oder nicht. Mehr Informationen hierzu befinden sich in Anhang~\xcom. 
+logisch konsistent denken oder nicht. Mehr Informationen hierzu befinden sich in Anhang~\ref{Anhang_Bayes}. 
 
 \item[Einfluss der Persönlichkeit (Cognitive Style):] \hfill \\
 Für ein gutes Urteilsvermögen ist es grundsätzlich besser ein Fox als ein Hedgehog zu sein\footnote{
@@ -746,8 +751,7 @@ Tabelle~\ref{tab:Kognitive_Verzerrungen} listet einige kognitive Verzerrungen, d
 von Forecasting und Datenanalysen zu Problemen führen können. Von Tetlock wurden insbesondere
 kognitiver Konservatismus (\emph{cognitive conservatism}), Zuschreibungsfehler (\emph{attribution bias}), 
 Rückschaufehler (\emph{hindsight bias}) und Selbstüberschätzung (\emph{overconfidence effect}) als
-relevante Verzerrungen eingestuft. Mehr Informationen zu kognitiven
-Verzerrungen sind in Anhang~\xcom zusammengestellt.
+relevante Verzerrungen eingestuft.
 
 \item[Betonung des (selbst)kritischen Denkens:] \hfill \\
 Für einen guten Forecaster sollte kritisches Denken an erster Stelle stehen
@@ -765,7 +769,7 @@ rein menschlichen Prognosen vorgezogen werden.
 
 Man beachte auch die \emph{10 Commandments of Superforecasting} die wichtige Ratschläge zum
 Forecasting liefern. Allerdings ist zu beachten, dass sie die obigen Punkte nicht obsolet machen,
-sondern vielmehr ergänzen. Anhang~\xcom liefert Erläuterungen zu den 10 Commandments.
+sondern vielmehr ergänzen. Anhang~\ref{Ten} liefert Erläuterungen zu den 10 Commandments.
 
 Der letzte Punkt der obigen Liste ist auch deshalb interessant, weil die Forecaster manchmal selbst
 einfachere, mathematische Modelle aufstellen, um ihre Prognosen aufzustellen und zu rechtfertigen
@@ -779,12 +783,12 @@ tatsächlichen Test geführt hatte. Dies ergibt folgendes Modell: Die Wahrschein
 Nukleartest in den nächsten drei Monaten durchführt liegt bei 10~\%, es sei denn, es hat zuvor eine Drohung
 gegeben, dann wird die Wahrscheinlichkeit auf 20~\% verdoppelt\footnote{
 Dieses Vorgehen wird auch im dritten Ratschlag der \emph{10 Commandments of Superforecasting} beschrieben
-(siehe Anhang~\xcom).
+(siehe Anhang~\ref{Ten}).
 }.
 
 Der Übergang von Forecasting zu Predictive Analytics scheint also fließend. Wenn man die notwendigen
 Ressourcen hat und es notwendig erscheint, sollte man Datenanalysen mit Hilfe mathematischer Modelle
-durchführen, also \gls{glos:Predictive_Analytics} implementieren.
+durchführen, also Predictive Analytics implementieren.
 
 
 \section{Bestandteile von Predictive Analytics}
@@ -793,7 +797,7 @@ Bei Predictive Analytics werden Daten mit Hilfe von geeigneten Methoden
 verarbeitet, um verschiedene Arten von Prognosen zu ermöglichen. Dem
 Datenanalysten stehen für diese Aufgabe Computeranwendungen zur Verfügung.
 Diese Programme lesen die Daten ein, führen die notwendigen Berechnungen aus und
-ermöglichen eine graphische Aufbereitung der Ergebnisse. \\ \\
+ermöglichen eine grafische Aufbereitung der Ergebnisse.
 
 \subsection{Daten}
 
@@ -1245,7 +1249,7 @@ Dabei eignet sich Forecasting besser für strategische und taktische Entscheidun
 da auf operativer Ebene mehr Erfahrungswerte vorliegen, was die Nutzung von
 Predictive Analytics ermöglicht. Forecasting hat allerdings den Vorteil, dass
 keine strukturierten Daten gesammelt werden müssen. Forecaster analysieren unstrukturierte
-Dokumente und erstellen auf dieser Basis einfache Modelle (siehe S.~\xcom).
+Dokumente und erstellen auf dieser Basis einfache Modelle.
 Dies ist insbesondere dann die einzige Alternative, wenn keine oder nur sehr wenige
 Daten vorliegen.
 
@@ -1256,7 +1260,7 @@ die in Fächern wie Mathematik, Statistik oder Informatik ausgebildet sind (\cit
 
 Predictive Analytics ist teuer. Es benötigt teures Personal, Anwendungen (vgl. \cite{Iffert}, S.~22) und eine
 Dateninfrastruktur. Dafür kann Predictive Analytics bei der
-Genauigkeit der Vorhersagen die besten menschlichen Forecaster schlagen (siehe Abbildung~\xcom in Abschnitt~\xcom).
+Genauigkeit der Vorhersagen die besten menschlichen Forecaster schlagen.
 Allerdings ist das weniger aufwendige Forecasting, wie eine Wettervorhersage, bei Kurzzeitprognosen ausreichend genau
 (vgl. \cite{Economist}).
 
@@ -1275,20 +1279,19 @@ Punkt erhöht sich der Schwierigkeitsgrad, allerdings verbessern sich auch die E
 
 \item[(1) Kenntnis der Probleme menschlicher Urteile:] \hfill \\
 Man sollte wissen, dass Menschen, insbesondere was Prognosen betrifft, oft zu Fehlurteilen verführt werden.
-Manchmal ist es sogar besser, eine Münze zu werfen, als sich auf die Vorhersagen von Experten zu verlassen
-(siehe Abschnitt~\xcom).
+Manchmal ist es sogar besser, eine Münze zu werfen, als sich auf die Vorhersagen von Experten zu verlassen.
 
 \item[(2) Befolgen narrativer Regeln:] \hfill \\
 Man sollte sein Bewusstsein dafür schärfen, dass es kognitive Verzerrungen gibt, die das menschliche Urteilsvermögen
-schwächen. Folglich sollte versucht werden, kognitive Verzerrungen zu meiden (siehe Anhang~\xcom). Es können weitere
-narrative Regeln befolgt werden, mit denen das Urteilsvermögen verbessert werden kann (siehe Abschnitt~\xcom und % Grundprinzipien des Forecasting
-Anhang~\xcom).
+schwächen. Folglich sollte versucht werden, kognitive Verzerrungen zu meiden. Es können weitere
+narrative Regeln befolgt werden, mit denen das Urteilsvermögen verbessert werden kann (siehe Abschnitt~\ref{Grund_Fo} und % Grundprinzipien des Forecasting
+Anhang~\ref{Ten}).
 
 \item[(3) Forecasting praktizieren:] \hfill \\
 Forecasting zu praktizieren, bedeutet subjektive Wahrscheinlichkeiten in Zahlen auszudrücken
-und mit Hilfe des Brier Score die Genauigkeit der Vorhersagen zu prüfen (siehe Anhang~\xcom). Ferner müssen
+und mit Hilfe des Brier Score die Genauigkeit der Vorhersagen zu prüfen (siehe Anhang~\ref{Anhang_Brier}). Ferner müssen
 das Belief Updating nach der Formel von Bayes und die Einhaltung der weiteren Formeln aus der Wahrscheinlichkeitstheorie
-quantitativ überprüft werden (siehe Anhang~\xcom).
+quantitativ überprüft werden (siehe Anhang~\ref{Anhang_Bayes}).
 
 \item[(4) Predictive Analytics anwenden:] \hfill \\ 
 Dies ist die anspruchsvollste Methode, die am meisten Ressourcen verbraucht.

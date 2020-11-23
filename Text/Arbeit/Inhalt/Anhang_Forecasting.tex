@@ -1,16 +1,6 @@
 % TODO evtl umbennen 
 \chapter{Forecasting - Technische Details}
 
-\section{Evidenzbasierte Methoden}
-
-%Für Überprüfbarkeit:
-
-%Vollständig: Es gibt keine weitere Kategorie, in die ein Objekt (oder in diesem
-%Fall ein Ereignis) fallen könnte.
-
-%Gegenseitig ausschließend: ...
-
-%Die menschliche Intuition ist schlecht in Wahrscheinlichkeitsrechnung (siehe S. X).
 
 % TODO
 % Brier Score Erklärung
@@ -25,7 +15,9 @@
 % + eher statistisch, mathematische "Verzerrungen" (subadditivity ...)
 % 11 Commandments GJP
 
-\section{Ten Commandments of Superforecasting}
+
+
+\section{Ten Commandments of Superforecasting} \label{Ten}
 
 Diese zehn Prinzipien für Forecasting können bei korrekter Anwendung die Genauigkeit von
 Prognosen verbessern (vgl. \cite{Ten_Comm}). Eine kommentierte Version wird von Jackson und Reichin
@@ -74,7 +66,7 @@ unterschieden. Bei der Sicht von Außerhalb geht es darum, eine Basisrate für d
 Die Kernfrage, die dabei beantwortet werden muss, lautet:
 
 \begin{description}
-\item[>] Wie oft geschehen Dinge dieser Art in ähnlichen Situationen?
+\item[-] Wie oft geschehen Dinge dieser Art in ähnlichen Situationen?
 \end{description}
 
 Bei der Sicht von Innerhalb werden Eigenschaften gesammelt, die den konkreten Fall von vergleichbaren Fällen
@@ -158,3 +150,53 @@ werden können. Sonst läuft man Gefahr, in zu starre Denkmuster zu verfallen.
 Wie in der Beschreibung angedeutet, versuchen manche Ratschläge, mathematische Formulierungen und deren Auswirkungen in Worten zu beschreiben.
 Es ist jedoch einfacher, die Ratschläge zu verstehen und vor Allem auch einzuhalten, wenn die zugrunde liegenden Formeln bekannt
 sind.
+\newpage
+
+\section{Empirische Korrespondenz - Der Brier Score} \label{Anhang_Brier}
+
+\subsection{Brier Score}
+
+Gleichung \ref{brier} definiert den Brier Score (\cite{Tetlock}, S. 273).
+
+\begin{equation}
+\textrm{PS} = \frac{\sum_{i=1}^{M} (p_i - x_i)^2}{ M }
+\label{brier}
+\end{equation}
+
+\begin{description}
+\item[$M$ :] Anzahl der gemachten Vorhersagen
+\item[$p_i$ :] subjektive Wahrscheinlichkeit für den Eintritt von Ereignis $i$
+\item[$x_i$ :] die tatsächliche Realisierung von Ereignis $i$ (0 wenn das Ereignis ausgeblieben ist, 1 wenn das Ereignis eingetreten ist)
+\end{description}
+
+\subsection{Brier Score - Zerlegung}
+
+Weiterhin zeigt Gleichung \ref{brier_decomposition} die Zerlegung des Brier Score (\cite{Tetlock}, S. 274).
+
+\begin{equation}
+\textrm{PS} = \underbrace{
+b(1-b)
+}_\textrm{VI} + \underbrace{
+\frac{1}{N} \sum_{t=1}^{T} n_t (p_t - b_t)^2
+}_\textrm{CI} - \underbrace{
+\frac{1}{N} \sum_{t=1}^{T} n_t (b_t - b)^2
+}_\textrm{DI}
+\label{brier_decomposition}
+\end{equation}
+
+\begin{description}
+\item[$b$ :] Basisrate aller Ereignisse
+\item[$b_t$ :] Basisrate für die Vorhersagekategorie $t$
+\item[$N$ :] Gesamtanzahl der Ereignisse
+\item[$n_t$ :] Anzahl der Vorhersagen in Kategorie $t$
+\item[$T$ :] Anzahl der Vorhersagekategorien
+\item[$p_t$ :] Vorhersage von Kategorie $t$
+\end{description}
+
+Weiterhin ist VI die Variability, CI die Calibration, DI die Discrimination.
+
+\subsection{Rechenbeispiel}
+
+
+\section{Logische Korrespondenz - Bayes Belief Updating} \label{Anhang_Bayes}
+
