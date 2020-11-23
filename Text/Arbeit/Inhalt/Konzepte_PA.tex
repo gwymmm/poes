@@ -1063,7 +1063,31 @@ Im folgenden Text werden einige konkrete Predictive Analytics Methoden mit ihren
 erläutert. 
 
 \subsubsection{Beschreibung der Daten}
-% TODO Korrelationsanalyse
+
+Eine typische Methode zur Beschreibung von Daten ist die Korrelationsanalyse.
+Die Korrelation\footnote{
+Genauer: Der Pearson Korrelationskoeffizient (vgl. \cite{Bowles}, S.~47).
+} kann zwischen zwei Variablen berechnet werden, um zu prüfen ob ein Zusammenhang zwischen ihnen besteht.
+Die Korrelation ist eine Zahl zwischen -1 und 1 und kann folgendermaßen interpretiert werden:
+
+\begin{description}
+
+\item[Positive Korrelation:] \hfill \\
+Positive Korrelation deutet auf einen Zusammenhang zweier Variablen hin. Wenn der Wert einer Variable steigt,
+dann steigt auch der Wert der anderen Variable. Hohe Korrelationswerte zwischen einem Attribut und einer
+Zielvariablen deuten darauf hin, dass dieses Attribut ein guter Prädiktor für die Zielvariable sein wird.
+Hohe Korrelationswerte zwischen zwei Attributen können allerdings Probleme verursachen oder deuten bei Korrelationswerten nahe 1 auf einen
+Fehler hin (vgl. \cite{Bowles}, S.~50).
+
+\item[Keine Korrelation:] \hfill \\
+Bei einer Korrelation nahe 0, gibt es keine Hinweise auf einen Zusammenhang zwischen den zwei Variablen.
+
+\item[Negative Korrelation:] \hfill \\
+Es gilt dieselbe Betrachtung wie bei positiver Korrelation. Allerdings ist die Beziehung zwischen zwei negativ korrelierten Variablen
+umgekehrt. Wenn der Wert der einen Variablen steigt, dann sinkt der Wert der anderen.
+
+\end{description}
+Wie bereits erwähnt wird die Korrelationsanalyse genutzt, um gute Prädiktorvariablen für ein Modell zu finden.
 
 Neben der Berechnung der Korrelation gibt es noch eine Reihe weiterer, spezieller
 Methoden zur Beschreibung der Daten. Ein Beispiel dafür ist die Varianzanalyse
@@ -1111,11 +1135,19 @@ Zur Berechnung einer Prognose für die Zielvariable zum Zeitpunkt $t$ wurden die
 zu den Zeitpunkten $t-1$ und $t-2$ verwendet und zusätzlich die Werte von drei Prädiktorvariablen zum Zeitpunkt $t-1$   
 (vgl. \cite{Tetlock}, S.~283).
 
+\subsubsection{Text Mining}
 
+Im Gegensatz zu den oben besprochenen Methoden die numerische Eingaben erwarten, verarbeiten Text Mining
+Methoden Texte in natürlichen Sprachen (vgl. \cite{Weiss}, S.~1). Dies macht Text Mining Anwendungen attraktiv um
+beispielsweise Social Media Inhalte zu analysieren. Genau wie die \glqq{numerischen}\grqq Algorithmen benötigen Text Mining
+Methoden ebenfalls Trainingsdatensätze um ihre Modelle zu erstellen (vgl. \cite{Weiss}, S.~1).
 
-\subsubsection{Textbasierte Analysen}
+Eine besondere Form von Text Mining ist die \emph{Sentiment Analysis} (vgl. \cite{Weiss}, S.~156). Dabei geht es nur darum
+zu entscheiden, ob die in einem Text vermittelte Stimmung positiver oder negativer Natur ist.
 
 \subsection{Werkzeuge}
+
+Predictive Analytics Methoden werden mit Hilfe von Softwarebibliotheken implementiert.
 
 % verteilte Anwendungen, Cloud (Hadoop)
 
@@ -1142,11 +1174,7 @@ werden kann. In diesem Fall würde die Anwendung eines aufwändigen Predictive
 Analytics Verfahrens wertvolle Ressourcen binden, die an anderer Stelle stärker
 gebraucht werden. 
 
-Somit ist es wichtig, Betrachtungen zu Alternativkosten\footnote{
-Alternativkosten, auch als Opportunitätskosten bezeichnet, sind die Mehrkosten,
-die entstehen wenn eine Handlungsoption einer anderen vorgezogen
-wird. % siehe 'Schlüsselideen der Wirtschaftswissenschaft'
-}
+Somit ist es wichtig, Betrachtungen zu Alternativkosten
 in die Planung von Predictive Analytics Anwendungen einzubeziehen. 
 
 \subsection{Risiken bei der Datenerhebung}
