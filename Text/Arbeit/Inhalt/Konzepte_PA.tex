@@ -798,7 +798,10 @@ ermöglichen eine graphische Aufbereitung der Ergebnisse. \\ \\
 % TODO
 % unstrukturiert, teilstrukturiert und strukturiert.
 
+
+
 \subsubsection{Elementare Datentypen}
+\label{Elem_Dat}
 
 Bei Daten lassen sich verschiedene elementare Typen\footnote{Alternativ dazu
 spricht man vom Skalenniveau (\emph{scale of measurement}) als eine
@@ -900,11 +903,54 @@ Proportional & Gleichheit ($=, \neq$), & Alter, & 21 Jahre \\
 \begin{figure}%[!hbt]
 \centering
 \caption{Beispiel eines Dataframe}
-\includegraphics[scale=0.9]{Grafiken/Dataframe_Ink.pdf} 
+\includegraphics[scale=0.8]{Grafiken/Dataframe_Ink.pdf} 
 \label{pic:Dataframe}
 \end{figure}
 
-\subsubsection{Information Management (Data Warehouse)}
+Die einfachen Datentypen aus Abschnitt~\ref{Elem_Dat} lassen sich beliebig zu
+zusammengesetzten Datentypen kombinieren. Eine tabellenähnliche Struktur, oft
+Dataframe genannt, ist der wichtigste Datentyp für Predictive Analytics. Das
+Dataframe enthält die Information über einen ganzen Datensatz. Abbildung~\ref{pic:Dataframe}
+zeigt ein Beispiel für ein Dataframe\footnote{
+Das Dataframe ist in dreifacher Ausführung vorhanden, damit die einzelnen Bestandteile hervorgehoben werden können.
+Grafik angelehnt an \cite{Bowles}, S.~24.
+}. Es sind folgende Bestandteile erkennbar:
+
+\begin{description}
+
+\item[Beobachtungen:] \hfill \\
+Eine Zeile aus dem Dataframe bildet eine Beobachtung (\emph{observation}).
+Wenn es sich beispielsweise um Personen handelt, dann ist eine Observation der Datensatz der zu
+einer konkreten Person gehört.
+
+Weitere (englische) Bezeichnungen für Beobachtungen sind \emph{instance} (Instanz) und \emph{example} (Beispiel) (vgl. \cite{Bowles}, S.~24).
+
+\item[Attribute:] \hfill \\
+Die Attribute (\emph{attributes}) sind die Spalten eines Dataframe, die als Eingabe in ein Modell eingehen.
+Der Datentyp der Attribute kann variieren. So steht das Attribut 2 für das Geschlecht und ist somit nominal.
+Dagegen ist das Attribut 1 numerisch. 
+
+Mit Hilfe der Attribute wird die Zielvariable im Modell prognostiziert.
+
+Weitere Bezeichnungen für Attribute sind:
+\emph{predictors} (Prädiktorvariablen), \emph{features}, \emph{independent variables} (unabhängige Variablen) und
+\emph{inputs} (Eingaben)
+(vgl. \cite{Bowles}, S.~25-26).
+
+\item[Die Zielvariable:] \hfill \\
+Die Zielvariable (\emph{target}) ist eine Spalte im Dataframe, die aus den Attributen prognostiziert werden soll.
+
+Der Einfachheit halber wurde hier nur eine Zielvariable im Dataframe angegeben, es können aber mehr sein.
+
+Weitere Bezeichnungen für eine Zielvariable sind: \emph{labels}, \emph{outcomes},
+\emph{dependent variables} (abhängige Variablen) und \emph{responses}
+(vgl. \cite{Bowles}, S.~25-26).
+
+\end{description}
+
+
+
+\subsubsection{Das Data Warehouse Konzept}
 
 
 \subsection{Vorgehensmodelle}
