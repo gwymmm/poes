@@ -1100,7 +1100,6 @@ die Art der Bewässerung, während der Ertrag die abhängige Variable darstellte
 (vgl. \cite{Bijma}, S.~275).
 } (vgl. \cite{Bijma}, S.~275-276).
 
-
 \subsubsection{Datenvisualisierung}
 
 Das menschliche Gehirn kann bei geeigneter Visualisierung von Daten in die Lage
@@ -1115,9 +1114,35 @@ Datenvisualisierungen werden auch verwendet, um die Ergebnisse von Datenanalysen
 zu präsentieren und zu vermitteln. 
 
 \subsubsection{Variablenreduktion}
+Variablenreduktion ist eine Methode, bei der ein Satz neuer Variablen aus der Kombination
+der Ausgangsvariablen berechnet wird. Die Hoffnung dabei ist, dass in dem neuen Variablensatz
+viele Variablen in der Bedeutungslosigkeit verschwinden, während einige wenige Variablen sich als
+gute Prädiktorvariablen etablieren. Konkrete Methoden zur Variablenreduktion sind beispielsweise
+die \emph{Principal Component Analysis} (PCA) oder die \emph{Factor Analysis} (FA) (vgl. \cite{Dinov}, S.~242-243). 
+Eine Besonderheit der Factor Analysis ist die Annahme, dass im Datensatz verborgene, latente Variablen existieren,
+die die sichtbaren Variablen beschreiben (vgl. \cite{Dinov}, S.~243).
 
 \subsubsection{Vorhersagealgorithmen}
-% TODO Die Großen Drei
+
+Vorhersagealgorithmen generieren, wie in Abbildung~\ref{pic:PA} dargestellt, aus historischen Daten
+eine Modellinstanz, die im nächsten Schritt zur Vorhersage von Zielvariablen mittels Attributen dienen kann.
+Dies soll am Beispiel der linearen Regression verdeutlicht werden. Gleichung~\ref{eq:linear_regression} zeigt
+ein lineares Regressionsmodell mit $y$ als Zielvariablen, $x_1$, $x_2$, $x_3$ als den Attributen und $\alpha$, $\beta$, $\gamma$
+als den Regressionskoeffizienten.
+
+\begin{equation}
+y = \alpha~x_1 + \beta~x_2 + \gamma~x_3
+\label{eq:linear_regression}
+\end{equation}
+
+Es gibt drei große Kategorien von Vorhesagealgorithmen, die häufig Anwendung finden und aus diesem Grund als
+\glqq{Die Großen 3}\grqq{} (\emph{The Big 3}) bezeichnet werden (vgl. \cite{McCarthy}, S~1): Regression (\emph{regression analysis}),
+Entscheidungsbäume (\emph{decision trees}) und Neuronale Netze (\emph{neural networks}).
+
+
+
+% training
+% TODO Die Großen Drei näher ausführen
 % Genauigkeit
 %\paragraph{Regression}
 
