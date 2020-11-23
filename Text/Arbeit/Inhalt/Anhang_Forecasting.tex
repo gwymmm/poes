@@ -74,7 +74,7 @@ unterscheiden. Diese neuen Variablen werden dann genutzt, um die Basisrate abzu�
 Frage anzupassen.
 
 Technischer ausgedrückt handelt es sich bei diesem Vorgehen um das Aufstellen eines Algorithmus, der auf Basisraten
-basiert (siehe auch S.~\xcom). Zunächst wird anhand historischer Betrachtungen eine Basisrate aufgestellt, die
+basiert. Zunächst wird anhand historischer Betrachtungen eine Basisrate aufgestellt, die
 beschreiben soll, wie häufig Ereignisse dieser Art im Allgemeinen auftreten. Daraufhin werden Prädiktorvariablen gesucht, die
 dafür verantwortlich sein können, dass die Häufigkeit eines Ereignisses von der allgemeinen Basisrate abweicht. Diese
 Prädiktorvariablen werden dann gewichtet und mit der Basisrate verrechnet, wobei manche Prädiktoren das Ereignis wahrscheinlicher
@@ -82,12 +82,12 @@ machen, wohingegen andere die Warscheinlichkeit des betrachteten Ereignisses ger
 
 \item[(4) Praktizieren von Belief Updating:] \hfill \\
 Gute Forecaster passen ihre Weltsicht ständig an neue Erkenntnisse an. Dabei geht es nicht nur darum die Formel von Bayes
-(siehe S.~\xcom) anzuwenden. Vielmehr müssen zunächst wichtige Signale aus dem Fluss von Nachrichten herausgefiltert werden, wobei
+ anzuwenden. Vielmehr müssen zunächst wichtige Signale aus dem Fluss von Nachrichten herausgefiltert werden, wobei
 Wunschdenken, Über- und Unterreaktionen vermieden werden müssen. Hierfür müssen Forecaster ständig die aktuellen Nachrichten beobachten 
 und kritisch widerspiegeln.
 
 \item[(5) Berücksichtigen rivalisierender Weltsichten:] \hfill \\
-Hierbei geht es darum, den Wahrheitsgehalt zweier gegensätzlicher Weltanschauungen (Hypothesen) in Verhältnis zueinander zu bringen (siehe S.~\xcom).
+Hierbei geht es darum, den Wahrheitsgehalt zweier gegensätzlicher Weltanschauungen (Hypothesen) in Verhältnis zueinander zu bringen .
 Je höher der Wahrheitsgehalt einer Hypothese, desto eher ist sie für die Erstellung von Prognosen relevant. Insbesondere
 sollte allein die eigene Weltsicht zur Bildung von Vorhersagen herangezogen werden, wenn man sehr sicher ist, dass die Weltsicht des
 geistigen Rivalen absolut falsch ist. Zudem kann das Verhältnis der Hypothesen sich angesichts neuer Ereignisse verändern.
@@ -101,7 +101,7 @@ Zahlen, also subjektiven Wahrscheinlichkeiten, ausgedrückt werden.
 
 \item[(7) Finden einer Balance zwischen Unentschlossenheit und Verbissenheit:] \hfill \\
 Zum Einen geht es bei diesem Ratschlag um das Dilemma, das entsteht, wenn man versucht seine Vorhersagen im Hinblick auf
-den Kalibrierungs- und Diskriminierungswert des Brier Score (siehe Anhang~\xcom) zu verbessern. Zu viel Entschlossenheit
+den Kalibrierungs- und Diskriminierungswert des Brier Score  zu verbessern. Zu viel Entschlossenheit
 kann zu großen Fehlern und folglich zu Einbußen bei der Kalibrierung führen. Unentschlossenheit hingegen kann dem
 Diskriminierungswert schaden, da bei vielen Prognosen eine vorsichtige \glqq{50/50-Schätzung}\grqq{} gegeben wird. Um
 die Vorhersagegenaugkeit auf einem guten Niveau zu halten, muss hierbei eine Balance gefunden werden.
@@ -113,8 +113,8 @@ eine entschlossene Haltung einzunehmen aber trotzdem den Grad der Unsicherheit b
 
 \item[(8) Aus Fehlern lernen:] \hfill \\
 Ein Vorschlag, der als sehr schwierig in der Umsetzung gilt (vgl. \cite{Jackson}, S.~294). Gute Forecaster müssen
-ehrliche Lektionen aus ihren Fehlern ziehen, anstatt durch Hindsight Bias (siehe S.~\xcom) und Rechtfertigungsversuche
-(Belief System Defenses, siehe S.~\xcom) davon abgelenkt zu werden.
+ehrliche Lektionen aus ihren Fehlern ziehen, anstatt durch Hindsight Bias  und Rechtfertigungsversuche
+(Belief System Defenses, ) davon abgelenkt zu werden.
 
 \item[(9) Gruppenarbeit lernen:] \hfill \\
 In Laufe des Good Judgement Projects wurde beobachtet, dass Gruppen bessere Prognose erstellen als einzelne Personen
@@ -222,16 +222,88 @@ Prognosekategorien. Die Formel für den Brier Score ergibt dann:
 Und für die Zerlegung:
 
 \begin{equation*}
-\textrm{VI} = \frac{4}{7} (1-\frac{4}{7})=\frac{12}{49} 
+\textrm{VI} = \frac{4}{7} ~(~1-\frac{4}{7}~)=\frac{12}{49} 
 \end{equation*}
 \begin{equation*}
-\textrm{CI} = \frac{1}{7} (3 \cdot (0.6 - \frac{2}{3})^2 + 4 \cdot (0.5 - \frac{2}{4})^2 ) \approx 0.0019 
+\textrm{CI} = \frac{1}{7}~(~3 \cdot (~0.6 - \frac{2}{3}~)^2 + 4 \cdot (~0.5 - \frac{2}{4}~)^2~) \approx 0.0019 
 \end{equation*}
 \begin{equation*}
-\textrm{DI} = \frac{1}{7} ( 3 \cdot (\frac{2}{3}-\frac{4}{7})^2 + 4 \cdot (\frac{2}{4} - \frac{4}{7})^2 ) =\frac{1}{147}
+\textrm{DI} = \frac{1}{7} ~(~ 3 \cdot (~\frac{2}{3}-\frac{4}{7}~)^2 + 4 \cdot (~\frac{2}{4} - \frac{4}{7}~)^2 ~) = \frac{1}{147}
 \end{equation*}
 
-Außerdem ergibt sich für BS  = VI+CI-DI$\approx 0.24$.
+Außerdem ergibt sich für BS  = VI+CI-DI$\approx 0.24$. Die Kalibrierung ist ziemlich gut, da nahe bei 0.
 
 \section{Logische Korrespondenz - Bayes Belief Updating} \label{Anhang_Bayes}
 
+\subsection{Der Forecaster und sein Rivale}
+Gleichung \ref{bayes_1} beschreibt wie sich die Wahrscheinlichkeit für ein Ereignis D aus den Wahrscheinlichkeiten
+innerhalb der Weltsicht eines Forecasters und seines Rivalen zusammensetzt (\cite{Tetlock}, S 302).
+
+\begin{equation}
+p(D) = p(D \vert H) p(H) + p (D \vert \bar{H}) p(\bar{H})
+\label{bayes_1}
+\end{equation}
+
+\begin{description}
+\item[$p(D)$ :] Wahrscheinlichkeit für Ereignis $D$
+\item[$p(D \vert H)$ :] Wahrscheinlichkeit, dass Ereignis $D$ in der Welt $H$ geschieht (Prognose des Forecasters)
+\item[$p(H)$ :] Wahrscheinlichkeit, dass die Weltsicht $H$ des Forecasters stimmt
+\item[$p (D \vert \bar{H})$ :] Wahrscheinlichkeit, dass Ereignis $D$ in der Welt $\bar{H}$ geschieht (Prognose des Rivalen)
+\item[$p(\bar{H})$ :] Wahrscheinlichkeit, dass die Weltsicht $\bar{H}$ des Rivalen stimmt
+\end{description}
+
+\subsection{Bayes Belief Updating}
+
+Herleitung für Belief Updating Formel (\cite{Tetlock}, S 302)
+
+\begin{equation*}
+p(H \vert D)  = \frac{ p(D \vert H) p(H) }{p(D)}
+\end{equation*}
+Und
+\begin{equation*}
+p(\bar{H} \vert D)  = \frac{ p(D \vert \bar{H}) p(\bar{H}) }{p(D)}
+\end{equation*}
+Durch Division der obigen Gleichungen erhält man
+\begin{equation*}
+\frac{p(H \vert D)}{p(\bar{H} \vert D)}  = \frac{\frac{ p(D \vert H) p(H) }{p(D)}}{\frac{ p(D \vert \bar{H}) p(\bar{H}) }{p(D)}}
+\end{equation*}
+Und schließlich Gleichung \ref{bayes_2}.
+\begin{equation}
+\underbrace{
+\frac{p(H \vert D)}{p(\bar{H} \vert D)}
+}_\textrm{Posterior Odds}  = \underbrace{
+\frac{p(D \vert H)}{ p(D \vert \bar{H})}
+}_\textrm{Likelihood Ratio} \underbrace{ \frac{p(H)}{p(\bar{H})}}_\textrm{Prior Odds}
+\label{bayes_2}
+\end{equation}
+Gleichung \ref{bayes_2} beschreibt wie sich das Welbild des Forecasters ändern muss, wenn Ereignis $D$ eingetreten ist.
+
+\begin{description}
+
+\item[Prior Odds:] \hfill \\
+Der Glaube and die eigene Weltsicht proportional zum Glauben an die Weltsicht des Rivalen
+\item[Likelihood Ratio:] \hfill \\
+Das Verhältnis der subjektiven Wahrscheinlichkeiten, die der Forecaster und sein Rivale jeweils für $D$ veranschlagt haben
+\item[Posterior Odds:] \hfill \\
+Der Glaube and die eigene Weltsicht proportional zum Glauben an die Weltsicht des Rivalen \emph{nachdem} $D$ eingetreten ist
+\end{description}
+
+\subsection{Rechenbeispiel}
+
+Ein selbstbewusster Forecaster $\frac{0.8}{0.2} = 4$ macht einen großen Fehler:
+
+\begin{equation*}
+\frac{0.1}{0.9} \cdot \frac{0.8}{0.2} = 0.44
+\end{equation*}
+
+Der selbsbewusste Forecaster macht alles (fast) richtig:
+
+\begin{equation*}
+\frac{0.9}{0.1} \cdot \frac{0.8}{0.2} = 36
+\end{equation*}
+
+Etwa unentschieden:
+
+\begin{equation*}
+\frac{0.5}{0.6} \cdot \frac{0.8}{0.2} = 3.33
+\end{equation*}
