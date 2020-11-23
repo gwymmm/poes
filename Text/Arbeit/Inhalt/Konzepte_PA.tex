@@ -1130,6 +1130,13 @@ Dies soll am Beispiel der linearen Regression verdeutlicht werden. Gleichung~\re
 ein lineares Regressionsmodell mit $y$ als Zielvariablen, $x_1$, $x_2$, $x_3$ als den Attributen und $\alpha$, $\beta$, $\gamma$
 als den Regressionskoeffizienten.
 
+Zunächst muss der Datensatz in einen Trainings- und einen Testdatensatz aufgeteilt werden. Das typische Verhältnis von Trainings- zu Testdaten
+ist 80/20 (vgl. \cite{McCarthy}, S.~43-44). Die Aufgabe des Regressionsalgorithmus ist nun die passenden Regressionskoeffizienten
+$\alpha$, $\beta$, $\gamma$ zu finden, die beim Trainingsdatensatz zu den besten Vorhersagen für $y$ führen. Sobald die Regressionskoeffizienten
+gefunden sind, wird eine Modellinstanz generiert, bei der die gefundenen Regressionskoeffizienten eingesetzt werden. Diese Modellinstanz wird
+zur Vorhersage der Zielvariablen beim Testdatensatz verwendet. Mit Hilfe eines Gütekriteriums wird dann die Genauigkeit der Prognosen der Modellinstanz festgestellt.
+Wenn die Genauigkeit zufriedenstellend ist, kann die Modellinstanz dann für weitere Prognosen verwendet werden.
+
 \begin{equation}
 y = \alpha~x_1 + \beta~x_2 + \gamma~x_3
 \label{eq:linear_regression}
@@ -1139,16 +1146,8 @@ Es gibt drei große Kategorien von Vorhesagealgorithmen, die häufig Anwendung f
 \glqq{Die Großen 3}\grqq{} (\emph{The Big 3}) bezeichnet werden (vgl. \cite{McCarthy}, S~1): Regression (\emph{regression analysis}),
 Entscheidungsbäume (\emph{decision trees}) und Neuronale Netze (\emph{neural networks}).
 
-
-
-% training
 % TODO Die Großen Drei näher ausführen
-% Genauigkeit
-%\paragraph{Regression}
 
-%\paragraph{Entscheidungsbäume}
-
-%\paragraph{Neuronale Netze}
 
 \subsubsection{Zeitreihenanalyse}
 
@@ -1172,9 +1171,12 @@ zu entscheiden, ob die in einem Text vermittelte Stimmung positiver oder negativ
 
 \subsection{Werkzeuge}
 
-Predictive Analytics Methoden werden mit Hilfe von Softwarebibliotheken implementiert.
+Predictive Analytics Methoden werden mit Hilfe von Softwarebibliotheken implementiert, wofür es sowohl kommerzielle Anbieter
+gibt als auch Open Source Lösungen. Aufgrund der hohen Kosten für Predictive Analytics Software (vgl. \cite{Iffert}, S.~22-23), 
+kann es sich lohnen sich mit den kostenfreien Anwendungen zu beschäftigen. Hierbei bieten sich Python oder R an\footnote{
+Für eine Einführung in R siehe hier \cite{Intro_R}.
+}
 
-% verteilte Anwendungen, Cloud (Hadoop)
 
 \section{Allgemeine Risiken bei der Nutzung von Predictive Analytics}
 
@@ -1202,22 +1204,16 @@ gebraucht werden.
 Somit ist es wichtig, Betrachtungen zu Alternativkosten
 in die Planung von Predictive Analytics Anwendungen einzubeziehen. 
 
-\subsection{Risiken bei der Datenerhebung}
+%\subsection{Die Umgebung verändert sich}
 
-Trainingsdaten spiegeln nicht (mehr) das Verhalten des Systems wider.
+%Trainingsdaten spiegeln nicht (mehr) das Verhalten des Systems wider.
 % corona beispiel 
 
-Hier: \cite{Springer}
+%Hier: \cite{Springer}
 
-\subsection{Risiken bei der Interpretation der Daten}
+% TODO Simpson Paradox
 
-\subsection{Risiken bei der Interpretation der Ergebnisse}
-
-Wenn die Ergebnisse der Datenanalyse zur Entscheidungsunterstützung herangezogen
-werden, beeinflussen sie das Verhalten der Entscheidungsträger. Dies kann zur
-Entstehung problematischer Effekte führen.
-
-\subsubsection{Prognose verändert das Verhalten des Systems }
+\subsection{Prognose verändert das Verhalten des Systems }
 
 Die Ergebnisse von Vorhersagen werden von Menschen interpretiert,
 die daraufhin ihr Verhalten anpassen. Dies kann zu Rückkopplungseffekten führen,
@@ -1231,7 +1227,7 @@ anders lautende Vorhersagen ignoriert werden. Dadurch bestärkt, setzt die Grupp
 ihre gewünschten Handlungsoptionen um. Dies ruft den vorhergesagten Effekt
 jedoch erst hervor.
 
-\subsubsection{Ignorieren der Unsicherheiten bei der Prognose}
+\subsection{Ignorieren der Unsicherheiten bei der Prognose}
 
 Es besteht die Gefahr, dass die Unsicherheiten von Vorhersagen ignoriert werden
 und die Prognose als eine Gewissheit betrachtet wird. Somit wird möglichen,
