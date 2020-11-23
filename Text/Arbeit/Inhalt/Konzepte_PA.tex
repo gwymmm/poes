@@ -795,10 +795,12 @@ ermöglichen eine graphische Aufbereitung der Ergebnisse. \\ \\
 
 \subsection{Daten}
 
-% TODO
-% unstrukturiert, teilstrukturiert und strukturiert.
-
-
+Bei Daten lassen sich unstrukturierte (\emph{unstructured data}), teilstrukturierte
+\emph{semi-structured data} und strukturierte (\emph{structured data}) Datensätze unterscheiden (vgl. \cite{McCarthy}, S.~9-10).
+Unstrukturierte Daten sind nicht geordnet und mit Computerprogrammen nur schwer zu analysieren. Beispiele für unstrukturierte Daten
+sind Bilder oder PDF-Dateien. XML-Dateien sind teilstrukturiert, da sie zwar nicht streng geordnet sind, aber trotzdem Markierungen
+beinhalten, die eine automatische Analyse ermöglichen. Strukturierte Daten sind streng geordnet und können leicht automatisch verarbeitet
+werden. Eine Datenbank ist ein Beispiel für einen strukturierten Datensatz. Im folgenden Text wird von strukturierten Datensätzen ausgegangen.
 
 \subsubsection{Elementare Datentypen}
 \label{Elem_Dat}
@@ -902,8 +904,9 @@ Proportional & Gleichheit ($=, \neq$), & Alter, & 21 Jahre \\
 
 \begin{figure}%[!hbt]
 \centering
+
 \caption{Beispiel eines Dataframe}
-\includegraphics[scale=0.8]{Grafiken/Dataframe_Ink.pdf} 
+\includegraphics[scale=0.85]{Grafiken/Dataframe_Ink.pdf} 
 \label{pic:Dataframe}
 \end{figure}
 
@@ -952,6 +955,39 @@ Weitere Bezeichnungen für eine Zielvariable sind: \emph{labels}, \emph{outcomes
 
 \subsubsection{Das Data Warehouse Konzept}
 
+Das Data Warehouse Konzept soll eine Informationsbereitstellung
+von entscheidungsrelevanten Daten ermöglichen und
+eine Informationsüberlastung des Managements verhindern (vgl. \cite{Gluchowski}, S.~118).
+Die im operativen Betrieb entstehenden Daten werden dabei selektiert und in eine Datenbasis
+überführt, die idealerweise für die ganze Organisation eine einheitliche Struktur bietet
+(vgl. \cite{Gluchowski}, S.~118).
+
+Ein Data Warehouse sollte die folgenden vier Anforderungen erfüllen (vgl. \cite{Gluchowski}, S.~119-121).
+
+\begin{description}
+
+\item[(1) Themenorientierung:] \hfill \\
+Ein Data Warehouse soll auf die inhaltlichen Kernbereiche der Organisation fokussiert sein
+und eine Organisation der Daten nach Themenschwerpunkten ermöglichen.
+Daten, die nur eine operative Funktion erfüllen und nicht für die
+Entscheidungsunterstützung relevant sind, werden nicht ins Data
+Warehouse aufgenommen.
+
+\item[(2) Vereinheitlichung:] \hfill \\
+Die Daten müssen vereinheitlicht werden bevor sie aus dem operativen
+Betrieb in das Data Warehouse importiert werden. Damit soll ein
+konsistenter Datenbestand erreicht werden.
+
+\item[(3) Zeitorientierung:] \hfill \\
+Die Daten in einem Data Warehouse müssen mit korrektn Zeitstempeln versehen werden,
+damit die zeitpunktbezogene Zuordnung von Daten jederzeit und für alle Datensätze erfolgen kann
+
+\item[(4) Beständigkeit:] \hfill \\
+Zeitreihendaten sollen über lange Zeiträume gelagert werden können.
+
+\end{description}
+
+% TODO auch Datenanalysen vereinfachen und beschleunigen...
 
 \subsection{Vorgehensmodelle}
 
