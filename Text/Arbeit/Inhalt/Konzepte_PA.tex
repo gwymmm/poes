@@ -517,43 +517,43 @@ abzuwerten.
 & & unzureichende Anpassung\\
 & & nach weiterem Überlegen.\\
 \hline
-{ \large Attribution bias } & Zuschreibungsfehler
+{ \large Attribution Bias } & Zuschreibungsfehler
   & Die Tendenz, Erfolge \\
 & & seinen eigenen Fähigkeiten \\
 & & zuzuschreiben; \\
 & & Misserfolge hingegen \\
 & & externen Zuständen. \\
 \hline
-{ \large Availability bias } & Verfügbarkeitsfehler
+{ \large Availability Bias } & Verfügbarkeitsfehler
   & Beispiele für Szenarien, \\
 & & die unmittelbar mit einem \\
 & & Ereignis assoziiert werden, \\
 & & bestimmen die Einschätzung \\
 & & dieses Ereignisses. \\
 \hline
-{ \large Base rate neglect } & Vernachlässigung von Basisraten
+{ \large Base Rate Neglect } & Vernachlässigung von Basisraten
   & Vernachlässigung allgemeiner \\
 & & Wahrscheinlichkeiten und \\
 & & Konzentration auf fallspezifische \\
 & & Informationen. \\
 \hline
-{ \large Cognitive conservatism } & Kognitiver Konservatismus
+{ \large Cognitive Conservatism } & Kognitiver Konservatismus
   & Weigerung von Menschen, \\
 & & Fehler zuzugeben und \\
 & & ihre Meinung zu ändern. \\
 \hline
-{ \large Gambler's fallacy } & Irrtum des Glücksspielers
+{ \large Gambler's Fallacy } & Irrtum des Glücksspielers
   & Der irrtümliche Glaube an \\
 & & regelmäßige Muster \\ 
 & & in zufälligen Prozessen. \\
 \hline
-{ \large Hindsight bias } & Rückschaufehler
+{ \large Hindsight Bias } & Rückschaufehler
   & Der Versuch eine Einschätzung \\
 & & eines Ereignisses, nach dessen \\
 & & Eintreten, rückwirkend zu \\
 & & verändern. \\
 \hline
-{ \large Overconfidence effect } & Selbstüberschätzung
+{ \large Overconfidence Effect } & Selbstüberschätzung
   & Überschätzung der Richtigkeit \\
 & & eigener Urteile. \\
 \hline
@@ -565,11 +565,13 @@ Tetlock benennt einige kognitive Verzerrungen (\emph{cognitive biases}),
 die ursächlich für das Versagen der Experten waren. Bei kognitiven Verzerrungen
 handelt es sich im Allgemeinen um Fehler im menschlichen Denken, die zu
 Fehlinterpretationen und Fehlurteilen führen.
-Tabelle~\ref{tab:Kognitive_Verzerrungen} listet einige Beipiele für kognitive
-Verzerrungen auf, die in diesem thematischen Kontext interessant sind und zur
-Erläuterung des Begriffs dienen können. Mehr Informationen zu kognitiven
-Verzerrungen befinden sich in Anhang~\xcom, während einige für das Forecasting
-besonders relevante kognitive Verzerrungen gleich hier erläutert werden.
+Tabelle~\ref{tab:Kognitive_Verzerrungen} listet einige Beispiele für kognitive
+Verzerrungen\footnote{
+Hier befinden sich die Quellen für die kognitiven Verzerrungen, die im weiteren Text nicht
+weiter erläutert werden: Anchoring (vgl. \cite{Eisenfuehr}, S.~179-180), Gambler’s Fallacy (vgl. \cite{Reese}, S.~113),
+Availability Bias (vgl. \cite{Eisenfuehr}, S.~176), Base Rate Neglect (vgl. \cite{Eisenfuehr}, S.~177).
+} auf, die in diesem thematischen Kontext interessant sind und zur
+Erläuterung des Begriffs dienen können.
 
 So kann das nicht angemessene Belief Updating der Experten mit kognitivem
 Konservatismus (\emph{cognitive conservatism}) und Zuschreibungsfehlern 
@@ -951,8 +953,6 @@ Weitere Bezeichnungen für eine Zielvariable sind: \emph{labels}, \emph{outcomes
 
 \end{description}
 
-
-
 \subsubsection{Das Data Warehouse Konzept}
 
 Das Data Warehouse Konzept soll eine Informationsbereitstellung
@@ -991,15 +991,27 @@ Zeitreihendaten sollen über lange Zeiträume gelagert werden können.
 
 \subsection{Vorgehensmodelle}
 
-% TODO
-% Beispiel CRIPS-DM
+Standardisierte Vorgehensmodelle können helfen, die Arbeitsschritte einer
+Datenanalyse zu vereinheitlichen. Tabelle~\ref{tab:Vier_Phasen} zeigt ein
+Vorgehensmodell, das sich auf die technischen Aspekte einer Datenanalyse
+konzentriert\footnote{
+Tabelle~\ref{tab:Vier_Phasen} angelehnt an das Original aus (\cite{Runkler}, S.~3).
+}. So wird ein Predictive Analytics Projekt in die vier Phasen Vorbereitung,
+Vorverarbeitung, Analyse und Nachbearbeitung eingeteilt. Weiterhin wird eine
+Auswahl an Schritten präsentiert, die in den jeweiligen Phasen durchgeführt werden
+können. Die Generierung des Modells (siehe Abbildung\ref{pic:PA}) erfolgt in der Analysephase.
 
-Standardisierte
-Vorgehensmodelle können helfen, die Arbeitsschritte einer Datenanalyse zu
-vereinheitlichen. Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM
-(\cite{crispdm}).
+Bei großen Projekten mit vielen Beteiligten würden zwei weitere Schritte
+hinzukommen (vgl. \cite{crispdm}, S.~12). So müsste zunächst ein Verständnis der
+geschäftlichen Umgebung (\emph{business understanding}) erworben werden. In der letzen Phase
+würde das Modell in seine Einsatzumgebung gebracht und dort weiter evaluiert werden.
 
-(vgl. \cite{Runkler}, S.~3)
+
+
+%Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM
+%(\cite{crispdm}).
+
+
 
 Zeigt eine beispielhafte Auswahl an Schritten, die in dieser Phase durchgeführt
 werden können
