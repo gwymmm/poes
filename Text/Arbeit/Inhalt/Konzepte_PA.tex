@@ -991,31 +991,6 @@ Zeitreihendaten sollen über lange Zeiträume gelagert werden können.
 
 \subsection{Vorgehensmodelle}
 
-Standardisierte Vorgehensmodelle können helfen, die Arbeitsschritte einer
-Datenanalyse zu vereinheitlichen. Tabelle~\ref{tab:Vier_Phasen} zeigt ein
-Vorgehensmodell, das sich auf die technischen Aspekte einer Datenanalyse
-konzentriert\footnote{
-Tabelle~\ref{tab:Vier_Phasen} angelehnt an das Original aus (\cite{Runkler}, S.~3).
-}. So wird ein Predictive Analytics Projekt in die vier Phasen Vorbereitung,
-Vorverarbeitung, Analyse und Nachbearbeitung eingeteilt. Weiterhin wird eine
-Auswahl an Schritten präsentiert, die in den jeweiligen Phasen durchgeführt werden
-können. Die Generierung des Modells (siehe Abbildung\ref{pic:PA}) erfolgt in der Analysephase.
-
-Bei großen Projekten mit vielen Beteiligten würden zwei weitere Schritte
-hinzukommen (vgl. \cite{crispdm}, S.~12). So müsste zunächst ein Verständnis der
-geschäftlichen Umgebung (\emph{business understanding}) erworben werden. In der letzen Phase
-würde das Modell in seine Einsatzumgebung gebracht und dort weiter evaluiert werden.
-
-
-
-%Ein Beispiel für ein solches Vorgehensmodell ist CRISP-DM
-%(\cite{crispdm}).
-
-
-
-Zeigt eine beispielhafte Auswahl an Schritten, die in dieser Phase durchgeführt
-werden können
-
 \begin{table}
 \centering
 \caption{Vier Phasen Vorgehensmodell bei Datenanalysen}
@@ -1052,8 +1027,22 @@ Nachbearbeitung & Interpretation der Ergebnisse \\
 %}
 \end{table}
 
-% TODO
-% Klassifikation vs Regression
+Standardisierte Vorgehensmodelle können helfen, die Arbeitsschritte einer
+Datenanalyse zu vereinheitlichen. Tabelle~\ref{tab:Vier_Phasen} zeigt ein
+Vorgehensmodell, das sich auf die technischen Aspekte einer Datenanalyse
+konzentriert\footnote{
+Tabelle~\ref{tab:Vier_Phasen} angelehnt an das Original aus (\cite{Runkler}, S.~3).
+}. So wird ein Predictive Analytics Projekt in die vier Phasen Vorbereitung,
+Vorverarbeitung, Analyse und Nachbearbeitung eingeteilt. Weiterhin wird eine
+Auswahl an Schritten präsentiert, die in den jeweiligen Phasen durchgeführt werden
+können. Die Generierung des Modells (siehe Abbildung~\ref{pic:PA}) erfolgt in der Analysephase.
+
+Bei großen Projekten mit vielen Beteiligten würden zwei weitere Phasen
+hinzukommen (vgl. \cite{crispdm}, S.~12). So müsste zunächst ein Verständnis der
+geschäftlichen Umgebung (\emph{business understanding}) erworben werden. In der letzen Phase
+würde das Modell in seine Einsatzumgebung gebracht und dort weiter evaluiert werden. Die zwei
+neuen Phasen würden das Vorgehensmodell aus Tabelle~\ref{tab:Vier_Phasen} \glqq{umklammern}\grqq{}
+und es so mit dem konkreten Anwendungsszenario verbinden. 
 
 \subsection{Methoden}
 
@@ -1064,11 +1053,17 @@ Nachbearbeitung & Interpretation der Ergebnisse \\
 \label{pic:PA_Methoden}
 \end{figure}
 
-% TODO
-% Beschreibung / Visualisierung der Daten
-% 
+Bei Predictive Analytics Methoden handelt es sich um Algorithmen, die Daten manipulieren und
+je nach Problemstellung verschiedene Funktionen erfüllen. Abbildung~\ref{pic:PA_Methoden} zeigt eine
+siese Methoden aus der Anwendersicht. Predictive Analytics Methoden erwarten Daten und eventuell noch zusätzliche
+Konfigurationsparameter als Eingaben. Daraufhin generieren sie, je nach ihrer konkreten Funktion, Ergebnisse und
+und liefern eventuell Güteparameter, die beschreiben, wie gut der Algorithmus funktioniert hat.
+
+Im folgenden Text werden einige konkrete Predictive Analytics Methoden mit ihren jeweiligen Anwendungsfeldern
+erläutert. 
+
 \subsubsection{Beschreibung der Daten}
-% Korrelationsanalyse
+% TODO Korrelationsanalyse
 
 Neben der Berechnung der Korrelation gibt es noch eine Reihe weiterer, spezieller
 Methoden zur Beschreibung der Daten. Ein Beispiel dafür ist die Varianzanalyse
@@ -1084,28 +1079,39 @@ die Art der Bewässerung, während der Ertrag die abhängige Variable darstellte
 
 \subsubsection{Datenvisualisierung}
 
+Das menschliche Gehirn kann bei geeigneter Visualisierung von Daten in die Lage
+versetzt werden, Muster in den Daten zu erkennen (vgl. \cite{Runkler}, S.~37).
+
 Es stehen eine Vielzahl von Methoden zur Verfügung, um Daten zu visualiseren.
 Die geläufigen Balken- und Kreisdiagramme bilden nur einen kleinen Teil der
 Möglichkeiten ab, die dem Datenanalysten zur Verfügung stehen um Daten zu
-visualisieren.
-
-% TODO menschliches Gehirn gut in Mustererkennung
+veranschaulichen (vgl. \cite{Dinov}, S.~143). 
 
 Datenvisualisierungen werden auch verwendet, um die Ergebnisse von Datenanalysen
 zu präsentieren und zu vermitteln. 
 
-\subsubsection{Vorhersagemodelle}
+\subsubsection{Variablenreduktion}
+
+\subsubsection{Vorhersagealgorithmen}
 % TODO Die Großen Drei
+% Genauigkeit
+%\paragraph{Regression}
 
-\paragraph{Regression}
+%\paragraph{Entscheidungsbäume}
 
-\paragraph{Entscheidungsbäume}
-
-\paragraph{Neuronale Netze}
+%\paragraph{Neuronale Netze}
 
 \subsubsection{Zeitreihenanalyse}
 
-% Güteparameter
+Einen Spezialfall bei Prognosealgorithmen bilden die Zeitreihenanalysen. Dabei
+soll, vereinfacht ausgedrückt, aus den Daten zu einem Zeitpunkt $t$ eine Prognose zu dem Zeitpunkt $t+1$
+erstellt werden. Ein Beispiel dafür ist das formale Modell , das bei den Forecasting
+Exercises die Experten mit viel Abstand geschlagen hat (siehe Abbildung~\ref{pic:Tetlock_2}).  
+Zur Berechnung einer Prognose für die Zielvariable zum Zeitpunkt $t$ wurden die Werte dieser Variable
+zu den Zeitpunkten $t-1$ und $t-2$ verwendet und zusätzlich die Werte von drei Prädiktorvariablen zum Zeitpunkt $t-1$   
+(vgl. \cite{Tetlock}, S.~283).
+
+
 
 \subsubsection{Textbasierte Analysen}
 
