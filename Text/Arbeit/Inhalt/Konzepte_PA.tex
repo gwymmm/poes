@@ -598,7 +598,7 @@ eigenen Fehler zu vernachlässigen und das Ausmaß der von ihren Rivalen gemacht
 sie dem Rivalen Fehleinschätzungen hinzugedichtet haben.
 } (vgl. \cite{Tetlock}, S.~138-139).
 
-Wieterhin waren die Experten sehr geschickt darin, die Resultate der Forecasting
+Weiterhin waren die Experten sehr geschickt darin, die Resultate der Forecasting
 Exercises anzuzweifeln. So nutzten sie eine Reihe von Erklärungsmustern
 (\emph{belief system defenses}), um ihre schlechten Leistungen zu rechtfertigen
 (vgl. \cite{Tetlock}, S.~129). Ein Beispiel für eine solche
@@ -983,7 +983,7 @@ Betrieb in das Data Warehouse importiert werden. Damit soll ein
 konsistenter Datenbestand erreicht werden.
 
 \item[(3) Zeitorientierung:] \hfill \\
-Die Daten in einem Data Warehouse müssen mit korrektn Zeitstempeln versehen werden,
+Die Daten in einem Data Warehouse müssen mit korrekten Zeitstempeln versehen werden,
 damit die zeitpunktbezogene Zuordnung von Daten jederzeit und für alle Datensätze erfolgen kann
 
 \item[(4) Beständigkeit:] \hfill \\
@@ -1109,7 +1109,7 @@ die Art der Bewässerung, während der Ertrag die abhängige Variable darstellte
 Das menschliche Gehirn kann bei geeigneter Visualisierung von Daten in die Lage
 versetzt werden, Muster in den Daten zu erkennen (vgl. \cite{Runkler}, S.~37).
 
-Es stehen eine Vielzahl von Methoden zur Verfügung, um Daten zu visualiseren.
+Es stehen eine Vielzahl von Methoden zur Verfügung, um Daten zu visualisieren.
 Die geläufigen Balken- und Kreisdiagramme bilden nur einen kleinen Teil der
 Möglichkeiten ab, die dem Datenanalysten zur Verfügung stehen um Daten zu
 veranschaulichen (vgl. \cite{Dinov}, S.~143). 
@@ -1134,6 +1134,11 @@ Dies soll am Beispiel der linearen Regression verdeutlicht werden. Gleichung~\re
 ein lineares Regressionsmodell mit $y$ als Zielvariablen, $x_1$, $x_2$, $x_3$ als den Attributen und $\alpha$, $\beta$, $\gamma$
 als den Regressionskoeffizienten.
 
+\begin{equation}
+y = \alpha~x_1 + \beta~x_2 + \gamma~x_3
+\label{eq:linear_regression}
+\end{equation}
+
 Zunächst muss der Datensatz in einen Trainings- und einen Testdatensatz aufgeteilt werden. Das typische Verhältnis von Trainings- zu Testdaten
 ist 80/20 (vgl. \cite{McCarthy}, S.~43-44). Die Aufgabe des Regressionsalgorithmus ist nun die passenden Regressionskoeffizienten
 $\alpha$, $\beta$, $\gamma$ zu finden, die beim Trainingsdatensatz zu den besten Vorhersagen für $y$ führen. Sobald die Regressionskoeffizienten
@@ -1141,12 +1146,7 @@ gefunden sind, wird eine Modellinstanz generiert, bei der die gefundenen Regress
 zur Vorhersage der Zielvariablen beim Testdatensatz verwendet. Mit Hilfe eines Gütekriteriums wird dann die Genauigkeit der Prognosen der Modellinstanz festgestellt.
 Wenn die Genauigkeit zufriedenstellend ist, kann die Modellinstanz dann für weitere Prognosen verwendet werden.
 
-\begin{equation}
-y = \alpha~x_1 + \beta~x_2 + \gamma~x_3
-\label{eq:linear_regression}
-\end{equation}
-
-Es gibt drei große Kategorien von Vorhesagealgorithmen, die häufig Anwendung finden und aus diesem Grund als
+Es gibt drei große Kategorien von Vorhersagealgorithmen, die häufig Anwendung finden und aus diesem Grund als
 \glqq{Die Großen 3}\grqq{} (\emph{The Big 3}) bezeichnet werden (vgl. \cite{McCarthy}, S~1): Regression (\emph{regression analysis}),
 Entscheidungsbäume (\emph{decision trees}) und Neuronale Netze (\emph{neural networks}).
 
@@ -1253,7 +1253,7 @@ Dokumente und erstellen auf dieser Basis einfache Modelle.
 Dies ist insbesondere dann die einzige Alternative, wenn keine oder nur sehr wenige
 Daten vorliegen.
 
-Forecasting kann prinizipiell von einer Person mit einem Taschenrechner praktiziert
+Forecasting kann prinzipiell von einer Person mit einem Taschenrechner praktiziert
 werden. Die Methoden sind leichter zu verstehen und es werden nur wenige Formeln benötigt.
 Predictive Analytics wird hingegen typischerweise von Spezialisten praktiziert, 
 die in Fächern wie Mathematik, Statistik oder Informatik ausgebildet sind (\cite{Gluchowski}, S.~107).

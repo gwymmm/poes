@@ -159,7 +159,7 @@ sind.
 Gleichung \ref{brier} definiert den Brier Score (\cite{Tetlock}, S. 273).
 
 \begin{equation}
-\textrm{PS} = \frac{\sum_{i=1}^{M} (p_i - x_i)^2}{ M }
+\textrm{BS} = \frac{\sum_{i=1}^{M} (p_i - x_i)^2}{ M }
 \label{brier}
 \end{equation}
 
@@ -169,12 +169,14 @@ Gleichung \ref{brier} definiert den Brier Score (\cite{Tetlock}, S. 273).
 \item[$x_i$ :] die tatsächliche Realisierung von Ereignis $i$ (0 wenn das Ereignis ausgeblieben ist, 1 wenn das Ereignis eingetreten ist)
 \end{description}
 
+Der ideale Brier Score ist 0.
+
 \subsection{Brier Score - Zerlegung}
 
 Weiterhin zeigt Gleichung \ref{brier_decomposition} die Zerlegung des Brier Score (\cite{Tetlock}, S. 274).
 
 \begin{equation}
-\textrm{PS} = \underbrace{
+\textrm{BS} = \underbrace{
 b(1-b)
 }_\textrm{VI} + \underbrace{
 \frac{1}{N} \sum_{t=1}^{T} n_t (p_t - b_t)^2
@@ -186,10 +188,10 @@ b(1-b)
 
 \begin{description}
 \item[$b$ :] Basisrate aller Ereignisse
-\item[$b_t$ :] Basisrate für die Vorhersagekategorie $t$
+\item[$b_t$ :] Basisrate für die Prognosekategorie $t$
 \item[$N$ :] Gesamtanzahl der Ereignisse
 \item[$n_t$ :] Anzahl der Vorhersagen in Kategorie $t$
-\item[$T$ :] Anzahl der Vorhersagekategorien
+\item[$T$ :] Anzahl der Prognosekategorien
 \item[$p_t$ :] Vorhersage von Kategorie $t$
 \end{description}
 
@@ -197,6 +199,39 @@ Weiterhin ist VI die Variability, CI die Calibration, DI die Discrimination.
 
 \subsection{Rechenbeispiel}
 
+\begin{table}
+\centering
+\caption{Prognosen - Ein Beispiel}
+\label{progs}
+%\scalebox{0.7}{
+\begin{tabular}{ l|c c c | c c c c| }
+Realisierung & 1 & 1 & 0 & 0 & 0 & 1 & 1 \\
+Prognose & 0.6 & 0.6 & 0.6 & 0.5 & 0.5 & 0.5 & 0.5
+
+\end{tabular}
+%}
+\end{table}
+
+Tabelle \ref{progs} zeigt ein Rechenbeispiel mit sieben Ereignissen und zwei
+Prognosekategorien. Die Formel für den Brier Score ergibt dann:
+
+\begin{equation*}
+\textrm{BS} = \frac{2 \cdot (0.6-1)^2 + (0.6-0)^2 + 2 \cdot (0.5-0)^2 + 2 \cdot (0.5-1)^2}{7} = 0.24
+\end{equation*}
+
+Und für die Zerlegung:
+
+\begin{equation*}
+\textrm{VI} = \frac{4}{7} (1-\frac{4}{7})=\frac{12}{49} 
+\end{equation*}
+\begin{equation*}
+\textrm{CI} = \frac{1}{7} (3 \cdot (0.6 - \frac{2}{3})^2 + 4 \cdot (0.5 - \frac{2}{4})^2 ) \approx 0.0019 
+\end{equation*}
+\begin{equation*}
+\textrm{DI} = \frac{1}{7} ( 3 \cdot (\frac{2}{3}-\frac{4}{7})^2 + 4 \cdot (\frac{2}{4} - \frac{4}{7})^2 ) =\frac{1}{147}
+\end{equation*}
+
+Außerdem ergibt sich für BS  = VI+CI-DI$\approx 0.24$.
 
 \section{Logische Korrespondenz - Bayes Belief Updating} \label{Anhang_Bayes}
 
