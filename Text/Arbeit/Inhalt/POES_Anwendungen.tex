@@ -5,11 +5,6 @@ Sektor vorgestellt. Es wurden Anwendungsfälle in den Bereichen öffentliche Ver
 Gesundheit und Bildung betrachtet. Zudem wurden Fallstudien erstellt, bei denen
 konkrete Anwendungen im Fokus stehen.
 
-% TODO
-% 2 grundlegende Probleme
-% - Datenschutz: Achtung Privatsphäre + Angst vor Missbrauch
-% - Verzerrungen in Daten: insb. auch Big Data, Daten nicht repräsentativ,
-%     Daten kulturabhängig
 
 \section{Öffentliche Verwaltung}
 
@@ -214,7 +209,7 @@ Neben den in Abschnitt~\xcom erwähnten Text Mining Anwendungen zur Verbesserung
 von Behörden existieren noch weitere \glqq{experimentelle}\grqq{} Anwendungen. So konnte Matter durch
 die Analyse teilstrukturierter Internetdokumente herausfinden, wie stark öffentliche Ämter in den USA
 mit religiösen Personen besetzt sind (vgl. \cite{Matter}). Der \glqq{Bible Belt}\grqq{}\footnote{
-Der \glqq{Bible Belt} ist eine besonders religiöse Region der USA, die sich über mehrere Bundesstaaten erstreckt.
+Der \glqq{Bible Belt}\grqq{} ist eine besonders religiöse Region der USA, die sich über mehrere Bundesstaaten erstreckt.
 } und der Mormonenstaat Utah waren deutlich als relgiös konservative Staaten erkennbar (vgl. \cite{Matter}, S.~1078).
 Weiterhin konnten Falck et al. die weltanschauliche Nähe von Zeitungen zu politischen Parteien und einzelnen Politikern
 darstellen, indem sie die Einstellungen der Zeitschriften zu den jeweiligen Personen und Parteien analysierten
@@ -371,11 +366,25 @@ sich Predictive Analytics zunehmend etabliert.
 % TODO Missbrauch -> Proctor
 \subsection{Seuchenerkennung}
 
-Der erste Alarm der wegen COVID-19 ausgelöst wurde, kam von einem Computersystem (vgl. \cite{Cho}, S.~810).
+Der erste internationale Alarm der wegen COVID-19 ausgelöst wurde, kam von einem Computersystem (vgl. \cite{Cho}, S.~810).
+Das System \emph{HealthMap} durchsucht Internetkommunikation, wie beispielsweise soziale Medien oder Nachrichtenberichte,
+nach Anzeichen von Krankheitsausbrüchen (vgl. \cite{Cho}, S.~810). So hat es am 30. Dezember 2019 den Ausbruch von
+COVID-19 in Wuhan bemerkt und einen Alarm als E-Mail versendet.
 
+Seuchenwarnsysteme wie HealthMap können auf zwei Arten eingesetzt werden. Erstens als Frühwarnsysteme, die nach ersten
+Anzeichen eines neuen Krankheitsausbruchs suchen und zweitens als Systeme, die den aktuellen Verlauf einer Pandemie
+verfolgen (vgl. \cite{Cho}, S.~811). Der zweite Prozess wird als \emph{Now-Casting} bezeichnet, weil er keine Vorhersage
+über eine Variable trifft, sondern versucht den aktuellen Zustand dieser Variable möglichst schnell zu erfassen und zu melden.
 
-% TODO
-% Google Flu Trends (vorerst gescheitert)
+Allerdings sind solche Warnsysteme sehr arbeitsintensiv, da sie mit relevanten Texten trainiert werden, die per Hand
+ausgesucht werden müssen (vgl. \cite{Cho}, S.~811). Außerdem kann ein solches System versagen, wenn die Umstände sich, wie
+in einer Pandemie, schnell ändern und die Art der Nachrichten im Internet sich wandelt (vgl. \cite{Cho}, S.~811). Daran ist
+\emph{Google Flu Trends} gescheitert, eine Anwendung, die Internetsuchanfragen nach Anzeichen von Grippeausbrüchen durchsucht
+(vgl. \cite{Cho}, S.~811). Google Flu Trends war zwischen 2009 und 2015 aktiv, allerdings hat es in den Jahren 2011 bis 2013
+Probleme gegeben, weil die Anwendung das Ausmaß von Grippeausbrüchen überschätzt hat. Die Forscher haben es versäumt, das System
+neu zu trainieren, nachdem sich das Verhalten der Menschen geändert hatte. So wurden Suchanfragen nach Nachrichtenmeldungen über
+die Grippe fälschlicherweise als Zeichen für Ausbrüche gehalten. Diese Probleme werden allerdings nicht als unausweichlich betrachtet
+und einige Forscher arbeiten bereits an neuen Systemen, die bei zukünftigen Pandemien helfen sollen (vgl. \cite{Cho}, S.~811).
 
 % TODO
 %\subsection{Flint Trinkwasserskandal - Fallstudie}
@@ -384,7 +393,7 @@ Der erste Alarm der wegen COVID-19 ausgelöst wurde, kam von einem Computersyste
 
 % TODO rosin infancy
 Abschließend sollen noch die Anwendungsmöglichkeiten von Predictive Analytics
-im Bildungssektor kurz skizziert werden.
+im Bildungssektor präsentiert werden.
 
 Eine weitere Anwendung ist E$^2$Coach, ein System zur Studienunterstützung.
 
